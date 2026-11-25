@@ -1,7 +1,7 @@
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
-import { google } from 'googleapis';
+import { OAuth2Client } from 'google-auth-library';
 import { chromium } from 'playwright';
 
 const rootDir = 'F:\\shiftandtip';
