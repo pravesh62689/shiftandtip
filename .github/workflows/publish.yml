@@ -75,10 +75,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add --ignore-missing dist/posts/published.json data/live-urls.json
+          for f in dist/posts/published.json data/live-urls.json; do
+            [ -f "$f" ] && git add "$f"
+          done
           if git diff --staged --quiet; then
             echo "No published registry changes to commit."
           else
             git commit -m "chore(publish): record published blogger posts & pages [skip ci]"
+            git pull --rebase origin main
             git push
           fi
