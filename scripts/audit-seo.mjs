@@ -21,7 +21,7 @@ const fails = [];
 const rows = [];
 for (const p of pages) {
   const h = p.html, bad = [];
-  const isTool = /data-tool=/.test(h), isTrust = /(?:\/p\/|^)(about|methodology|privacy|terms|contact|corrections)\.html$/.test(p.id);
+  const isTool = /data-tool=/.test(h), isTrust = /(?:\/p\/|^)(about|methodology|privacy|terms|contact|corrections|embed)\.html$/.test(p.id);
   const isHub = /(?:\/p\/|^)(tip-tools|overtime-tools|shift-pay-tools|state-pay-rules|guides)\.html$/.test(p.id);
   if (p.live) {
     const t = (h.match(/<title>([^<]*)<\/title>/) || [])[1] || '';
@@ -43,7 +43,7 @@ for (const p of pages) {
   if (/DATE PENDING/.test(h)) bad.push('verified date pending');
   if (/[?&]m=1/.test(h)) bad.push('?m=1 link');
   if (/AUTHOR_NAME/.test(h)) bad.push('AUTHOR_NAME placeholder');
-  if (/lorem ipsum|TODO/i.test(h) || (!p.id.includes('state-pay-rules') && /pending verification/i.test(h))) bad.push('placeholder text');
+  if (/lorem ipsum/i.test(h) || /\bTODO\b/.test(h) || (!p.id.includes('state-pay-rules') && /pending verification/i.test(h))) bad.push('placeholder text');
   if (Buffer.byteLength(h) > 150 * 1024) bad.push('HTML > 150 KB');
   // ads: must carry a label, and never sit inside the tool card
   for (const m of h.matchAll(/<div class="ad"[\s\S]*?<\/div>/g)) if (!/Advertisements/.test(m[0])) bad.push('unlabelled ad');
