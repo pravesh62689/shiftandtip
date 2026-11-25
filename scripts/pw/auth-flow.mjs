@@ -114,7 +114,7 @@ async function main() {
         const cb = checkboxes.nth(i);
         if (!(await cb.isChecked())) {
           console.log(`Checking permission checkbox ${i + 1}...`);
-          await cb.check({ force: true }).catch(() => {});
+          await cb.check({ force: true }).catch(() => { });
         }
       }
 
