@@ -67,17 +67,17 @@ jobs:
           BLOGGER_TOKEN_JSON: ${{ secrets.BLOGGER_TOKEN_JSON }}
           BLOGGER_CLIENT_SECRET_JSON: ${{ secrets.BLOGGER_CLIENT_SECRET_JSON }}
 
-      - name: Commit updated reports
+      - name: Commit updated reports and verified data
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add reports/ docs/manual-steps.md
+          git add reports/ docs/manual-steps.md docs/publish-schedule.md data/state-taxes.json data/cities.json data/raw/
           git checkout -- .
           if git diff --staged --quiet; then
             echo "No report changes to commit."
           else
-            git commit -m "chore(audit): update weekly health & qa reports [skip ci]"
+            git commit -m "chore(audit): update weekly reports and monthly verified data [skip ci]"
             git pull --rebase --autostash origin main
             git push
           fi
