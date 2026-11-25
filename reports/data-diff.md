@@ -1,5 +1,5 @@
 # State Pay Rules Data Recheck & Diff Report
-Audit Timestamp: 2026-11-25T01:02:15.689Z
+Audit Timestamp: 2026-11-25T18:00:44.100Z
 
 Total Jurisdictions: 51
 Verified Jurisdictions: 49
@@ -66,9 +66,22 @@ Pending / Fallback Jurisdictions: 2
 
 ## Audit Engine Output
 ```text
-Audited 51 states.
-Total values: 153
-Found verbatim: 147
-Not found verbatim (set to null): 0
-Saved data/audit-report.md and updated data/states.json
+Command failed: node scripts/audit-data.mjs
+node:fs:448
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'data/raw/dol-minwage.html'
+    at Object.readFileSync (node:fs:448:20)
+    at file:///home/runner/work/shiftandtip/shiftandtip/scripts/audit-data.mjs:13:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'data/raw/dol-minwage.html'
+}
+
+Node.js v20.20.2
 ```
