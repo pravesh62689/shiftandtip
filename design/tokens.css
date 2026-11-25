@@ -1,0 +1,13 @@
+/* Shift & Tip design tokens v1 (source of truth: design/DESIGN.md). Page background is ALWAYS paper, never mint. */
+:root{
+  --ink:#16201C;--ink-2:#3D4A44;--muted:#525F59;
+  --paper:#F7F6F1;--surface:#FFFFFF;--line:#E3E0D6;--line-2:#CFCABB;--zebra:#FAFAF7;
+  --ledger:#0E6B4C;--ledger-600:#0A5039;--ledger-50:#E7F1EC;
+  --receipt:#A85400;--receipt-50:#FBF1E3;--danger:#B42318;--danger-50:#FDECEA;--ad-bg:#F1EFE8;
+  --font-display:"Source Serif 4","Source Serif 4 Fallback",Georgia,"Times New Roman",serif;
+  --font-ui:"Public Sans","Public Sans Fallback",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --font-num:"IBM Plex Mono","IBM Plex Mono Fallback",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;--s8:64px;
+  --r-sm:6px;--r-md:10px;--shadow:0 1px 2px rgba(22,32,28,.06);
+  --max:1200px;--side:300px;--body:680px;--tap:44px;
+}

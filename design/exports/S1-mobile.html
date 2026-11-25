@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Public+Sans:wght@400;600&family=Source+Serif+4:wght@600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100..900&family=Source+Serif+4:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-surface":"#141e1a","primary-fixed-dim":"#85d7b1","tertiary":"#3c4943","outline":"#6f7a73","on-error":"#ffffff","surface-container-highest":"#dae5de","surface-dim":"#d1ddd6","error-container":"#ffdad6","on-secondary-fixed":"#301400","on-tertiary-fixed-variant":"#3d4a44","inverse-primary":"#85d7b1","on-tertiary":"#ffffff","secondary-fixed-dim":"#ffb785","secondary-fixed":"#ffdcc6","tertiary-container":"#54615b","on-primary-fixed":"#002114","primary-fixed":"#a1f3cc","surface-variant":"#dae5de","surface-container-lowest":"#ffffff","on-surface-variant":"#3f4943","inverse-on-surface":"#e8f3ed","surface-container-high":"#dfebe4","on-tertiary-fixed":"#121e19","on-tertiary-container":"#cddbd3","error":"#ba1a1a","on-secondary-container":"#6c3400","on-primary":"#ffffff","primary":"#005138","background":"#f1fcf5","on-secondary-fixed-variant":"#713700","on-background":"#141e1a","secondary":"#954a00","surface-container":"#e5f1ea","inverse-surface":"#28332e","on-primary-fixed-variant":"#005138","surface-bright":"#f1fcf5","on-primary-container":"#96e8c1","tertiary-fixed":"#d7e6de","on-error-container":"#93000a","surface-container-low":"#ebf6ef","outline-variant":"#bec9c1","tertiary-fixed-dim":"#bccac2","primary-container":"#0e6b4c","surface-tint":"#0f6c4c","surface":"#f1fcf5","secondary-container":"#fe9748","on-secondary":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-lg":"1.5rem","space-xl":"2rem","space-sm":"0.5rem","margin-desktop":"2rem","space-xs":"0.25rem","space-2xl":"3rem","gutter":"1rem","margin-tablet":"1.5rem","gutter-tablet":"1.5rem","margin":"1rem","gutter-desktop":"1.5rem"},"fontFamily":{"ui-medium":["Public Sans"],"body-editorial-strong":["Public Sans"],"headline-h2":["\"Source Serif 4\""],"tabular-mono-sm":["IBM Plex Mono"],"headline-h3":["\"Source Serif 4\""],"headline-h1-mobile":["\"Source Serif 4\""],"headline-h1":["\"Source Serif 4\""],"ui-small-bold":["Public Sans"],"ui-small":["Public Sans"],"headline-h2-mobile":["\"Source Serif 4\""],"tabular-mono-base":["IBM Plex Mono"],"tabular-mono-lg":["IBM Plex Mono"],"body-editorial":["Public Sans"],"ui-base":["Public Sans"]},"fontSize":{"ui-medium":["15px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"600"}],"body-editorial-strong":["17px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-h2":["28px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"600"}],"tabular-mono-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"500"}],"headline-h3":["20px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"600"}],"headline-h1-mobile":["30px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-h1":["38px",{"lineHeight":"44px","letterSpacing":"-0.015em","fontWeight":"600"}],"ui-small-bold":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"ui-small":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-h2-mobile":["24px",{"lineHeight":"30px","letterSpacing":"-0.005em","fontWeight":"600"}],"tabular-mono-base":["15px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"500"}],"tabular-mono-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"500"}],"body-editorial":["17px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"400"}],"ui-base":["15px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-ui-base text-ui-base text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="font-headline-h3 text-headline-h3 text-on-surface tracking-tight">Shift & Tip</span></div><div class="flex items-center gap-space-sm"><button aria-label="Open menu" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-margin pt-16 pb-36 bg-surface flex-1"><div class="w-full py-space-md"><div class="flex flex-col w-full gap-space-lg">
+<section class="flex flex-col gap-space-sm">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-ui-small text-ui-small text-on-surface-variant">
+<a class="hover:text-on-surface transition-colors" href="#">Tip tools</a>
+<span>/</span>
+<span class="text-on-surface font-ui-small-bold text-ui-small-bold">Tip pool calculator</span>
+</nav>
+<h1 class="font-headline-h1-mobile text-headline-h1-mobile text-on-surface tracking-tight">Tip pool calculator</h1>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant">
+      Split tonight’s tips by hours, points or percentage — with tip-outs taken off the top.
+    </p>
+<div class="flex items-center pt-space-xs">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-primary-fixed text-on-primary-fixed font-ui-small-bold text-ui-small-bold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Rules verified Dec 2026</span>
+</span>
+</div>
+</section>
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-h3 text-headline-h3 text-on-surface">Shift inputs</h2>
+<div class="flex items-center gap-space-sm">
+<button class="min-h-[44px] px-space-xs font-ui-small-bold text-ui-small-bold text-primary hover:text-primary-container transition-colors" id="btn-example" type="button">
+          Use example
+        </button>
+<button class="min-h-[44px] px-space-xs font-ui-small-bold text-ui-small-bold text-on-surface-variant hover:text-on-surface transition-colors" id="btn-reset" type="button">
+          Reset
+        </button>
+</div>
+</div>
+<div class="flex flex-col gap-space-md">
+<label class="flex flex-col gap-space-xs">
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface">Total tips</span>
+<div class="flex items-center h-[44px] bg-surface-container-low rounded-lg px-space-sm gap-space-xs">
+<span class="font-tabular-mono-base text-tabular-mono-base text-on-surface-variant">$</span>
+<input class="w-full bg-transparent font-tabular-mono-base text-tabular-mono-base text-on-surface focus:outline-none" id="input-total-tips" min="0" step="0.01" type="number" value="1240.00"/>
+</div>
+</label>
+<label class="flex flex-col gap-space-xs">
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface">Net sales (for tip-outs)</span>
+<div class="flex items-center h-[44px] bg-surface-container-low rounded-lg px-space-sm gap-space-xs">
+<span class="font-tabular-mono-base text-tabular-mono-base text-on-surface-variant">$</span>
+<input class="w-full bg-transparent font-tabular-mono-base text-tabular-mono-base text-on-surface focus:outline-none" id="input-net-sales" min="0" step="0.01" type="number" value="8000.00"/>
+</div>
+</label>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface">Split by</span>
+<div class="grid grid-cols-2 gap-space-xs bg-surface-container-low p-space-xs rounded-lg" id="split-mode-group">
+<button class="split-mode-btn min-h-[44px] rounded-md bg-primary text-on-primary font-ui-small-bold text-ui-small-bold transition-colors" data-mode="hours" type="button">
+          Hours
+        </button>
+<button class="split-mode-btn min-h-[44px] rounded-md bg-transparent text-on-surface-variant font-ui-small-bold text-ui-small-bold hover:text-on-surface transition-colors" data-mode="points" type="button">
+          Points
+        </button>
+<button class="split-mode-btn min-h-[44px] rounded-md bg-transparent text-on-surface-variant font-ui-small-bold text-ui-small-bold hover:text-on-surface transition-colors" data-mode="hours-points" type="button">
+          Hours × points
+        </button>
+<button class="split-mode-btn min-h-[44px] rounded-md bg-transparent text-on-surface-variant font-ui-small-bold text-ui-small-bold hover:text-on-surface transition-colors" data-mode="percent" type="button">
+          % share
+        </button>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface">Staff</span>
+<span class="font-ui-small text-ui-small text-on-surface-variant" id="staff-count-label">5 people</span>
+</div>
+<div class="flex flex-col gap-space-sm" id="staff-list"></div>
+<button class="min-h-[44px] w-full rounded-lg bg-surface-container-low text-primary font-ui-medium text-ui-medium flex items-center justify-center gap-space-xs hover:bg-surface-container transition-colors" id="btn-add-person" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add person</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface">Tip-outs (off the top)</span>
+<div class="flex flex-col gap-space-xs" id="tipout-list">
+<div class="flex items-center justify-between bg-surface-container-low rounded-lg px-space-sm min-h-[44px]">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="font-ui-base text-ui-base text-on-surface truncate">Kitchen</span>
+<span class="font-ui-small text-ui-small text-on-surface-variant">·</span>
+<input class="w-12 bg-surface-container-lowest rounded px-1 py-0.5 text-center font-tabular-mono-sm text-tabular-mono-sm text-on-surface focus:outline-none" id="input-kitchen-pct" max="100" min="0" step="0.5" type="number" value="3"/>
+<span class="font-ui-small text-ui-small text-on-surface-variant">% of net sales</span>
+</div>
+<span class="font-tabular-mono-base text-tabular-mono-base text-on-surface" id="kitchen-tipout-preview">$240.00</span>
+</div>
+</div>
+<button class="min-h-[44px] w-full rounded-lg bg-surface-container-low text-primary font-ui-medium text-ui-medium flex items-center justify-center gap-space-xs hover:bg-surface-container transition-colors" id="btn-add-tipout" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add tip-out</span>
+</button>
+</div>
+</section>
+<section class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col">
+<div class="h-2 w-full bg-surface-container flex items-center justify-around px-space-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+</div>
+<div class="p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-h3 text-headline-h3 text-on-surface">Payout receipt</h2>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-on-surface-variant" id="receipt-pool-net">Pool: $1,000.00</span>
+</div>
+<div class="flex flex-col gap-space-sm" id="receipt-lines"></div>
+<div class="h-[2px] w-full bg-surface-container-low my-space-xs"></div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-ui-base text-ui-base text-on-surface-variant">Kitchen tip-out</span>
+<span class="font-tabular-mono-base text-tabular-mono-base text-on-surface" id="receipt-tipout-total">$240.00</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-ui-small-bold text-ui-small-bold text-primary">Check</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-primary" id="receipt-check-line">Allocated $1,240.00 of $1,240.00</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-space-sm">
+<button class="min-h-[44px] rounded-lg bg-primary text-on-primary font-ui-small-bold text-ui-small-bold flex items-center justify-center gap-space-xs hover:bg-primary-container transition-colors" id="btn-save-preset" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+<span>Save preset</span>
+</button>
+<button class="min-h-[44px] rounded-lg bg-surface-container-low text-on-surface font-ui-small-bold text-ui-small-bold flex items-center justify-center gap-space-xs hover:bg-surface-container transition-colors" id="btn-copy-link" type="button">
+<span class="material-symbols-outlined text-[18px]">link</span>
+<span>Copy link</span>
+</button>
+<button class="min-h-[44px] rounded-lg bg-surface-container-low text-on-surface font-ui-small-bold text-ui-small-bold flex items-center justify-center gap-space-xs hover:bg-surface-container transition-colors" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Print</span>
+</button>
+<button class="min-h-[44px] rounded-lg bg-surface-container-low text-on-surface font-ui-small-bold text-ui-small-bold flex items-center justify-center gap-space-xs hover:bg-surface-container transition-colors" id="btn-export-csv" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export CSV</span>
+</button>
+</div>
+</div>
+</section>
+<div class="mt-space-md bg-surface-container rounded-xl h-[300px] flex flex-col items-center justify-center gap-space-xs p-space-md">
+<span class="font-ui-small-bold text-ui-small-bold tracking-widest text-outline uppercase">ADVERTISEMENTS</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-on-surface-variant">300 × 250 In-Content Unit</span>
+</div>
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-md">
+<h2 class="font-headline-h2-mobile text-headline-h2-mobile text-on-surface">How this was calculated</h2>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start gap-space-sm">
+<span class="w-7 h-7 shrink-0 rounded-md bg-primary-fixed text-on-primary-fixed font-tabular-mono-sm text-tabular-mono-sm flex items-center justify-center">1</span>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-ui-medium text-ui-medium text-on-surface">Deduct tip-outs off the top</h3>
+<p class="font-ui-base text-ui-base text-on-surface-variant">3% of $8,000.00 net sales ($240.00) is set aside for the kitchen before the floor pool is divided.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="w-7 h-7 shrink-0 rounded-md bg-primary-fixed text-on-primary-fixed font-tabular-mono-sm text-tabular-mono-sm flex items-center justify-center">2</span>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-ui-medium text-ui-medium text-on-surface">Sum total shift hours</h3>
+<p class="font-ui-base text-ui-base text-on-surface-variant">The remaining $1,000.00 pool is divided by 30.50 combined hours, yielding $32.79 per hour.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="w-7 h-7 shrink-0 rounded-md bg-primary-fixed text-on-primary-fixed font-tabular-mono-sm text-tabular-mono-sm flex items-center justify-center">3</span>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-ui-medium text-ui-medium text-on-surface">Reconcile to the penny</h3>
+<p class="font-ui-base text-ui-base text-on-surface-variant">Each payout is rounded to the nearest cent and checked against total tips so nothing is left unallocated.</p>
+</div>
+</div>
+</div>
+</section>
+<div class="bg-surface-container rounded-xl h-[300px] flex flex-col items-center justify-center gap-space-xs p-space-md">
+<span class="font-ui-small-bold text-ui-small-bold tracking-widest text-outline uppercase">ADVERTISEMENTS</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-on-surface-variant">300 × 250 In-Content Unit</span>
+</div>
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-sm">
+<h2 class="font-headline-h2-mobile text-headline-h2-mobile text-on-surface">State tip pool rules</h2>
+<div class="flex flex-col gap-space-xs" id="state-accordion">
+<div class="bg-surface-container-low rounded-lg overflow-hidden">
+<button class="accordion-trigger w-full min-h-[44px] px-space-sm flex items-center justify-between text-left font-ui-medium text-ui-medium text-on-surface" type="button">
+<span>California</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">expand_more</span>
+</button>
+<div class="accordion-panel hidden px-space-sm pb-space-sm font-ui-base text-ui-base text-on-surface-variant">
+          Mandatory tip pooling is permitted among employees in the chain of service. Employers, managers, and supervisors may never receive a share.
+        </div>
+</div>
+<div class="bg-surface-container-low rounded-lg overflow-hidden">
+<button class="accordion-trigger w-full min-h-[44px] px-space-sm flex items-center justify-between text-left font-ui-medium text-ui-medium text-on-surface" type="button">
+<span>New York</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">expand_more</span>
+</button>
+<div class="accordion-panel hidden px-space-sm pb-space-sm font-ui-base text-ui-base text-on-surface-variant">
+          Only food service workers who directly serve customers may participate in a tip pool when a tip credit is claimed. Written notice is required.
+        </div>
+</div>
+<div class="bg-surface-container-low rounded-lg overflow-hidden">
+<button class="accordion-trigger w-full min-h-[44px] px-space-sm flex items-center justify-between text-left font-ui-medium text-ui-medium text-on-surface" type="button">
+<span>Texas</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">expand_more</span>
+</button>
+<div class="accordion-panel hidden px-space-sm pb-space-sm font-ui-base text-ui-base text-on-surface-variant">
+          Follows federal FLSA rules. If all staff are paid at least the full $7.25/hr minimum wage without tip credit, back-of-house staff may join the pool.
+        </div>
+</div>
+</div>
+</section>
+<aside class="bg-secondary-fixed text-on-secondary-fixed-variant rounded-xl p-space-md flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[22px] shrink-0">warning</span>
+<p class="font-ui-base text-ui-base">
+<strong class="font-ui-medium text-ui-medium">Watch out:</strong> under federal law, managers and supervisors can’t keep tips from the pool.
+    </p>
+</aside>
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-sm">
+<h2 class="font-headline-h2-mobile text-headline-h2-mobile text-on-surface">Frequently asked questions</h2>
+<div class="flex flex-col gap-space-xs">
+<div class="bg-surface-container-low rounded-lg overflow-hidden">
+<button class="accordion-trigger w-full min-h-[44px] px-space-sm flex items-center justify-between text-left font-ui-medium text-ui-medium text-on-surface" type="button">
+<span>Are credit card processing fees deducted?</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">expand_more</span>
+</button>
+<div class="accordion-panel hidden px-space-sm pb-space-sm font-ui-base text-ui-base text-on-surface-variant">
+          In most states, employers may deduct the actual credit card processing fee percentage on charged tips, unless prohibited by state law (such as California).
+        </div>
+</div>
+<div class="bg-surface-container-low rounded-lg overflow-hidden">
+<button class="accordion-trigger w-full min-h-[44px] px-space-sm flex items-center justify-between text-left font-ui-medium text-ui-medium text-on-surface" type="button">
+<span>Can kitchen staff receive a tip-out?</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">expand_more</span>
+</button>
+<div class="accordion-panel hidden px-space-sm pb-space-sm font-ui-base text-ui-base text-on-surface-variant">
+          Yes, under federal FLSA rules, back-of-house staff can participate in a tip pool as long as no tip credit is claimed for any employee.
+        </div>
+</div>
+</div>
+</section>
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-sm">
+<h2 class="font-headline-h3 text-headline-h3 text-on-surface">Related calculators</h2>
+<div class="flex flex-col gap-space-xs">
+<a class="min-h-[44px] px-space-sm rounded-lg bg-surface-container-low flex items-center justify-between text-on-surface hover:bg-surface-container transition-colors" href="#">
+<span class="font-ui-medium text-ui-medium">Overtime pay calculator</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">chevron_right</span>
+</a>
+<a class="min-h-[44px] px-space-sm rounded-lg bg-surface-container-low flex items-center justify-between text-on-surface hover:bg-surface-container transition-colors" href="#">
+<span class="font-ui-medium text-ui-medium">Paycheck estimator</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">chevron_right</span>
+</a>
+<a class="min-h-[44px] px-space-sm rounded-lg bg-surface-container-low flex items-center justify-between text-on-surface hover:bg-surface-container transition-colors" href="#">
+<span class="font-ui-medium text-ui-medium">Tip credit compliance check</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">chevron_right</span>
+</a>
+</div>
+</section>
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-h3 text-headline-h3 text-on-surface">Saved presets</h2>
+<span class="font-ui-small text-ui-small text-on-surface-variant">Local</span>
+</div>
+<div class="flex flex-col gap-space-xs" id="saved-presets-list">
+<div class="min-h-[44px] px-space-sm py-space-xs rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-ui-medium text-ui-medium text-on-surface">Friday Dinner Floor</span>
+<span class="font-ui-small text-ui-small text-on-surface-variant">5 staff · 3% kitchen</span>
+</div>
+<button class="min-h-[44px] px-space-sm font-ui-small-bold text-ui-small-bold text-primary" type="button">Load</button>
+</div>
+</div>
+</section>
+<section class="bg-surface-container rounded-xl p-space-md flex flex-col gap-space-sm">
+<span class="font-ui-small-bold text-ui-small-bold tracking-widest text-outline uppercase text-center">ADVERTISEMENTS</span>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest rounded-lg p-space-sm h-24 flex items-center justify-center font-ui-small text-ui-small text-on-surface-variant text-center">
+        Payroll & Scheduling
+      </div>
+<div class="bg-surface-container-lowest rounded-lg p-space-sm h-24 flex items-center justify-center font-ui-small text-ui-small text-on-surface-variant text-center">
+        POS Tip Payouts
+      </div>
+</div>
+</section>
+</div>
+<script>
+  (function () {
+    const defaultStaff = [
+      { role: 'Server', name: 'Maya', value: 6.5 },
+      { role: 'Server', name: 'Luis', value: 7 },
+      { role: 'Bartender', name: 'Dana', value: 8 },
+      { role: 'Busser', name: 'Theo', value: 5 },
+      { role: 'Host', name: 'Priya', value: 4 }
+    ];
+
+    let staff = JSON.parse(JSON.stringify(defaultStaff));
+    let splitMode = 'hours';
+
+    const totalTipsInput = document.getElementById('input-total-tips');
+    const netSalesInput = document.getElementById('input-net-sales');
+    const kitchenPctInput = document.getElementById('input-kitchen-pct');
+    const kitchenPreview = document.getElementById('kitchen-tipout-preview');
+    const staffListEl = document.getElementById('staff-list');
+    const staffCountLabel = document.getElementById('staff-count-label');
+    const receiptLinesEl = document.getElementById('receipt-lines');
+    const receiptPoolNetEl = document.getElementById('receipt-pool-net');
+    const receiptTipoutTotalEl = document.getElementById('receipt-tipout-total');
+    const receiptCheckLineEl = document.getElementById('receipt-check-line');
+
+    function fmtMoney(n) {
+      return '$' + (isNaN(n) ? 0 : n).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    }
+
+    function renderStaff() {
+      staffListEl.innerHTML = '';
+      staffCountLabel.textContent = staff.length + (staff.length === 1 ? ' person' : ' people');
+
+      staff.forEach((person, idx) => {
+        const card = document.createElement('div');
+        card.className = 'bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs';
+
+        const topRow = document.createElement('div');
+        topRow.className = 'flex items-center gap-space-xs';
+
+        const roleSelect = document.createElement('select');
+        roleSelect.className = 'h-[44px] flex-1 bg-surface-container-lowest rounded-md px-space-sm font-ui-base text-ui-base text-on-surface focus:outline-none';
+        ['Server', 'Bartender', 'Busser', 'Host', 'Barback'].forEach(r => {
+          const opt = document.createElement('option');
+          opt.value = r;
+          opt.textContent = r;
+          if (person.role === r) opt.selected = true;
+          roleSelect.appendChild(opt);
+        });
+        roleSelect.addEventListener('change', (e) => {
+          staff[idx].role = e.target.value;
+          calculate();
+        });
+
+        const valWrap = document.createElement('div');
+        valWrap.className = 'h-[44px] w-24 bg-surface-container-lowest rounded-md px-space-xs flex items-center gap-1';
+        const valInput = document.createElement('input');
+        valInput.type = 'number';
+        valInput.step = '0.5';
+        valInput.min = '0';
+        valInput.value = person.value;
+        valInput.className = 'w-full bg-transparent text-right font-tabular-mono-base text-tabular-mono-base text-on-surface focus:outline-none';
+        valInput.addEventListener('input', (e) => {
+          staff[idx].value = parseFloat(e.target.value) || 0;
+          calculate();
+        });
+        const unitSpan = document.createElement('span');
+        unitSpan.className = 'font-ui-small text-ui-small text-on-surface-variant';
+        unitSpan.textContent = splitMode === 'percent' ? '%' : splitMode === 'points' ? 'pt' : 'h';
+
+        valWrap.appendChild(valInput);
+        valWrap.appendChild(unitSpan);
+        topRow.appendChild(roleSelect);
+        topRow.appendChild(valWrap);
+
+        const nameInput = document.createElement('input');
+        nameInput.type = 'text';
+        nameInput.placeholder = 'Name (optional)';
+        nameInput.value = person.name;
+        nameInput.className = 'h-[44px] w-full bg-surface-container-lowest rounded-md px-space-sm font-ui-base text-ui-base text-on-surface focus:outline-none';
+        nameInput.addEventListener('input', (e) => {
+          staff[idx].name = e.target.value;
+          calculate();
+        });
+
+        card.appendChild(topRow);
+        card.appendChild(nameInput);
+        staffListEl.appendChild(card);
+      });
+    }
+
+    function calculate() {
+      const totalTips = parseFloat(totalTipsInput.value) || 0;
+      const netSales = parseFloat(netSalesInput.value) || 0;
+      const kitchenPct = parseFloat(kitchenPctInput.value) || 0;
+
+      const tipOut = netSales * (kitchenPct / 100);
+      const poolNet = Math.max(0, totalTips - tipOut);
+
+      kitchenPreview.textContent = fmtMoney(tipOut);
+      receiptPoolNetEl.textContent = 'Pool: ' + fmtMoney(poolNet);
+      receiptTipoutTotalEl.textContent = fmtMoney(tipOut);
+
+      const totalWeight = staff.reduce((sum, p) => sum + (p.value || 0), 0);
+      receiptLinesEl.innerHTML = '';
+
+      let allocatedSum = tipOut;
+
+      staff.forEach((p) => {
+        const share = totalWeight > 0 ? (p.value / totalWeight) * poolNet : 0;
+        const roundedShare = Math.round(share * 100) / 100;
+        allocatedSum += roundedShare;
+        const effRate = p.value > 0 ? roundedShare / p.value : 0;
+
+        const row = document.createElement('div');
+        row.className = 'flex items-center justify-between py-space-xs';
+        row.innerHTML = `
+          <div class="flex flex-col min-w-0">
+            <span class="font-ui-medium text-ui-medium text-on-surface truncate">${p.name || p.role}</span>
+            <span class="font-tabular-mono-sm text-tabular-mono-sm text-on-surface-variant">${fmtMoney(effRate)}/hr · ${p.value} h</span>
+          </div>
+          <span class="font-tabular-mono-base text-tabular-mono-base text-on-surface">${fmtMoney(roundedShare)}</span>
+        `;
+        receiptLinesEl.appendChild(row);
+      });
+
+      receiptCheckLineEl.textContent = `Allocated ${fmtMoney(allocatedSum)} of ${fmtMoney(totalTips)}`;
+    }
+
+    document.querySelectorAll('.split-mode-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        splitMode = btn.dataset.mode;
+        document.querySelectorAll('.split-mode-btn').forEach(b => {
+          b.className = 'split-mode-btn min-h-[44px] rounded-md bg-transparent text-on-surface-variant font-ui-small-bold text-ui-small-bold hover:text-on-surface transition-colors';
+        });
+        btn.className = 'split-mode-btn min-h-[44px] rounded-md bg-primary text-on-primary font-ui-small-bold text-ui-small-bold transition-colors';
+        renderStaff();
+        calculate();
+      });
+    });
+
+    document.getElementById('btn-add-person').addEventListener('click', () => {
+      staff.push({ role: 'Server', name: '', value: 5 });
+      renderStaff();
+      calculate();
+    });
+
+    document.getElementById('btn-example').addEventListener('click', () => {
+      totalTipsInput.value = '1240.00';
+      netSalesInput.value = '8000.00';
+      kitchenPctInput.value = '3';
+      staff = JSON.parse(JSON.stringify(defaultStaff));
+      renderStaff();
+      calculate();
+    });
+
+    document.getElementById('btn-reset').addEventListener('click', () => {
+      totalTipsInput.value = '0.00';
+      netSalesInput.value = '0.00';
+      kitchenPctInput.value = '0';
+      staff = [{ role: 'Server', name: '', value: 0 }];
+      renderStaff();
+      calculate();
+    });
+
+    [totalTipsInput, netSalesInput, kitchenPctInput].forEach(el => {
+      el.addEventListener('input', calculate);
+    });
+
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const panel = trigger.nextElementSibling;
+        panel.classList.toggle('hidden');
+      });
+    });
+
+    document.getElementById('btn-copy-link').addEventListener('click', function () {
+      const orig = this.innerHTML;
+      this.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>Copied</span>';
+      setTimeout(() => { this.innerHTML = orig; }, 1500);
+    });
+
+    renderStaff();
+    calculate();
+  })();
+</script></div><footer class="mt-auto pt-space-lg pb-space-md flex flex-col gap-space-sm text-on-surface-variant"><p class="font-ui-small text-ui-small">Estimates, not legal or tax advice.</p><div class="flex flex-wrap gap-x-space-md gap-y-space-xs font-ui-small text-ui-small"><a class="hover:text-on-surface transition-colors" href="#">About</a><a class="hover:text-on-surface transition-colors" href="#">Methodology</a><a class="hover:text-on-surface transition-colors" href="#">Privacy</a><a class="hover:text-on-surface transition-colors" href="#">Terms</a><a class="hover:text-on-surface transition-colors" href="#">Contact</a></div><div class="w-full h-[60px] bg-surface-container-low rounded flex items-center justify-center font-tabular-mono-sm text-tabular-mono-sm text-outline">320x50 / 60px Anchor Ad Placeholder</div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-ui-small-bold"><div class="flex justify-around items-center h-16 px-space-sm"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-space-xs transition-colors text-primary font-ui-small-bold" data-path="tip-pool" href="#"><span class="material-symbols-outlined text-[22px]">calculate</span><span>Tip Pool</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-on-surface transition-colors font-ui-small text-ui-small" data-path="overtime-pay" href="#"><span class="material-symbols-outlined text-[22px]">schedule</span><span>Overtime</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-on-surface transition-colors font-ui-small text-ui-small" data-path="paycheck-estimator" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span>Paycheck</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] px-space-xs text-on-surface-variant hover:text-on-surface transition-colors font-ui-small text-ui-small" data-path="saved-ledgers" href="#"><span class="material-symbols-outlined text-[22px]">folder_open</span><span>Ledgers</span></a></div></nav></body></html>

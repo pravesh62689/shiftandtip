@@ -1,0 +1,380 @@
+[
+  {
+    "code": "AL",
+    "minWage": 7.25,
+    "snippet": "Alabama No state minimum wage law. Employers subject to the Fair Labor Standards Act must pay the current Federal minimum wage of $7.25 per hour.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "AK",
+    "minWage": 14,
+    "snippet": "Alaska Basic Minimum Rate (per hour): $14.00 Premium Pay After Designated Hours 1 : Daily - 8, Weekly - 40 Under a voluntary flexible work hour plan approved by the Alaska Department of Labor, a 10 hour day, 40 hour workweek may be instituted with premium pay after 10 hours a day. The premium overti",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "AS",
+    "minWage": null,
+    "snippet": "American Samoa American Samoa has special minimum wage rates .",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "AZ",
+    "minWage": 15.15,
+    "snippet": "Arizona Basic Minimum Rate (per hour): $15.15",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "AR",
+    "minWage": 11,
+    "snippet": "Arkansas Applicable to employers with 4 or more employees Basic Minimum Rate (per hour): $11.00 Premium Pay After Designated Hours 1 : Weekly - 40",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "CA",
+    "minWage": 16.9,
+    "snippet": "California Basic Minimum Rate (per hour): $16.90 Any work in excess of eight hours in one workday, in excess of 40 hours in one workweek, or in the first eight hours worked on the seventh day of work in any one workweek shall be at the rate of one and one-half times the regular rate of pay. Any work",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "CO",
+    "minWage": 15.16,
+    "snippet": "Colorado Basic Minimum Rate (per hour): $15.16 Premium Pay After Designated Hours 1 : Daily - 12, Weekly - 40 Minimum wage rate and overtime provisions applicable to retail and service, commercial support service, food and beverage, and health and medical industries.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "CT",
+    "minWage": 16.94,
+    "snippet": "Connecticut Basic Minimum Rate (per hour): $16.94 Premium Pay After Designated Hours 1 : Weekly - 40 In restaurants and hotel restaurants, for the 7th consecutive day of work, premium pay is required at time and one half the minimum rate.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "DE",
+    "minWage": 15,
+    "snippet": "Delaware Basic Minimum Rate (per hour): $15.00 The State adopts the federal minimum wage rate by reference if the federal rate is greater than the State rate. District of Columbia Basic Minimum Rate (per hour): $18.40 Premium Pay After Designated Hours 1 : Weekly - 40 The minimum wage is adjusted an",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "FL",
+    "minWage": 15,
+    "snippet": "Florida Basic Minimum Rate (per hour): $15.00 The Florida minimum wage is scheduled to be updated annually based on a set formula beginning January 1, 2028.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "GA",
+    "minWage": 5.15,
+    "snippet": "Georgia Applicable to employers of 6 or more employees Basic Minimum Rate (per hour): $5.15 The State law excludes from coverage any employment that is subject to the federal Fair Labor Standards Act when the federal rate is greater than the State rate. Employers subject to the Fair Labor Standards ",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "GU",
+    "minWage": 9.25,
+    "snippet": "Guam Basic Minimum Rate (per hour): $9.25 Premium Pay After Designated Hours 1 : Weekly - 40",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "HI",
+    "minWage": 16,
+    "snippet": "Hawaii Basic Minimum Rate (per hour): $16.00 Premium Pay After Designated Hours 1 : Weekly - 40 An employee earning a guaranteed monthly compensation of $4,000 or more is exempt from the State minimum wage and overtime law. Domestic service workers are subject to Hawaii's minimum wage and overtime r",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "ID",
+    "minWage": 7.25,
+    "snippet": "Idaho Basic Minimum Rate (per hour): $7.25",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "IL",
+    "minWage": 15,
+    "snippet": "Illinois Applicable to employers of 4 or more employees, excluding family members Basic Minimum Rate (per hour): $15.00 Premium Pay After Designated Hours 1 : Weekly - 40",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "IN",
+    "minWage": 7.25,
+    "snippet": "Indiana Applicable to employers of 2 or more employees Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "IA",
+    "minWage": 7.25,
+    "snippet": "Iowa Basic Minimum Rate (per hour): $7.25 The Iowa minimum wage equals the federal minimum wage rate if it is set below the federal rate.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "KS",
+    "minWage": 7.25,
+    "snippet": "Kansas Basic Minimum Rate (per hour): $7.25 The State law excludes from coverage any employment that is subject to the federal Fair Labor Standards Act.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "KY",
+    "minWage": 7.25,
+    "snippet": "Kentucky Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40, 7th day The 7th day overtime law, which is separate from the minimum wage law, requires employers who permit covered employees to work seven days in any one workweek to pay the employee at a rate of tim",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "LA",
+    "minWage": 7.25,
+    "snippet": "Louisiana No state minimum wage law. Employers subject to the Fair Labor Standards Act must pay the current Federal minimum wage of $7.25 per hour.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "ME",
+    "minWage": 15.1,
+    "snippet": "Maine Basic Minimum Rate (per hour): $15.10 Premium Pay After Designated Hours 1 : Weekly - 40 If the highest federal minimum wage is increased in excess of the State minimum wage in effect, then the State minimum wage will increase to the same amount, effective on the same date as the increase in t",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "MD",
+    "minWage": 15,
+    "snippet": "Maryland Basic Minimum Rate (per hour): $15.00 Premium Pay After Designated Hours 1 : Weekly - 40",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "MA",
+    "minWage": 15,
+    "snippet": "Massachusetts Basic Minimum Rate (per hour): $15.00 Premium Pay After Designated Hours 1 : Weekly - 40 In no case shall the Massachusetts minimum wage rate be less than $0.50 higher than the effective federal minimum rate.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "MI",
+    "minWage": 13.73,
+    "snippet": "Michigan Applicable to employers of 2 or more employees Basic Minimum Rate (per hour): $13.73 The Michigan minimum wage is scheduled to increase on January 1, 2027 to $15.00 per hour and then will be adjusted annually based on a set formula. Premium Pay After Designated Hours 1 : Weekly - 40 The Sta",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "MN",
+    "minWage": 11.41,
+    "snippet": "Minnesota Basic Minimum Rate (per hour): $11.41 Premium Pay After Designated Hours 1 : Weekly - 48 The minimum wage is adjusted annually based on a set formula.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "MS",
+    "minWage": 7.25,
+    "snippet": "Mississippi No state minimum wage law. Employers subject to the Fair Labor Standards Act must pay the current Federal minimum wage of $7.25 per hour.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "MO",
+    "minWage": 15,
+    "snippet": "Missouri Basic Minimum Rate (per hour): $15.00 Premium Pay After Designated Hours 2 : Weekly - 40 In addition to the exemption for federally covered employment, the law exempts, among others, employees of a retail or service business with gross annual sales or business done of less than $500,000. Pr",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "MT",
+    "minWage": 10.85,
+    "snippet": "Montana Businesses with gross annual sales of more than $110,000 Basic Minimum Rate (per hour): $10.85 Premium Pay After Designated Hours 1 : Weekly - 40 Businesses not covered by the Fair Labor Standards Act with gross annual sales of $110,000 or less Basic Minimum Rate (per hour): $4.00 Premium Pa",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "NE",
+    "minWage": 15,
+    "snippet": "Nebraska Applicable to employers of 4 or more employees Basic Minimum Rate (per hour): $15.00",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "NV",
+    "minWage": 12,
+    "snippet": "Nevada Basic Minimum Rate (per hour): $12.00 Premium Pay After Designated Hours: Employees earning less than 1.5 times the state minimum wage are entitled to premium pay for hours worked in excess of 8 in a single day or 40 in a single week. Employees earning at least 1.5 times the state minimum wag",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "NH",
+    "minWage": 7.25,
+    "snippet": "New Hampshire Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40 The New Hampshire minimum wage equals the federal minimum wage when set below the federal rate.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "NJ",
+    "minWage": 15.92,
+    "snippet": "New Jersey Basic Minimum Rate (per hour): $15.92 Premium Pay After Designated Hours 1 : Weekly - 40 The minimum wage is adjusted annually based on a set formula. There is a minimum wage of $15.23 per hour for employers who employ fewer than 6 people and employees engaged in seasonal employment.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "NM",
+    "minWage": 12,
+    "snippet": "New Mexico Basic Minimum Rate (per hour): $12.00 Premium Pay After Designated Hours 1 : Weekly - 40",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "NY",
+    "minWage": 17,
+    "snippet": "New York Basic Minimum Rate (per hour): $17.00 (New York City, Nassau County, Suffolk County, &amp; Westchester County); $16.00 (remainder of the state) Premium Pay After Designated Hours 1 : Weekly - 40 The New York minimum wage equals the federal minimum wage when set below the federal rate. Resid",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "NC",
+    "minWage": 7.25,
+    "snippet": "North Carolina Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40 Premium pay is required after 45 hours a week in seasonal amusements or recreational establishments.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "ND",
+    "minWage": 7.25,
+    "snippet": "North Dakota Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40 Northern Mariana Islands Basic Minimum Rate (per hour): $7.25",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "OH",
+    "minWage": 11,
+    "snippet": "Ohio Employers with annual gross receipts of $405,000 or more Basic Minimum Rate (per hour): $11.00 Premium Pay After Designated Hours 1 : Weekly - 40 Employers with annual gross receipts under $405,000 Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40 The minim",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "OK",
+    "minWage": 7.25,
+    "snippet": "Oklahoma Employers with ten or more full time employees at any one location or employers with annual gross sales over $100,000 irrespective of number of full time employees. Basic Minimum Rate (per hour): $7.25 All other employers Basic Minimum Rate (per hour): $2.00 The Oklahoma state minimum wage ",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "OR",
+    "minWage": 15.55,
+    "snippet": "Oregon Basic Minimum Rate (per hour): $15.55 (standard state rate); $16.80 (Portland Metro Area); $14.55 (Non-Urban counties) Premium Pay After Designated Hours 1 : Weekly - 40 Premium pay required after 10 hours a day in nonfarm canneries, driers, or packing plants and in mills, factories or manufa",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "PA",
+    "minWage": 7.25,
+    "snippet": "Pennsylvania Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "PR",
+    "minWage": 10.5,
+    "snippet": "Puerto Rico Applicable to all employees covered by the federal Fair Labor Standards Act (FLSA) except for agricultural employees and employees of municipalities and the Commonwealth of Puerto Rico. Basic Minimum Rate (per hour): $10.50 Premium Pay After Designated Hours: Daily - 8, Weekly – 40, and ",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "RI",
+    "minWage": 16,
+    "snippet": "Rhode Island Basic Minimum Rate (per hour): $16.00 Premium Pay After Designated Hours 1 : Weekly - 40 Time and one-half premium pay for work on Sundays and holidays in retail and certain other businesses is required under two laws that are separate from the minimum wage law.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "SC",
+    "minWage": 7.25,
+    "snippet": "South Carolina No state minimum wage law. Employers subject to the Fair Labor Standards Act must pay the current federal minimum wage of $7.25 per hour.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "SD",
+    "minWage": 11.85,
+    "snippet": "South Dakota Basic Minimum Rate (per hour): $11.85 The minimum wage is adjusted annually based on a set formula.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "TN",
+    "minWage": 7.25,
+    "snippet": "Tennessee No state minimum wage law. Employers subject to the Fair Labor Standards Act must pay the current Federal minimum wage of $7.25 per hour.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "TX",
+    "minWage": 7.25,
+    "snippet": "Texas Basic Minimum Rate (per hour): $7.25 The State law excludes from coverage any employment that is subject to the federal Fair Labor Standards Act. The Texas State minimum wage law does not contain current dollar minimums. Instead the State adopts the federal minimum wage rate by reference.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "UT",
+    "minWage": 7.25,
+    "snippet": "Utah Basic Minimum Rate (per hour): $7.25 The State law excludes from coverage any employment that is subject to the federal Fair Labor Standards Act.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "VT",
+    "minWage": 14.42,
+    "snippet": "Vermont Applicable to employers of two or more employees Basic Minimum Rate (per hour): $14.42 Premium Pay After Designated Hours 1 : Weekly - 40 The Vermont minimum wage is adjusted annually based on a set formula. The State minimum wage is automatically replaced with the federal minimum wage rate ",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "VI",
+    "minWage": 10.5,
+    "snippet": "Virgin Islands Basic Minimum Rate (per hour): $10.50 Premium Pay After Designated Hours 1 : Daily 8; Weekly – 40; Any hours worked on the 6th or 7th consecutive day of work.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "VA",
+    "minWage": 12.77,
+    "snippet": "Virginia Basic Minimum Rate (per hour): $12.77 The Virginia minimum wage is adjusted annually based on a set formula.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "WA",
+    "minWage": 17.13,
+    "snippet": "Washington Basic Minimum Rate (per hour): $17.13 Premium Pay After Designated Hours 1 : Weekly - 40 Premium pay not applicable to employees who request compensating time off in lieu of premium pay. The minimum wage is adjusted annually based on a set formula.",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "WV",
+    "minWage": 8.75,
+    "snippet": "West Virginia Applicable to employers of 6 or more employees at one location Basic Minimum Rate (per hour): $8.75 Premium Pay After Designated Hours 1 : Weekly - 40",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "WI",
+    "minWage": 7.25,
+    "snippet": "Wisconsin Basic Minimum Rate (per hour): $7.25 Premium Pay After Designated Hours 1 : Weekly - 40",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  },
+  {
+    "code": "WY",
+    "minWage": 5.15,
+    "snippet": "Wyoming Basic Minimum Rate (per hour): $5.15 Employers subject to the Fair Labor Standards Act must pay the current Federal minimum wage of $7.25 per hour. &nbsp; Some states set subminimum rates for minors and/or students or exempt them from coverage or have a training wage for new hires. Some loca",
+    "retrievedAt": "2026-11-24T16:08:25.659Z",
+    "url": "https://www.dol.gov/agencies/whd/minimum-wage/state"
+  }
+]

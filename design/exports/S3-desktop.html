@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shift &amp; Tip — US Payroll &amp; Shift Pay Tools</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#F7F6F1',
+            surface: '#FFFFFF',
+            line: '#E3E0D6',
+            'line-2': '#CFCABB',
+            ink: '#16201C',
+            'ink-2': '#3D4A44',
+            muted: '#5E6B65',
+            ledger: '#0E6B4C',
+            'ledger-600': '#0A5039',
+            'ledger-50': '#E7F1EC',
+            receipt: '#A85400',
+            'receipt-50': '#FBF1E3',
+            'ad-bg': '#F1EFE8',
+            danger: '#B42318'
+          },
+          fontFamily: {
+            serif: ['"Source Serif 4"', 'Georgia', 'serif'],
+            sans: ['"Public Sans"', 'system-ui', 'sans-serif'],
+            mono: ['"IBM Plex Mono"', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      background-color: #F7F6F1;
+      color: #16201C;
+      font-family: 'Public Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .receipt-perforation {
+      background-image: radial-gradient(#E3E0D6 1.5px, transparent 1.5px);
+      background-size: 8px 8px;
+    }
+  </style>
+</head>
+<body class="bg-paper text-ink min-h-screen flex flex-col antialiased selection:bg-ledger selection:text-white">
+
+  <!-- TOP HEADER / NAV BAR -->
+  <header class="w-full border-b border-line bg-surface/90 sticky top-0 z-50 backdrop-blur-sm">
+    <div class="max-w-[1240px] mx-auto px-6 h-16 flex items-center justify-between">
+      
+      <!-- Brand & Section Label -->
+      <div class="flex items-center gap-6">
+        <a href="#" class="flex items-baseline gap-2 group">
+          <span class="font-serif text-[22px] font-bold tracking-tight text-ink group-hover:text-ledger transition-colors">Shift &amp; Tip</span>
+          <span class="font-mono text-[11px] uppercase tracking-wider text-muted hidden sm:inline">US Payroll &amp; Tip Utility</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:flex items-center gap-6 text-[15px] font-medium text-ink-2 pl-4 border-l border-line">
+          <a href="#" class="hover:text-ledger text-ledger flex items-center gap-1 font-semibold">Tip tools</a>
+          <a href="#" class="hover:text-ledger transition-colors">Overtime</a>
+          <a href="#" class="hover:text-ledger transition-colors">Shift pay</a>
+          <a href="#" class="hover:text-ledger transition-colors">State rules</a>
+          <a href="#" class="hover:text-ledger transition-colors">Guides</a>
+        </nav>
+      </div>
+
+      <!-- Right Actions: Search & Verification Badge -->
+      <div class="flex items-center gap-4">
+        <div class="relative hidden md:block w-56 lg:w-64">
+          <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-muted text-[18px]">search</span>
+          <input 
+            type="text" 
+            placeholder="Search rules or tools…" 
+            class="w-full h-9 pl-9 pr-3 text-[13px] bg-paper border border-line rounded focus:outline-none focus:border-ledger font-sans text-ink placeholder:text-muted transition-colors"
+          />
+        </div>
+
+        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-ledger-50 border border-ledger text-ledger font-mono text-[12px] font-medium whitespace-nowrap">
+          <span class="w-1.5 h-1.5 rounded-full bg-ledger"></span>
+          <span>Rules verified Dec 2026</span>
+        </div>
+
+        <button aria-label="Account profile" class="w-8 h-8 rounded-full bg-ledger flex items-center justify-center text-white shrink-0 hover:bg-ledger-600 transition-colors">
+          <span class="material-symbols-outlined text-[18px]">person</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN EDITORIAL CONTENT -->
+  <main class="flex-1 max-w-[1240px] mx-auto px-6 py-10 w-full flex flex-col gap-12">
+
+    <!-- HERO SECTION (Asymmetric 7 / 5 Columns) -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start pt-2">
+      
+      <!-- Left 7 Columns: Editorial Narrative -->
+      <div class="lg:col-span-7 flex flex-col items-start gap-5 pt-2">
+        <div class="inline-flex items-center gap-2 font-mono text-[13px] font-medium text-ledger uppercase tracking-wider">
+          <span>Free</span>
+          <span class="text-line-2">·</span>
+          <span>No sign-up</span>
+          <span class="text-line-2">·</span>
+          <span>2026 state rules</span>
+        </div>
+
+        <h1 class="font-serif text-[42px] lg:text-[48px] leading-[1.12] font-bold text-ink tracking-tight">
+          Pay math for people who work shifts.
+        </h1>
+
+        <p class="text-[17px] leading-[28px] text-ink-2 max-w-[620px]">
+          Tip pools, overtime, double time and take-home pay — calculated with your state's rules and the source linked.
+        </p>
+
+        <div class="pt-2">
+          <a href="#calculators-list" class="inline-flex items-center gap-2 text-[16px] font-semibold text-ledger hover:text-ledger-600 group transition-colors">
+            <span>See all 7 calculators</span>
+            <span class="font-mono transition-transform group-hover:translate-x-1">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right 5 Columns: Working Mini Tip-Split Receipt Card -->
+      <div class="lg:col-span-5 w-full">
+        <div class="bg-surface border border-line rounded shadow-sm overflow-hidden">
+          <!-- Card Header / Perforated Voucher style -->
+          <div class="bg-surface border-b border-line p-4 flex items-center justify-between">
+            <div>
+              <div class="font-mono text-[11px] font-semibold text-ledger uppercase tracking-wider">Live Sample Split</div>
+              <div class="font-serif text-[18px] font-bold text-ink">Floor Tip Distribution</div>
+            </div>
+            <div class="text-right">
+              <span class="font-mono text-[11px] text-muted">Voucher #8892</span>
+              <div class="font-mono text-[12px] font-semibold text-ink">5 staff on floor</div>
+            </div>
+          </div>
+
+          <!-- Receipt Details -->
+          <div class="p-5 flex flex-col gap-4 font-mono text-[14px]">
+            <!-- Shift Totals Row -->
+            <div class="flex justify-between items-baseline pb-3 border-b border-line">
+              <span class="font-sans text-[14px] text-ink-2">Total shift tips collected:</span>
+              <span class="text-[16px] font-semibold text-ink">$1,240.00</span>
+            </div>
+
+            <!-- Off-the-top Tip-out -->
+            <div class="flex justify-between items-start text-receipt text-[13px] bg-receipt-50 -mx-5 px-5 py-2 border-y border-[#F3DECA]">
+              <div>
+                <span class="font-sans font-medium text-[13px] text-receipt">Kitchen tip-out (3% of sales)</span>
+                <span class="block font-sans text-[11px] text-receipt/80">Subtracted before floor hourly pool</span>
+              </div>
+              <span class="font-semibold text-[14px]">-$240.00</span>
+            </div>
+
+            <div class="flex justify-between items-baseline pt-1">
+              <span class="font-sans text-[13px] text-muted">Net distributable pool:</span>
+              <span class="text-[15px] font-bold text-ink">$1,000.00</span>
+            </div>
+            <div class="flex justify-between items-baseline text-[13px] text-muted">
+              <span class="font-sans">Combined floor hours:</span>
+              <span>30.50 hrs ($32.79/hr)</span>
+            </div>
+
+            <!-- Per-person Payout Breakdown Table -->
+            <div class="mt-1 border-t border-dashed border-line-2 pt-3 flex flex-col gap-2 text-[13px]">
+              <div class="flex justify-between items-baseline">
+                <span class="font-sans text-ink">Maya S. <span class="text-muted text-[12px]">(Server · 6.5h)</span></span>
+                <span class="font-medium text-ink">$213.11</span>
+              </div>
+              <div class="flex justify-between items-baseline">
+                <span class="font-sans text-ink">Luis R. <span class="text-muted text-[12px]">(Server · 7.0h)</span></span>
+                <span class="font-medium text-ink">$229.51</span>
+              </div>
+              <div class="flex justify-between items-baseline">
+                <span class="font-sans text-ink">Dana K. <span class="text-muted text-[12px]">(Bartender · 8.0h)</span></span>
+                <span class="font-medium text-ink">$262.30</span>
+              </div>
+              <div class="flex justify-between items-baseline">
+                <span class="font-sans text-ink">Theo M. <span class="text-muted text-[12px]">(Busser · 5.0h)</span></span>
+                <span class="font-medium text-ink">$163.93</span>
+              </div>
+              <div class="flex justify-between items-baseline">
+                <span class="font-sans text-ink">Priya N. <span class="text-muted text-[12px]">(Host · 4.0h)</span></span>
+                <span class="font-medium text-ink">$131.15</span>
+              </div>
+            </div>
+
+            <!-- Reconciled Stamp -->
+            <div class="mt-2 p-2.5 rounded bg-ledger-50 border border-ledger text-ledger flex items-center justify-between text-[12px]">
+              <span class="font-sans font-medium flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[16px]">check_circle</span>
+                Allocated $1,240.00 of $1,240.00
+              </span>
+              <span class="font-semibold font-mono">0¢ Residual</span>
+            </div>
+          </div>
+
+          <!-- Bottom Action -->
+          <div class="p-3 bg-[#FAF9F5] border-t border-line text-center">
+            <a href="#" class="text-[13px] font-medium text-ledger hover:text-ledger-600 inline-flex items-center gap-1">
+              <span>Open live Tip Pool Calculator</span>
+              <span class="font-mono">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CALCULATORS LIST SECTION (7 Rows, Editorial Directory) -->
+    <section id="calculators-list" class="flex flex-col gap-4 pt-4 border-t border-line">
+      <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+        <div>
+          <span class="font-mono text-[12px] font-semibold text-muted uppercase tracking-wider">Payroll Instruments</span>
+          <h2 class="font-serif text-[28px] font-bold text-ink">Calculators</h2>
+        </div>
+        <p class="font-sans text-[14px] text-ink-2">Statutory rules updated for the 2026 tax &amp; wage year</p>
+      </div>
+
+      <!-- 7 Rows List (Strictly list view, not icon cards) -->
+      <div class="bg-surface border border-line rounded divide-y divide-line">
+        
+        <!-- Row 1: Tip pool -->
+        <a href="#" class="p-5 flex flex-col md:flex-row md:items-center justify-between gap-3 hover:bg-paper/70 transition-colors group">
+          <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6">
+            <span class="text-[17px] font-bold text-ink group-hover:text-ledger transition-colors min-w-[220px]">
+              Tip pool
+            </span>
+            <span class="text-[15px] text-ink-2 italic font-serif">
+              “How much does each of us get tonight?”
+            </span>
+          </div>
+          <div class="flex items-center gap-4 shrink-0 font-mono text-[14px] text-muted group-hover:text-ledger">
+            <span class="hidden sm:inline text-[12px] uppercase">Hours · Points · % Split</span>
+            <span class="text-[18px] transition-transform group-hover:translate-x-1">→</span>
+          </div>
+        </a>
+
+        <!-- Row 2: Tip-out -->
+        <a href="#" class="p-5 flex flex-col md:flex-row md:items-center justify-between gap-3 hover:bg-paper/70 transition-colors group">
+          <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6">
+            <span class="text-[17px] font-bold text-ink group-hover:text-ledger transition-colors min-w-[220px]">
+              Tip-out
+            </span>
+            <span class="text-[15px] text-ink-2 italic font-serif">
+              “What do I owe the bar and bussers?”
+            </span>
+          </div>
+          <div class="flex items-center gap-4 shrink-0 font-mono text-[14px] text-muted group-hover:text-ledger">
+            <span class="hidden sm:inline text-[12px] uppercase">% Sales or % Tips</span>
+            <span class="text-[18px] transition-transform group-hover:translate-x-1">→</span>
+          </div>
+        </a>
+
+        <!-- Row 3: Overtime & double time -->
+        <a href="#" class="p-5 flex flex-col md:flex-row md:items-center justify-between gap-3 hover:bg-paper/70 transition-colors group">
+          <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6">
+            <span class="text-[17px] font-bold text-ink group-hover:text-ledger transition-colors min-w-[220px]">
+              Overtime &amp; double time
+            </span>
+            <span class="text-[15px] text-ink-2 italic font-serif">
+              “Was my overtime paid right?”
+            </span>
+          </div>
+          <div class="flex items-center gap-4 shrink-0 font-mono text-[14px] text-muted group-hover:text-ledger">
+            <span class="hidden sm:inline text-[12px] uppercase">Daily 8h / 12h &amp; 7th Day</span>
+            <span class="text-[18px] transition-transform group-hover:translate-x-1">→</span>
+          </div>
+        </a>
+
+        <!-- Row 4: Shift differential -->
+        <a href="#" class="p-5 flex flex-col md:flex-row md:items-center justify-between gap-3 hover:bg-paper/70 transition-colors group">
+          <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6">
+            <span class="text-[17px] font-bold text-ink group-hover:text-ledger transition-colors min-w-[220px]">
+              Shift differential
+            </span>
+            <span class="text-[15px] text-ink-2 italic font-serif">
+              “What's my real overtime rate with night pay?”
+            </span>
+          </div>
+          <div class="flex items-center gap-4 shrink-0 font-mono text-[14px] text-muted group-hover:text-ledger">
+            <span class="hidden sm:inline text-[12px] uppercase">Blended Regular Rate</span>
+            <span class="text-[18px] transition-transform group-hover:translate-x-1">→</span>
+          </div>
+        </a>
+
+        <!-- Row 5: Tipped overtime -->
+        <a href="#" class="p-5 flex flex-col md:flex-row md:items-center justify-between gap-3 hover:bg-paper/70 transition-colors group">
+          <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6">
+            <span class="text-[17px] font-bold text-ink group-hover:text-ledger transition-colors min-w-[220px]">
+              Tipped overtime
+            </span>
+            <span class="text-[15px] text-ink-2 italic font-serif">
+              “What cash wage do I get for overtime hours?”
+            </span>
+          </div>
+          <div class="flex items-center gap-4 shrink-0 font-mono text-[14px] text-muted group-hover:text-ledger">
+            <span class="hidden sm:inline text-[12px] uppercase">FLSA Tip Credit Rules</span>
+            <span class="text-[18px] transition-transform group-hover:translate-x-1">→</span>
+          </div>
+        </a>
+
+        <!-- Row 6: Take-home with tips -->
+        <a href="#" class="p-5 flex flex-col md:flex-row md:items-center justify-between gap-3 hover:bg-paper/70 transition-colors group">
+          <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6">
+            <span class="text-[17px] font-bold text-ink group-hover:text-ledger transition-colors min-w-[220px]">
+              Take-home with tips
+            </span>
+            <span class="text-[15px] text-ink-2 italic font-serif">
+              “What lands in my account?”
+            </span>
+          </div>
+          <div class="flex items-center gap-4 shrink-0 font-mono text-[14px] text-muted group-hover:text-ledger">
+            <span class="hidden sm:inline text-[12px] uppercase">FICA · State &amp; Fed Withholding</span>
+            <span class="text-[18px] transition-transform group-hover:translate-x-1">→</span>
+          </div>
+        </a>
+
+        <!-- Row 7: Tips & overtime deduction -->
+        <a href="#" class="p-5 flex flex-col md:flex-row md:items-center justify-between gap-3 hover:bg-paper/70 transition-colors group">
+          <div class="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-6">
+            <span class="text-[17px] font-bold text-ink group-hover:text-ledger transition-colors min-w-[220px]">
+              Tips &amp; overtime deduction
+            </span>
+            <span class="text-[15px] text-ink-2 italic font-serif">
+              “How much could the 2025–2028 deduction save me?”
+            </span>
+          </div>
+          <div class="flex items-center gap-4 shrink-0 font-mono text-[14px] text-muted group-hover:text-ledger">
+            <span class="hidden sm:inline text-[12px] uppercase">Federal Statutory Modeling</span>
+            <span class="text-[18px] transition-transform group-hover:translate-x-1">→</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- AD: FULL-WIDTH 90PX LEADERBOARD CONTAINER -->
+    <aside aria-label="Advertisements" class="w-full bg-ad-bg border border-dashed border-line-2 rounded p-3 flex flex-col items-center justify-center min-h-[90px] text-center">
+      <span class="font-mono text-[11px] tracking-widest text-muted uppercase font-semibold">ADVERTISEMENTS</span>
+      <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-[13px] text-ink pt-1">
+        <span class="font-semibold">Automate Shift Differential &amp; Tip Pools Directly in POS:</span>
+        <span class="text-ink-2">Audit-proof wage records for multi-unit hospitality operators.</span>
+        <a href="#" class="font-mono text-ledger text-[12px] font-bold hover:underline">Learn more →</a>
+      </div>
+    </aside>
+
+    <!-- "CHECK YOUR STATE" JURISDICTION STRIP -->
+    <section class="flex flex-col gap-3 pt-2">
+      <div class="flex items-center justify-between">
+        <h3 class="font-mono text-[12px] font-semibold text-muted uppercase tracking-wider">
+          Check your state
+        </h3>
+        <span class="text-[13px] text-ink-2">50 state labor codes &amp; local wage orders indexed</span>
+      </div>
+
+      <!-- State Chips -->
+      <div class="flex flex-wrap gap-2">
+        <button class="px-3.5 py-1.5 rounded bg-surface border border-line hover:border-ledger font-mono text-[14px] text-ink font-medium transition-colors">CA</button>
+        <button class="px-3.5 py-1.5 rounded bg-surface border border-line hover:border-ledger font-mono text-[14px] text-ink font-medium transition-colors">TX</button>
+        <button class="px-3.5 py-1.5 rounded bg-surface border border-line hover:border-ledger font-mono text-[14px] text-ink font-medium transition-colors">FL</button>
+        <button class="px-3.5 py-1.5 rounded bg-surface border border-line hover:border-ledger font-mono text-[14px] text-ink font-medium transition-colors">NY</button>
+        <button class="px-3.5 py-1.5 rounded bg-surface border border-line hover:border-ledger font-mono text-[14px] text-ink font-medium transition-colors">IL</button>
+        <button class="px-3.5 py-1.5 rounded bg-surface border border-line hover:border-ledger font-mono text-[14px] text-ink font-medium transition-colors">PA</button>
+        <button class="px-3.5 py-1.5 rounded bg-surface border border-line hover:border-ledger font-mono text-[14px] text-ink font-medium transition-colors">OH</button>
+        <button class="px-3.5 py-1.5 rounded bg-surface border border-line hover:border-ledger font-mono text-[14px] text-ink font-medium transition-colors">GA</button>
+        <button class="px-3.5 py-1.5 rounded bg-surface border border-line hover:border-ledger font-mono text-[14px] text-ink font-medium transition-colors">NC</button>
+        <button class="px-3.5 py-1.5 rounded bg-surface border border-line hover:border-ledger font-mono text-[14px] text-ink font-medium transition-colors">MI</button>
+        <button class="px-3.5 py-1.5 rounded bg-surface border border-line hover:border-ledger font-mono text-[14px] text-ink font-medium transition-colors">NV</button>
+        <button class="px-3.5 py-1.5 rounded bg-surface border border-line hover:border-ledger font-mono text-[14px] text-ink font-medium transition-colors">WA</button>
+        
+        <button class="px-4 py-1.5 rounded bg-ledger-50 border border-ledger hover:bg-ledger hover:text-white text-ledger font-mono text-[13px] font-semibold transition-all">
+          All states →
+        </button>
+      </div>
+    </section>
+
+    <!-- "RULES WE TRACK" TABLE PREVIEW -->
+    <section class="flex flex-col gap-3">
+      <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+        <div>
+          <span class="font-mono text-[12px] font-semibold text-muted uppercase tracking-wider">Statutory Matrix Preview</span>
+          <h2 class="font-serif text-[24px] font-bold text-ink">Rules we track</h2>
+        </div>
+        <a href="#" class="text-[14px] text-ledger font-medium hover:underline">View complete 50-state wage table →</a>
+      </div>
+
+      <div class="bg-surface border border-line rounded overflow-x-auto shadow-sm">
+        <table class="w-full text-left border-collapse font-sans text-[15px]">
+          <thead>
+            <tr class="border-b border-line bg-paper/60 text-muted font-mono text-[12px] uppercase">
+              <th class="py-3 px-4 font-semibold">Jurisdiction</th>
+              <th class="py-3 px-4 font-semibold">Standard Min Wage</th>
+              <th class="py-3 px-4 font-semibold">Tipped Cash Wage</th>
+              <th class="py-3 px-4 font-semibold">Overtime / Double-Time Standard</th>
+              <th class="py-3 px-4 font-semibold text-right">Verified</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-line font-mono text-[14px]">
+            <!-- Federal -->
+            <tr class="hover:bg-paper/40 transition-colors">
+              <td class="py-3 px-4 font-sans font-semibold text-ink">Federal (FLSA Baseline)</td>
+              <td class="py-3 px-4">$7.25 / hr</td>
+              <td class="py-3 px-4">$2.13 / hr</td>
+              <td class="py-3 px-4 font-sans text-[14px] text-ink-2">Weekly after 40h (none daily)</td>
+              <td class="py-3 px-4 text-right">
+                <span class="inline-flex items-center gap-1 text-ledger font-sans text-[12px] font-medium">
+                  <span class="w-1.5 h-1.5 rounded-full bg-ledger"></span> Dec 2026
+                </span>
+              </td>
+            </tr>
+
+            <!-- Texas -->
+            <tr class="hover:bg-paper/40 transition-colors">
+              <td class="py-3 px-4 font-sans font-semibold text-ink">Texas</td>
+              <td class="py-3 px-4">$7.25 <span class="font-sans text-[12px] text-muted">(follows federal)</span></td>
+              <td class="py-3 px-4">$2.13 <span class="font-sans text-[12px] text-muted">(follows federal)</span></td>
+              <td class="py-3 px-4 font-sans text-[14px] text-ink-2">Weekly after 40h (follows federal)</td>
+              <td class="py-3 px-4 text-right">
+                <span class="inline-flex items-center gap-1 text-ledger font-sans text-[12px] font-medium">
+                  <span class="w-1.5 h-1.5 rounded-full bg-ledger"></span> Dec 2026
+                </span>
+              </td>
+            </tr>
+
+            <!-- California -->
+            <tr class="hover:bg-paper/40 transition-colors bg-ledger-50/20">
+              <td class="py-3 px-4 font-sans font-semibold text-ink">California</td>
+              <td class="py-3 px-4 font-medium text-ledger">$16.50 / hr</td>
+              <td class="py-3 px-4 font-medium text-ledger">$16.50 <span class="font-sans text-[12px] text-muted">(no tip credit)</span></td>
+              <td class="py-3 px-4 font-sans text-[14px] text-ink-2">Daily OT after 8h (1.5×), double time after 12h (2.0×), 7th day rule</td>
+              <td class="py-3 px-4 text-right">
+                <span class="inline-flex items-center gap-1 text-ledger font-sans text-[12px] font-medium">
+                  <span class="w-1.5 h-1.5 rounded-full bg-ledger"></span> Dec 2026
+                </span>
+              </td>
+            </tr>
+
+            <!-- Colorado -->
+            <tr class="hover:bg-paper/40 transition-colors">
+              <td class="py-3 px-4 font-sans font-semibold text-ink">Colorado</td>
+              <td class="py-3 px-4">$14.81 / hr</td>
+              <td class="py-3 px-4">$11.79 / hr</td>
+              <td class="py-3 px-4 font-sans text-[14px] text-ink-2">Daily OT after 12h, or after 12 consecutive hours</td>
+              <td class="py-3 px-4 text-right">
+                <span class="inline-flex items-center gap-1 text-ledger font-sans text-[12px] font-medium">
+                  <span class="w-1.5 h-1.5 rounded-full bg-ledger"></span> Dec 2026
+                </span>
+              </td>
+            </tr>
+
+            <!-- Nevada -->
+            <tr class="hover:bg-paper/40 transition-colors">
+              <td class="py-3 px-4 font-sans font-semibold text-ink">Nevada</td>
+              <td class="py-3 px-4">$12.00 / hr</td>
+              <td class="py-3 px-4">$12.00 <span class="font-sans text-[12px] text-muted">(no tip credit)</span></td>
+              <td class="py-3 px-4 font-sans text-[14px] text-ink-2">Daily OT after 8h (if earning under 1.5× min wage) / 40h weekly</td>
+              <td class="py-3 px-4 text-right">
+                <span class="inline-flex items-center gap-1 text-ledger font-sans text-[12px] font-medium">
+                  <span class="w-1.5 h-1.5 rounded-full bg-ledger"></span> Dec 2026
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- "LATEST GUIDES" WITH 300x250 AD IN RIGHT COLUMN -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pt-2">
+      
+      <!-- Left 8 Columns: 3 Guide Rows -->
+      <div class="lg:col-span-8 flex flex-col gap-4">
+        <div>
+          <span class="font-mono text-[12px] font-semibold text-muted uppercase tracking-wider">Analysis &amp; Case Law</span>
+          <h2 class="font-serif text-[26px] font-bold text-ink">Latest guides</h2>
+        </div>
+
+        <div class="bg-surface border border-line rounded divide-y divide-line">
+          
+          <!-- Guide 1 -->
+          <article class="p-5 flex flex-col gap-1.5 hover:bg-paper/50 transition-colors group">
+            <div class="flex items-center gap-3 font-mono text-[12px] text-muted">
+              <time datetime="2026-11-20">Nov 20, 2026</time>
+              <span>·</span>
+              <span>7 min read</span>
+              <span>·</span>
+              <span class="text-ledger font-medium">DOL 29 CFR § 531</span>
+            </div>
+            <h3 class="font-serif text-[19px] font-bold text-ink group-hover:text-ledger transition-colors">
+              <a href="#">Who legally qualifies to participate in a mandatory restaurant tip pool?</a>
+            </h3>
+            <p class="text-[15px] leading-[22px] text-ink-2 font-sans">
+              The bright-line test between supervisors, lead servers, and back-of-house staff under the amended federal FLSA rules.
+            </p>
+          </article>
+
+          <!-- Guide 2 -->
+          <article class="p-5 flex flex-col gap-1.5 hover:bg-paper/50 transition-colors group">
+            <div class="flex items-center gap-3 font-mono text-[12px] text-muted">
+              <time datetime="2026-11-04">Nov 4, 2026</time>
+              <span>·</span>
+              <span>5 min read</span>
+              <span>·</span>
+              <span class="text-ledger font-medium">Cal. Lab. Code § 510</span>
+            </div>
+            <h3 class="font-serif text-[19px] font-bold text-ink group-hover:text-ledger transition-colors">
+              <a href="#">Calculating California's seventh-day rule without compounding penalties</a>
+            </h3>
+            <p class="text-[15px] leading-[22px] text-ink-2 font-sans">
+              How daily overtime hours already credited during workdays 1 through 6 apply to 7th consecutive day double-time thresholds.
+            </p>
+          </article>
+
+          <!-- Guide 3 -->
+          <article class="p-5 flex flex-col gap-1.5 hover:bg-paper/50 transition-colors group">
+            <div class="flex items-center gap-3 font-mono text-[12px] text-muted">
+              <time datetime="2026-10-18">Oct 18, 2026</time>
+              <span>·</span>
+              <span>9 min read</span>
+              <span>·</span>
+              <span class="text-ledger font-medium">FLSA 80/20 Dual-Job</span>
+            </div>
+            <h3 class="font-serif text-[19px] font-bold text-ink group-hover:text-ledger transition-colors">
+              <a href="#">Continuous 30-minute side work limits: What servers need to track on opening shifts</a>
+            </h3>
+            <p class="text-[15px] leading-[22px] text-ink-2 font-sans">
+              When prep duties, rolling silverware, and cleaning mandate full regular minimum wage rather than the sub-minimum tip credit.
+            </p>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Right 4 Columns: 300x250 Ad Container -->
+      <div class="lg:col-span-4 flex flex-col gap-2">
+        <span class="font-mono text-[11px] tracking-wider text-muted uppercase font-semibold text-center lg:text-left">
+          Sponsor Directory
+        </span>
+        <aside aria-label="Advertisement" class="w-full lg:w-[300px] h-[250px] bg-ad-bg border border-dashed border-line-2 rounded p-5 flex flex-col justify-between mx-auto">
+          <div>
+            <span class="font-mono text-[10px] tracking-widest text-muted uppercase font-semibold block">ADVERTISEMENTS</span>
+            <div class="font-serif text-[18px] font-bold text-ink mt-2">State Labor Law Digest 2027</div>
+            <p class="font-sans text-[13px] leading-relaxed text-ink-2 mt-1">
+              Multi-state tip credit rules, service charge mandates, and local wage ordinances handbook for managers &amp; payroll directors.
+            </p>
+          </div>
+          <div class="pt-2 border-t border-line-2/60 flex items-center justify-between text-[12px]">
+            <span class="font-mono text-muted">300 × 250 In-Content</span>
+            <a href="#" class="font-semibold text-ledger hover:underline">Download Handbook →</a>
+          </div>
+        </aside>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mt-16 border-t border-line bg-surface/60 py-10">
+    <div class="max-w-[1240px] mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[14px]">
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-ink-2 font-medium">
+        <a href="#" class="hover:text-ledger transition-colors">About</a>
+        <a href="#" class="hover:text-ledger transition-colors">Methodology</a>
+        <a href="#" class="hover:text-ledger transition-colors">Privacy</a>
+        <a href="#" class="hover:text-ledger transition-colors">Terms</a>
+        <a href="#" class="hover:text-ledger transition-colors">Contact</a>
+      </div>
+      <div class="font-mono text-[13px] text-muted text-center sm:text-right">
+        Estimates, not legal or tax advice.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

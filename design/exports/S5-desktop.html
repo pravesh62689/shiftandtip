@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Shift &amp; Tip — US Payroll &amp; Tip Utility</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&amp;family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,600;1,8..60,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-on-surface": "#e8f3ed", "primary-fixed-dim": "#85d7b1", "tertiary-fixed-dim": "#bccac2", "on-tertiary-container": "#cddbd3", "on-secondary-fixed": "#301400", "surface-variant": "#dae5de", "on-surface": "#141e1a", "surface-container": "#e5f1ea", "on-primary-container": "#96e8c1", "primary": "#005138", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#3d4a44", "background": "#f1fcf5", "secondary-container": "#fe9748", "primary-container": "#0e6b4c", "on-background": "#141e1a", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "surface-dim": "#d1ddd6", "surface-container-low": "#ebf6ef", "error-container": "#ffdad6", "on-primary-fixed": "#002114", "inverse-primary": "#85d7b1", "surface-bright": "#f1fcf5", "tertiary-fixed": "#d7e6de", "on-primary-fixed-variant": "#005138", "surface-container-highest": "#dae5de", "surface-container-high": "#dfebe4", "secondary-fixed": "#ffdcc6", "on-surface-variant": "#3f4943", "on-tertiary-fixed": "#121e19", "on-primary": "#ffffff", "surface": "#f1fcf5", "outline-variant": "#bec9c1", "on-secondary-container": "#6c3400", "secondary-fixed-dim": "#ffb785", "tertiary": "#3c4943", "error": "#ba1a1a", "tertiary-container": "#54615b", "inverse-surface": "#28332e", "on-tertiary": "#ffffff", "on-error-container": "#93000a", "surface-tint": "#0f6c4c", "primary-fixed": "#a1f3cc", "on-secondary-fixed-variant": "#713700", "secondary": "#954a00", "outline": "#6f7a73" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-2xl": "3rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-xl": "2rem", "gutter-tablet": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "margin-tablet": "1.5rem", "space-lg": "1.5rem", "margin": "1rem", "margin-desktop": "2rem" }, fontFamily: { "body-editorial": ["Public Sans"], "tabular-mono-sm": ["IBM Plex Mono"], "ui-medium": ["Public Sans"], "headline-h3": ["\"Source Serif 4\""], "headline-h2": ["\"Source Serif 4\""], "ui-small": ["Public Sans"], "headline-h1-mobile": ["\"Source Serif 4\""], "tabular-mono-lg": ["IBM Plex Mono"], "ui-base": ["Public Sans"], "ui-small-bold": ["Public Sans"], "tabular-mono-base": ["IBM Plex Mono"], "body-editorial-strong": ["Public Sans"], "headline-h1": ["\"Source Serif 4\""], "headline-h2-mobile": ["\"Source Serif 4\""] }, fontSize: { "body-editorial": ["17px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "tabular-mono-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "500" }], "ui-medium": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-h3": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-h2": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "ui-small": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-h1-mobile": ["30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "tabular-mono-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "ui-base": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "ui-small-bold": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "tabular-mono-base": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "500" }], "body-editorial-strong": ["17px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-h1": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-h2-mobile": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.005em", "fontWeight": "600" }] } } } };</script></head><body class="bg-[#F7F6F1] font-body-editorial text-ui-base text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest border-b border-[#E3E0D6] shadow-[0_1px_2px_rgba(22,32,28,0.06)]"><div class="h-16 max-w-[1200px] mx-auto px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs text-primary font-headline-h3 text-headline-h3 tracking-tight select-none" data-path="shift-pay" href="#"><span class="material-symbols-outlined text-[24px] text-primary">account_balance_wallet</span><span>Shift &amp; Tip</span></a><nav class="hidden xl:flex items-center gap-space-md pl-space-sm" data-active-classes="text-primary font-ui-medium border-b-2 border-primary pb-[1px]"><a class="font-ui-base text-ui-base text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="tip-tools" href="#">Tip tools</a><a class="font-ui-base text-ui-base text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="overtime" href="#">Overtime</a><a class="font-ui-base text-ui-base text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="shift-pay" href="#">Shift pay</a><a class="font-ui-base text-ui-base text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="state-rules" href="#">State rules</a><a aria-current="page" class="transition-colors py-space-xs text-primary font-ui-medium border-b-2 border-primary pb-[1px]" data-path="guides" href="#">Guides</a></nav></div><div class="flex items-center gap-space-md"><div class="relative hidden md:block w-64"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px] select-none">search</span><input class="w-full bg-[#F7F6F1] border border-[#E3E0D6] rounded pl-9 pr-3 py-1.5 font-ui-small text-ui-small text-on-surface placeholder:text-outline focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" placeholder="Search rules or tools..." type="text"/></div><div class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#E7F1EC] border border-primary text-primary text-ui-small-bold font-ui-small-bold whitespace-nowrap"><span class="text-[10px] leading-none text-primary">●</span><span>Rules verified Dec 2026</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-[#F7F6F1] flex-1"><div class="max-w-[1200px] mx-auto px-margin-desktop py-space-lg"><div class="flex flex-col w-full text-on-surface">
+<!-- Category Breadcrumb & Regulatory Stamp Header -->
+<div class="flex flex-wrap items-center justify-between gap-y-2 pb-6 border-b border-[#E3E0D6]">
+<nav class="flex items-center gap-2 font-ui-small text-ui-small text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Guides</a>
+<span class="text-outline">/</span>
+<a class="hover:text-primary transition-colors" href="#">FLSA Tip Compliance</a>
+<span class="text-outline">/</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-on-surface font-semibold">Statute 29 CFR § 531.54</span>
+</nav>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#E7F1EC] border border-primary text-primary font-ui-small-bold text-ui-small-bold">
+<span class="text-[10px] leading-none text-primary">●</span>
+<span>Rules verified Dec 2026</span>
+</div>
+</div>
+<!-- Editorial Headline Section -->
+<header class="py-8 border-b border-[#E3E0D6]">
+<div class="max-w-4xl space-y-4">
+<h1 class="font-headline-h1 text-headline-h1 text-[#16201C] tracking-tight">
+        Is tip pooling legal? Rules for owners and staff (2026)
+      </h1>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant max-w-3xl">
+        A plain-language guide to mandatory tip pools, kitchen staff eligibility under the 2020 FLSA amendments, manager exclusion rules, and credit card fee deductions.
+      </p>
+<!-- Byline Row -->
+<div class="pt-4 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-[#EBF6EF] border border-[#0E6B4C] flex items-center justify-center font-ui-small-bold text-[#0E6B4C] shrink-0">
+            JD
+          </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-ui-medium text-ui-medium text-on-surface">Jordan Davis</span>
+<span class="text-outline">·</span>
+<span class="font-ui-small text-ui-small text-on-surface-variant">Editor, Shift &amp; Tip</span>
+</div>
+<div class="font-ui-small text-ui-small text-outline">
+              Updated Dec 2026 · 8 min read · Sources: 6 statutory references
+            </div>
+</div>
+</div>
+<!-- Utility Article Actions -->
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container-lowest border border-[#CFCABB] hover:bg-[#F1EFE8] font-ui-small-bold text-ui-small text-on-surface transition-colors shadow-sm" onclick="window.print()">
+<span class="material-symbols-outlined text-[16px] text-outline">print</span>
+<span>Print Guide</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container-lowest border border-[#CFCABB] hover:bg-[#F1EFE8] font-ui-small-bold text-ui-small text-on-surface transition-colors shadow-sm" onclick="navigator.clipboard?.writeText(window.location.href); alert('Citation link copied to clipboard.');">
+<span class="material-symbols-outlined text-[16px] text-outline">link</span>
+<span>Copy Citation</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- 3-Column Editorial Canvas (TOC / Reading Column / Ad & Digest Sidebar) -->
+<div class="py-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT COLUMN: Sticky TOC (~200px) -->
+<aside class="hidden lg:block lg:col-span-2 sticky top-24">
+<div class="bg-surface-container-lowest rounded-lg border border-[#E3E0D6] p-4 shadow-sm">
+<div class="font-ui-small-bold text-ui-small-bold text-outline uppercase tracking-wider pb-2 border-b border-[#E3E0D6] mb-3">
+          On This Page
+        </div>
+<nav class="space-y-1.5 font-ui-small text-ui-small">
+<a class="block text-primary font-ui-small-bold hover:underline py-0.5" href="#takeaways">1. Key takeaways</a>
+<a class="block text-on-surface-variant hover:text-on-surface py-0.5" href="#flsa-baseline">2. FLSA baseline rules</a>
+<a class="block text-on-surface-variant hover:text-on-surface py-0.5" href="#boh-eligibility">3. Front vs. Back of House</a>
+<a class="block text-on-surface-variant hover:text-on-surface py-0.5" href="#manager-ban">4. Manager exclusion ban</a>
+<a class="block text-on-surface-variant hover:text-on-surface py-0.5" href="#interactive-simulator">5. Shift tip split simulator</a>
+<a class="block text-on-surface-variant hover:text-on-surface py-0.5" href="#cc-deductions">6. Credit card fees</a>
+<a class="block text-on-surface-variant hover:text-on-surface py-0.5" href="#state-laws">7. State-specific rules</a>
+<a class="block text-on-surface-variant hover:text-on-surface py-0.5" href="#audit-penalties">8. Audit &amp; penalties</a>
+<a class="block text-on-surface-variant hover:text-on-surface py-0.5" href="#sources">9. Statutory references</a>
+</nav>
+</div>
+<div class="mt-4 p-3 bg-surface-container-lowest rounded-lg border border-[#E3E0D6] text-center">
+<span class="material-symbols-outlined text-[20px] text-primary">gavel</span>
+<p class="font-ui-small-bold text-ui-small-bold text-on-surface mt-1">FLSA WH-2026</p>
+<p class="font-ui-small text-[12px] leading-4 text-outline mt-0.5">U.S. Dept. of Labor Wage &amp; Hour Audited</p>
+</div>
+</aside>
+<!-- CENTER COLUMN: Reading Spine (~680px) -->
+<main class="lg:col-span-7 flex flex-col space-y-8">
+<!-- Key Takeaways Ledger Box -->
+<section class="bg-surface-container-lowest rounded-lg border border-[#E3E0D6] p-6 shadow-sm border-t-4 border-t-primary" id="takeaways">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-[20px]">fact_check</span>
+<h2 class="font-headline-h3 text-headline-h3 text-[#16201C]">Key Takeaways (At a Glance)</h2>
+</div>
+<ul class="space-y-3 font-body-editorial text-body-editorial text-on-surface">
+<li class="flex items-start gap-2.5">
+<span class="font-tabular-mono-base text-primary font-bold shrink-0 mt-0.5">•</span>
+<span><strong>Federal baseline:</strong> Mandatory tip pools are fully legal under 29 U.S.C. § 203(m), provided the employer retains zero percent of pool funds for operational overhead or credit margins.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="font-tabular-mono-base text-primary font-bold shrink-0 mt-0.5">•</span>
+<span><strong>Back-of-House (BOH) inclusion:</strong> Line cooks, prep staff, and dishwashers may participate in employer-mandated tip pools <em>only</em> if the operator pays all participating staff the full statutory minimum wage and takes zero tip credit.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="font-tabular-mono-base text-primary font-bold shrink-0 mt-0.5">•</span>
+<span><strong>Strict manager prohibition:</strong> Any supervisor, shift leader, or manager possessing statutory authority to hire, fire, schedule, or supervise is explicitly barred from participating under 29 CFR § 531.54(c)(3)(ii).</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="font-tabular-mono-base text-primary font-bold shrink-0 mt-0.5">•</span>
+<span><strong>State preemption:</strong> High-protection states (California, Minnesota, Nevada, Montana, Oregon, Washington, and Alaska) prohibit tip credits entirely and mandate strict state-specific pooling procedures.</span>
+</li>
+</ul>
+</section>
+<!-- Section 1: FLSA Baseline -->
+<section class="space-y-4" id="flsa-baseline">
+<h2 class="font-headline-h2 text-headline-h2 text-[#16201C]">1. Federal Baseline: What the Fair Labor Standards Act (FLSA) Allows</h2>
+<p class="font-body-editorial text-body-editorial leading-relaxed">
+          Under the United States Fair Labor Standards Act (FLSA), tips are considered the sole legal property of the employees who receive them. For decades, traditional federal labor doctrine strictly limited mandatory tip pools to workers who “customarily and regularly receive tips”—traditionally servers, bussers, food runners, and bartenders.
+        </p>
+<p class="font-body-editorial text-body-editorial leading-relaxed">
+          However, significant revisions enacted under the Consolidated Appropriations Act and finalized by the Department of Labor (DOL) in late 2020 transformed how restaurant operators structure shift tip distribution. The legality of an employer-mandated pool now turns primarily on a single statutory question: <em>Does the employer take a tip credit against its minimum wage obligation?</em>
+</p>
+<p class="font-body-editorial text-body-editorial leading-relaxed">
+          If an employer pays tipped employees the sub-minimum direct cash wage (the federal cash wage minimum remains $2.13 per hour while claiming the maximum $5.12 tip credit), the pool remains strictly restricted to Front-of-House (FOH) roles. If the employer pays the standard federal minimum wage ($7.25+) or applicable state minimum out-of-pocket, the pool boundary expands dramatically.
+        </p>
+<!-- Inline Ad Container 1 -->
+<div class="my-6 p-4 rounded-lg bg-[#F1EFE8] border border-dashed border-[#CFCABB] text-center">
+<div class="font-tabular-mono-sm text-[11px] uppercase tracking-wider text-outline mb-1">Advertisement</div>
+<div class="font-ui-medium text-ui-medium text-on-surface">Automate Shift Differential &amp; Tip Pools Directly in POS</div>
+<p class="font-ui-small text-ui-small text-on-surface-variant max-w-md mx-auto mt-1">Export auditable daily tip distribution receipts compliant with 29 CFR § 531.54 reporting standards.</p>
+<a class="inline-block mt-2.5 font-ui-small-bold text-ui-small text-primary hover:underline" href="#">Learn more about LedgerPOS Integration →</a>
+</div>
+</section>
+<!-- Section 2: Kitchen Staff Eligibility -->
+<section class="space-y-4" id="boh-eligibility">
+<h2 class="font-headline-h2 text-headline-h2 text-[#16201C]">2. The 2020 BOH Rule: Can Kitchen Staff Participate?</h2>
+<p class="font-body-editorial text-body-editorial leading-relaxed">
+          Yes. Under the 2020 DOL Tip Regulations rule amending 29 CFR § 531.54, back-of-house employees—including cooks, prep cooks, dishwashers, and expediters—may now legally participate in employer-mandated tip pools, provided the restaurant satisfies two non-negotiable statutory tests:
+        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-2">
+<div class="p-4 bg-surface-container-lowest rounded-lg border border-[#E3E0D6]">
+<span class="inline-flex px-2 py-0.5 text-xs font-tabular-mono-sm bg-[#E7F1EC] text-primary rounded mb-2 font-semibold">TEST 01 · Direct Wage Test</span>
+<h3 class="font-ui-medium text-ui-medium text-on-surface mb-1">Zero Tip-Credit Claimed</h3>
+<p class="font-ui-small text-ui-small text-on-surface-variant">The employer must pay all participating servers and bartenders the full prevailing regular minimum wage without offsetting any tip credit.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest rounded-lg border border-[#E3E0D6]">
+<span class="inline-flex px-2 py-0.5 text-xs font-tabular-mono-sm bg-[#E7F1EC] text-primary rounded mb-2 font-semibold">TEST 02 · Custody Test</span>
+<h3 class="font-ui-medium text-ui-medium text-on-surface mb-1">Zero Employer Retention</h3>
+<p class="font-ui-small text-ui-small text-on-surface-variant">100% of accumulated tips must be disbursed to non-exempt staff. Zero administrative skim or reserve balance may be retained.</p>
+</div>
+</div>
+<p class="font-body-editorial text-body-editorial leading-relaxed">
+          This model is referred to under federal law as a “nontraditional tip pool.” When executed properly, it allows dining establishments to narrow the long-standing earnings gap between dining room servers and kitchen teams.
+        </p>
+</section>
+<!-- Interactive Embedded Mini Tip-Split Simulator -->
+<section class="bg-surface-container-lowest rounded-lg border border-[#E3E0D6] p-6 shadow-sm" id="interactive-simulator">
+<div class="flex items-center justify-between border-b border-[#E3E0D6] pb-3 mb-4">
+<div>
+<div class="font-tabular-mono-sm text-[11px] uppercase tracking-wider text-outline">Interactive Audit Widget</div>
+<h3 class="font-headline-h3 text-headline-h3 text-[#16201C]">Mini Shift Tip Split Simulator</h3>
+</div>
+<span class="inline-flex items-center gap-1 text-xs font-tabular-mono-sm text-primary bg-[#E7F1EC] px-2.5 py-1 rounded-full border border-primary">
+            FLSA Compliant Model
+          </span>
+</div>
+<p class="font-ui-small text-ui-small text-on-surface-variant mb-4">
+          Calculate compliant distribution between floor servers and kitchen personnel based on total shift tips and weighted labor hours.
+        </p>
+<!-- Inputs Row -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+<div>
+<label class="block font-ui-small-bold text-ui-small text-on-surface mb-1">Total Shift Tips ($)</label>
+<div class="relative">
+<span class="absolute left-3 top-2.5 font-tabular-mono-base text-outline">$</span>
+<input class="w-full bg-surface-container-lowest border border-[#E3E0D6] rounded px-3 py-2 pl-7 font-tabular-mono-base text-tabular-mono-base text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" id="simTotalTips" oninput="calculateMiniSplit()" step="10" type="number" value="800.00"/>
+</div>
+</div>
+<div>
+<label class="block font-ui-small-bold text-ui-small text-on-surface mb-1">Server Hours (Total)</label>
+<input class="w-full bg-surface-container-lowest border border-[#E3E0D6] rounded px-3 py-2 font-tabular-mono-base text-tabular-mono-base text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" id="simServerHours" oninput="calculateMiniSplit()" step="1" type="number" value="28"/>
+</div>
+<div>
+<label class="block font-ui-small-bold text-ui-small text-on-surface mb-1">BOH Kitchen Hours</label>
+<input class="w-full bg-surface-container-lowest border border-[#E3E0D6] rounded px-3 py-2 font-tabular-mono-base text-tabular-mono-base text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary" id="simBohHours" oninput="calculateMiniSplit()" step="1" type="number" value="14"/>
+</div>
+</div>
+<!-- Perforated Receipt Division Slip -->
+<div class="p-4 bg-[#F7F6F1] rounded border border-[#E3E0D6]">
+<div class="flex items-center justify-between text-xs font-tabular-mono-sm text-outline pb-2">
+<span>SHIFT DISBURSEMENT MANIFEST</span>
+<span class="text-primary font-bold" id="simVariancePill">✓ Balanced pool ($800.00 of $800.00)</span>
+</div>
+<div class="border-t border-dashed border-[#CFCABB] pt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<div class="font-ui-small text-ui-small text-on-surface-variant">Front of House (Servers / Bar)</div>
+<div class="flex items-baseline gap-2">
+<span class="font-tabular-mono-lg text-tabular-mono-lg text-on-surface font-semibold" id="simFohRate">$19.05</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">/ hr tipped</span>
+</div>
+<div class="font-tabular-mono-sm text-tabular-mono-sm text-outline" id="simFohTotal">Subtotal: $533.33 (66.7%)</div>
+</div>
+<div>
+<div class="font-ui-small text-ui-small text-on-surface-variant">Back of House (Dish / Prep)</div>
+<div class="flex items-baseline gap-2">
+<span class="font-tabular-mono-lg text-tabular-mono-lg text-primary font-semibold" id="simBohRate">$19.05</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">/ hr tipped</span>
+</div>
+<div class="font-tabular-mono-sm text-tabular-mono-sm text-outline" id="simBohTotal">Subtotal: $266.67 (33.3%)</div>
+</div>
+</div>
+</div>
+<div class="mt-4 flex items-center justify-between">
+<span class="font-ui-small text-ui-small text-outline">Proportional point/hour weighted distribution</span>
+<a class="font-ui-small-bold text-ui-small text-primary hover:underline flex items-center gap-1" href="#">
+            Open full Tip Pool Calculator
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Section 3: Manager Exclusion -->
+<section class="space-y-4" id="manager-ban">
+<h2 class="font-headline-h2 text-headline-h2 text-[#16201C]">3. The Strict Manager &amp; Supervisor Exclusion (§ 203(m)(2)(B))</h2>
+<p class="font-body-editorial text-body-editorial leading-relaxed">
+          Federal law sets an unequivocal boundary: <strong>Managers and supervisors may never take any portion of an employee tip pool under any circumstances.</strong> Even if a shift supervisor helps bus tables during a rush, rings up takeout orders, or works an entire service alone, they cannot receive tip-pool distributions.
+        </p>
+<!-- Editorial Regulatory Callout Warning -->
+<div class="p-4 bg-[#FBF1E3] border border-[#E3E0D6] border-l-4 border-l-[#A85400] rounded-r-lg">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-[#A85400] text-[20px]">warning</span>
+<span class="font-ui-medium text-ui-medium text-[#A85400]">FLSA Statutory Compliance Notice</span>
+</div>
+<p class="font-body-editorial text-body-editorial text-on-surface">
+            Under 29 U.S.C. § 203(m)(2)(B), any employer, manager, or supervisor who retains employee tips—regardless of whether a tip credit is claimed—faces mandatory disgorgement of all retained tips, 100% liquidated damages, and civil monetary penalties up to $1,330 per violation under 29 CFR § 578.3.
+          </p>
+</div>
+<h3 class="font-headline-h3 text-headline-h3 text-[#16201C] pt-2">How the DOL Defines a “Supervisor”</h3>
+<p class="font-body-editorial text-body-editorial leading-relaxed">
+          The Department of Labor uses the <em>Executive Exemption Duties Test</em> set forth in 29 CFR § 541.100. A staff member is disqualified from the tip pool if they satisfy all three conditions:
+        </p>
+<ol class="space-y-2 pl-4 font-body-editorial text-body-editorial list-decimal text-on-surface">
+<li>Their primary duty is the management of the enterprise, department, or recognized subdivision.</li>
+<li>They customarily and regularly direct the work of two or more full-time employees (or the equivalent in part-time workers).</li>
+<li>They possess the authority to hire or fire employees, or their suggestions/recommendations regarding hiring, firing, advancement, or scheduling are given particular weight.</li>
+</ol>
+<p class="font-body-editorial text-body-editorial leading-relaxed">
+          Sole proprietors, partners, and corporate officers are completely barred from pools under all conditions. Shift leads without scheduling or disciplinary authority may qualify only if their operational duties are non-managerial.
+        </p>
+<!-- Inline Ad Container 2 -->
+<div class="my-6 p-4 rounded-lg bg-[#F1EFE8] border border-dashed border-[#CFCABB] text-center">
+<div class="font-tabular-mono-sm text-[11px] uppercase tracking-wider text-outline mb-1">Regulatory Advisory</div>
+<div class="font-ui-medium text-ui-medium text-on-surface">Federal Compliance Standards: Protect Against Dual-Job &amp; 80/20 Claims</div>
+<p class="font-ui-small text-ui-small text-on-surface-variant max-w-lg mx-auto mt-1">Audit shift roles, prep time classifications, and automated point weighting with our verified FLSA framework.</p>
+<a class="inline-block mt-2.5 font-ui-small-bold text-ui-small text-primary hover:underline" href="#">View 2027 Compliance Package →</a>
+</div>
+</section>
+<!-- State Preemption Section -->
+<section class="space-y-4" id="state-laws">
+<h2 class="font-headline-h2 text-headline-h2 text-[#16201C]">4. State-Specific Preemption: When Local Rules Override FLSA</h2>
+<p class="font-body-editorial text-body-editorial leading-relaxed">
+          Federal labor law establishes a compliance floor, not a ceiling. Where state labor statutes offer broader protections to workers, state law strictly supersedes FLSA guidelines.
+        </p>
+<!-- Prominent State Callout Card -->
+<div class="bg-surface-container-lowest rounded-lg border border-[#E3E0D6] p-6 shadow-sm">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-[22px]">map</span>
+<h3 class="font-headline-h3 text-headline-h3 text-[#16201C]">Check Your State Regulations</h3>
+</div>
+<p class="font-ui-base text-ui-base text-on-surface-variant mb-4">
+            Seven states forbid the tip credit completely, requiring full state minimums prior to any pooling formulas:
+          </p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-2.5 py-1 bg-[#F7F6F1] border border-[#E3E0D6] rounded text-on-surface font-ui-small-bold text-ui-small">California (Cal. Lab. Code § 351)</span>
+<span class="px-2.5 py-1 bg-[#F7F6F1] border border-[#E3E0D6] rounded text-on-surface font-ui-small-bold text-ui-small">New York (12 NYCRR § 146-2.14)</span>
+<span class="px-2.5 py-1 bg-[#F7F6F1] border border-[#E3E0D6] rounded text-on-surface font-ui-small-bold text-ui-small">Minnesota (Minn. Stat. § 177.24)</span>
+<span class="px-2.5 py-1 bg-[#F7F6F1] border border-[#E3E0D6] rounded text-on-surface font-ui-small-bold text-ui-small">Nevada (NRS 608.160)</span>
+<span class="px-2.5 py-1 bg-[#F7F6F1] border border-[#E3E0D6] rounded text-on-surface font-ui-small-bold text-ui-small">Washington (RCW 49.46.020)</span>
+<span class="px-2.5 py-1 bg-[#F7F6F1] border border-[#E3E0D6] rounded text-on-surface font-ui-small-bold text-ui-small">Oregon (ORS 653.035)</span>
+</div>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded bg-primary text-on-primary font-ui-medium text-ui-medium hover:bg-primary-container transition-colors" href="#">
+<span>View Complete 50-State Wage &amp; Tip Hub</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Section 5: Credit Card Fee Deductions -->
+<section class="space-y-4" id="cc-deductions">
+<h2 class="font-headline-h2 text-headline-h2 text-[#16201C]">5. Credit Card Processing Fees &amp; Tip Deductions</h2>
+<p class="font-body-editorial text-body-editorial leading-relaxed">
+          When a patron charges a tip on a credit card, the merchant processor levies an interchange fee (typically 1.5% to 3.5%). Under federal FLSA guidance, an employer may deduct the actual transactional percentage charged by the credit card processor before placing the net tip into the pool.
+        </p>
+<p class="font-body-editorial text-body-editorial leading-relaxed">
+          However, the employer cannot deduct more than the actual transactional rate charged, nor can they turn credit card fee administration into a source of revenue. Crucially, multiple states ban this deduction entirely:
+        </p>
+<ul class="space-y-1.5 pl-4 font-body-editorial text-body-editorial list-disc text-on-surface">
+<li><strong>Prohibited:</strong> California, Colorado, Maine, Massachusetts, Montana, and New York forbid employers from taking any credit card processing deductions from gratuities.</li>
+<li><strong>Permitted (Federal standard):</strong> Texas, Florida, Illinois, Ohio, and Georgia permit deduction of the verifiable card fee.</li>
+</ul>
+</section>
+<!-- Section 6: Audit Checklist & Penalties -->
+<section class="space-y-4" id="audit-penalties">
+<h2 class="font-headline-h2 text-headline-h2 text-[#16201C]">6. Employer Audit Checklist &amp; Violation Penalties</h2>
+<p class="font-body-editorial text-body-editorial leading-relaxed">
+          Hospitality operators facing DOL Wage and Hour Division (WHD) audits must maintain meticulous records. Under 29 CFR § 516.28, employers must preserve weekly tip accounting rosters, showing all credits taken and pools disbursed, for at least three calendar years.
+        </p>
+<div class="bg-surface-container-lowest rounded-lg border border-[#E3E0D6] overflow-hidden">
+<div class="bg-[#F7F6F1] px-4 py-2.5 border-b border-[#E3E0D6] font-ui-small-bold text-ui-small-bold text-on-surface">
+            Statutory Violation Risk Matrix (FLSA § 16(e)(2))
+          </div>
+<table class="w-full text-left font-ui-small text-ui-small">
+<thead class="border-b border-[#E3E0D6] text-outline uppercase tracking-wider">
+<tr>
+<th class="p-3">Violation Type</th>
+<th class="p-3">Statutory Penalty</th>
+<th class="p-3">Remedy Required</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-[#E3E0D6]">
+<tr>
+<td class="p-3 font-semibold text-on-surface">Manager Kept Pool Tips</td>
+<td class="p-3 font-tabular-mono-sm text-error">Up to $1,330 / civil infraction</td>
+<td class="p-3">100% full disgorgement + liquidated damages</td>
+</tr>
+<tr>
+<td class="p-3 font-semibold text-on-surface">BOH Included with Tip Credit Active</td>
+<td class="p-3 font-tabular-mono-sm text-error">Loss of tip credit retroactively</td>
+<td class="p-3">Pay full direct wage backpay ($5.12/hr gap)</td>
+</tr>
+<tr>
+<td class="p-3 font-semibold text-on-surface">Excessive CC Fee Surcharge</td>
+<td class="p-3 font-tabular-mono-sm text-error">Unlawful wage kickback</td>
+<td class="p-3">Restitution of deducted transactional balance</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Section 7: Verified Sources -->
+<section class="space-y-4 pt-4 border-t border-[#E3E0D6]" id="sources">
+<h3 class="font-headline-h3 text-headline-h3 text-[#16201C]">Statutory Citations &amp; Legal Authorities</h3>
+<ol class="space-y-2 font-tabular-mono-sm text-tabular-mono-sm text-on-surface-variant list-decimal pl-5">
+<li>
+<a class="hover:text-primary underline" href="https://www.dol.gov" rel="noopener noreferrer" target="_blank">29 U.S.C. § 203(m)(2)(B)</a> — Fair Labor Standards Act provisions governing tip pool ownership and manager exclusions.
+          </li>
+<li>
+<a class="hover:text-primary underline" href="https://www.ecfr.gov" rel="noopener noreferrer" target="_blank">29 CFR § 531.54</a> — Tip pooling regulations under the Consolidated Appropriations Act 2020 Final Rule.
+          </li>
+<li>
+<a class="hover:text-primary underline" href="https://www.dol.gov/agencies/whd/fact-sheets/15-tipped-employees-flsa" rel="noopener noreferrer" target="_blank">U.S. DOL Wage &amp; Hour Fact Sheet #15</a> — Tipped Employees Under the Fair Labor Standards Act (FLSA).
+          </li>
+<li>
+<a class="hover:text-primary underline" href="https://www.irs.gov" rel="noopener noreferrer" target="_blank">IRS Rev. Rul. 2012-18</a> — Tax Treatment of Tips vs. Mandatory Service Charges.
+          </li>
+<li>
+<a class="hover:text-primary underline" href="https://leginfo.legislature.ca.gov" rel="noopener noreferrer" target="_blank">California Labor Code § 351</a> — Prohibition of employer retention and credit card deduction bans.
+          </li>
+<li>
+<a class="hover:text-primary underline" href="https://dol.ny.gov" rel="noopener noreferrer" target="_blank">New York Hospitality Wage Order 12 NYCRR Part 146</a> — Rules on directly-tipped service staff eligibility.
+          </li>
+</ol>
+</section>
+<!-- Author Bio Card -->
+<section class="p-6 bg-surface-container-lowest rounded-lg border border-[#E3E0D6] flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-[#EBF6EF] border border-[#0E6B4C] flex items-center justify-center font-ui-small-bold text-[#0E6B4C] shrink-0 text-base">
+          JD
+        </div>
+<div class="space-y-1">
+<div class="font-ui-medium text-ui-medium text-on-surface">Written by Jordan Davis</div>
+<div class="font-ui-small text-ui-small text-outline">Senior Payroll &amp; Labor Standards Editor · Shift &amp; Tip</div>
+<p class="font-ui-small text-ui-small text-on-surface-variant pt-1 leading-relaxed">
+            Jordan has spent over 12 years auditing multi-unit restaurant payroll systems and counseling operators on federal wage compliance. Jordan is a certified hospitality compensation specialist and a frequent contributor to labor law review panels.
+          </p>
+</div>
+</section>
+<!-- Related Calculators & Compliance Tools -->
+<section class="p-6 bg-surface-container-lowest rounded-lg border border-[#E3E0D6]">
+<div class="font-headline-h3 text-headline-h3 text-[#16201C] mb-3">Related Payroll &amp; Tip Calculators</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<a class="p-3 rounded border border-[#E3E0D6] hover:border-primary hover:bg-[#F7F6F1] transition-colors flex items-center justify-between group" href="#">
+<span class="font-ui-medium text-ui-medium text-on-surface group-hover:text-primary">Shift Tip Pool Calculator</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary text-[18px]">arrow_forward</span>
+</a>
+<a class="p-3 rounded border border-[#E3E0D6] hover:border-primary hover:bg-[#F7F6F1] transition-colors flex items-center justify-between group" href="#">
+<span class="font-ui-medium text-ui-medium text-on-surface group-hover:text-primary">California Overtime &amp; Double Time</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary text-[18px]">arrow_forward</span>
+</a>
+<a class="p-3 rounded border border-[#E3E0D6] hover:border-primary hover:bg-[#F7F6F1] transition-colors flex items-center justify-between group" href="#">
+<span class="font-ui-medium text-ui-medium text-on-surface group-hover:text-primary">FLSA Dual-Job 80/20 Rule Auditor</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary text-[18px]">arrow_forward</span>
+</a>
+<a class="p-3 rounded border border-[#E3E0D6] hover:border-primary hover:bg-[#F7F6F1] transition-colors flex items-center justify-between group" href="#">
+<span class="font-ui-medium text-ui-medium text-on-surface group-hover:text-primary">Tipped Minimum Wage Matrix 2026</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary text-[18px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Multiplex Ad Grid at Article Footer -->
+<section class="pt-4">
+<div class="font-tabular-mono-sm text-[11px] uppercase tracking-wider text-outline mb-2">Sponsored Industry Resources</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+<div class="p-3 rounded bg-[#F1EFE8] border border-dashed border-[#CFCABB] flex flex-col justify-between h-28">
+<span class="font-ui-small-bold text-ui-small text-on-surface">Payroll Audit Automation</span>
+<span class="font-tabular-mono-sm text-[11px] text-primary">LedgerSync →</span>
+</div>
+<div class="p-3 rounded bg-[#F1EFE8] border border-dashed border-[#CFCABB] flex flex-col justify-between h-28">
+<span class="font-ui-small-bold text-ui-small text-on-surface">POS Tip Distribution Plugin</span>
+<span class="font-tabular-mono-sm text-[11px] text-primary">OmniPool →</span>
+</div>
+<div class="p-3 rounded bg-[#F1EFE8] border border-dashed border-[#CFCABB] flex flex-col justify-between h-28">
+<span class="font-ui-small-bold text-ui-small text-on-surface">FICA Tip Credit (45B) Filing</span>
+<span class="font-tabular-mono-sm text-[11px] text-primary">TaxAudit 2026 →</span>
+</div>
+<div class="p-3 rounded bg-[#F1EFE8] border border-dashed border-[#CFCABB] flex flex-col justify-between h-28">
+<span class="font-ui-small-bold text-ui-small text-on-surface">Instant Tipped Cashout Cards</span>
+<span class="font-tabular-mono-sm text-[11px] text-primary">ShiftPay Net →</span>
+</div>
+</div>
+</section>
+</main>
+<!-- RIGHT COLUMN: Sticky Digest Sidebar (~300px) -->
+<aside class="lg:col-span-3 space-y-6 sticky top-24">
+<!-- Quick Tip Rules Summary Table Widget -->
+<div class="bg-surface-container-lowest rounded-lg border border-[#E3E0D6] p-4 shadow-sm">
+<div class="flex items-center gap-2 pb-2 border-b border-[#E3E0D6] mb-3">
+<span class="material-symbols-outlined text-[18px] text-primary">menu_book</span>
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface uppercase tracking-wide">Quick Rule Matrix</span>
+</div>
+<div class="space-y-2.5 font-ui-small text-ui-small">
+<div class="flex items-center justify-between pb-2 border-b border-[#E3E0D6]">
+<span class="text-on-surface-variant">Mandatory Pools</span>
+<span class="font-ui-small-bold text-primary">Legal (FLSA)</span>
+</div>
+<div class="flex items-center justify-between pb-2 border-b border-[#E3E0D6]">
+<span class="text-on-surface-variant">Managers in Pool</span>
+<span class="font-ui-small-bold text-error">Strictly Illegal</span>
+</div>
+<div class="flex items-center justify-between pb-2 border-b border-[#E3E0D6]">
+<span class="text-on-surface-variant">Kitchen in Pool</span>
+<span class="font-ui-small-bold text-on-surface">Only if no tip credit</span>
+</div>
+<div class="flex items-center justify-between pb-2 border-b border-[#E3E0D6]">
+<span class="text-on-surface-variant">Credit Card Fee Skim</span>
+<span class="font-ui-small-bold text-on-surface">Max actual fee</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Record Retention</span>
+<span class="font-tabular-mono-sm text-on-surface">3 Years Required</span>
+</div>
+</div>
+</div>
+<!-- 300x600 Tower Ad Container -->
+<div class="w-full bg-[#F1EFE8] rounded-lg border border-[#CFCABB] p-6 flex flex-col justify-between text-center min-h-[520px]">
+<div>
+<div class="font-tabular-mono-sm text-[11px] uppercase tracking-wider text-outline mb-3">
+            ADVERTISEMENT · 300 × 600 Tower
+          </div>
+<div class="w-12 h-12 mx-auto rounded bg-primary text-on-primary flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<h4 class="font-headline-h3 text-headline-h3 text-[#16201C] mb-2 leading-snug">
+            State Labor Law Digest 2027 Edition
+          </h4>
+<p class="font-ui-small text-ui-small text-on-surface-variant mb-6">
+            The Complete Hospitality Employer Guide to Tipped Wage Credits, Dual-Job Limits, and Pool Apportionment Across All 50 States.
+          </p>
+<ul class="text-left font-ui-small text-ui-small text-on-surface space-y-2.5 pb-6 border-b border-[#CFCABB]">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+<span>Updated for 2026-2027 statutory adjustments</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+<span>Full statutory text &amp; audit templates</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+<span>DOL Field Operations Handbook breakdown</span>
+</li>
+</ul>
+</div>
+<div>
+<a class="block w-full py-2.5 px-4 rounded bg-primary text-on-primary font-ui-medium text-ui-medium hover:bg-primary-container transition-colors shadow-sm" href="#">
+            Download Legal Handbook
+          </a>
+<span class="block mt-2 font-tabular-mono-sm text-[11px] text-outline">Published by National Wage Audit Bureau</span>
+</div>
+</div>
+</aside>
+</div>
+<!-- Interactive Script for Mini Shift Simulator -->
+<script>
+    function calculateMiniSplit() {
+      const totalTips = parseFloat(document.getElementById('simTotalTips').value) || 0;
+      const fohHours = parseFloat(document.getElementById('simServerHours').value) || 0;
+      const bohHours = parseFloat(document.getElementById('simBohHours').value) || 0;
+      const totalHours = fohHours + bohHours;
+
+      if (totalHours <= 0 || totalTips <= 0) {
+        document.getElementById('simFohRate').textContent = '$0.00';
+        document.getElementById('simBohRate').textContent = '$0.00';
+        document.getElementById('simFohTotal').textContent = 'Subtotal: $0.00';
+        document.getElementById('simBohTotal').textContent = 'Subtotal: $0.00';
+        document.getElementById('simVariancePill').textContent = 'Enter valid tip and hour figures';
+        return;
+      }
+
+      const hourlyRate = totalTips / totalHours;
+      const fohTotal = hourlyRate * fohHours;
+      const bohTotal = hourlyRate * bohHours;
+
+      document.getElementById('simFohRate').textContent = '$' + hourlyRate.toFixed(2);
+      document.getElementById('simBohRate').textContent = '$' + hourlyRate.toFixed(2);
+      
+      const fohPct = ((fohTotal / totalTips) * 100).toFixed(1);
+      const bohPct = ((bohTotal / totalTips) * 100).toFixed(1);
+
+      document.getElementById('simFohTotal').textContent = 'Subtotal: $' + fohTotal.toFixed(2) + ' (' + fohPct + '%)';
+      document.getElementById('simBohTotal').textContent = 'Subtotal: $' + bohTotal.toFixed(2) + ' (' + bohPct + '%)';
+      
+      document.getElementById('simVariancePill').textContent = '✓ Balanced pool ($' + (fohTotal + bohTotal).toFixed(2) + ' of $' + totalTips.toFixed(2) + ')';
+    }
+  </script>
+</div></div></main><footer class="w-full bg-surface-container-lowest border-t border-[#E3E0D6] mt-auto"><div class="max-w-[1200px] mx-auto px-margin-desktop py-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg"><div class="space-y-space-xs max-w-xl"><p class="font-ui-small text-ui-small text-on-surface-variant">Estimates, not legal or tax advice. Calculations adhere to US FLSA 29 CFR § 531.54 tip regulations.</p><p class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Form Ref: FLSA-WH2026 · Archival Ledger Spec</p></div><nav class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs" data-active-classes="text-primary font-ui-small-bold"><a class="font-ui-small text-ui-small text-on-surface-variant hover:text-on-surface transition-colors" data-path="flsa-statutes" href="#">FLSA Statutes</a><a class="font-ui-small text-ui-small text-on-surface-variant hover:text-on-surface transition-colors" data-path="audit-method" href="#">Audit Method</a><a class="font-ui-small text-ui-small text-on-surface-variant hover:text-on-surface transition-colors" data-path="terms" href="#">Terms</a><a class="font-ui-small text-ui-small text-on-surface-variant hover:text-on-surface transition-colors" data-path="privacy" href="#">Privacy</a><a class="font-ui-small text-ui-small text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="font-ui-small text-ui-small text-on-surface-variant hover:text-on-surface transition-colors" data-path="methodology" href="#">Methodology</a><a class="font-ui-small text-ui-small text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav></div></footer></body></html>

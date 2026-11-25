@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Public+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,600;1,8..60,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-container": "#96e8c1", "tertiary-container": "#54615b", "primary-container": "#0e6b4c", "on-secondary-fixed": "#301400", "on-secondary-fixed-variant": "#713700", "on-tertiary": "#ffffff", "background": "#f1fcf5", "outline-variant": "#bec9c1", "error-container": "#ffdad6", "on-primary-fixed": "#002114", "on-surface-variant": "#3f4943", "inverse-surface": "#28332e", "tertiary-fixed-dim": "#bccac2", "on-error": "#ffffff", "on-secondary": "#ffffff", "tertiary": "#3c4943", "secondary-fixed-dim": "#ffb785", "secondary": "#954a00", "primary-fixed": "#a1f3cc", "primary-fixed-dim": "#85d7b1", "on-secondary-container": "#6c3400", "outline": "#6f7a73", "on-tertiary-fixed-variant": "#3d4a44", "inverse-primary": "#85d7b1", "secondary-container": "#fe9748", "surface": "#f1fcf5", "surface-container-low": "#ebf6ef", "surface-container-lowest": "#ffffff", "surface-container": "#e5f1ea", "surface-bright": "#f1fcf5", "inverse-on-surface": "#e8f3ed", "on-primary-fixed-variant": "#005138", "tertiary-fixed": "#d7e6de", "on-primary": "#ffffff", "surface-container-highest": "#dae5de", "on-surface": "#141e1a", "surface-tint": "#0f6c4c", "secondary-fixed": "#ffdcc6", "on-error-container": "#93000a", "surface-container-high": "#dfebe4", "on-background": "#141e1a", "surface-dim": "#d1ddd6", "surface-variant": "#dae5de", "primary": "#005138", "on-tertiary-container": "#cddbd3", "error": "#ba1a1a", "on-tertiary-fixed": "#121e19" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-tablet": "1.5rem", "gutter-desktop": "1.5rem", "space-lg": "1.5rem", "space-xl": "2rem", "gutter-tablet": "1.5rem", "margin": "1rem", "space-xs": "0.25rem", "space-2xl": "3rem", "space-md": "1rem", "space-sm": "0.5rem", "margin-desktop": "2rem", "gutter": "1rem" }, "fontFamily": { "ui-base": [ "Public Sans" ], "headline-h1": [ "\"Source Serif 4\"" ], "headline-h2-mobile": [ "\"Source Serif 4\"" ], "tabular-mono-base": [ "IBM Plex Mono" ], "headline-h2": [ "\"Source Serif 4\"" ], "tabular-mono-lg": [ "IBM Plex Mono" ], "body-editorial": [ "Public Sans" ], "ui-medium": [ "Public Sans" ], "ui-small": [ "Public Sans" ], "ui-small-bold": [ "Public Sans" ], "headline-h1-mobile": [ "\"Source Serif 4\"" ], "headline-h3": [ "\"Source Serif 4\"" ], "body-editorial-strong": [ "Public Sans" ], "tabular-mono-sm": [ "IBM Plex Mono" ] }, "fontSize": { "ui-base": [ "15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-h1": [ "38px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-h2-mobile": [ "24px", { "lineHeight": "30px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "tabular-mono-base": [ "15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "500" } ], "headline-h2": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "tabular-mono-lg": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "body-editorial": [ "17px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "ui-medium": [ "15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" } ], "ui-small": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" } ], "ui-small-bold": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "headline-h1-mobile": [ "30px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-h3": [ "20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" } ], "body-editorial-strong": [ "17px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "tabular-mono-sm": [ "13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-surface font-ui-base text-ui-base text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-low border-b border-outline-variant"><div class="h-24 max-w-[1200px] mx-auto px-margin-desktop flex flex-col justify-between py-space-sm"><div class="flex items-center justify-between w-full"><div class="flex items-baseline gap-space-sm"><span class="font-headline-h3 text-headline-h3 text-on-surface">Shift &amp; Tip</span><span class="font-ui-small text-ui-small text-on-surface-variant">US Payroll &amp; Tip Pool Utility</span></div><div class="flex items-center gap-space-md"><div class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface border border-outline-variant"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span><span class="font-ui-small-bold text-ui-small-bold text-primary">Rules verified Dec 2026</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center justify-between border-t border-outline-variant pt-space-xs"><nav class="flex items-center gap-space-lg" data-active-classes="text-primary font-ui-medium border-b-2 border-primary pb-0.5"><a class="font-ui-base text-ui-base text-on-surface-variant hover:text-on-surface transition-colors" data-path="tip-pool-calculator" href="#">Tip Pool Calculator</a><a class="font-ui-base text-ui-base text-on-surface-variant hover:text-on-surface transition-colors" data-path="overtime-and-tip-credit" href="#">Overtime &amp; Tip Credit</a><a class="font-ui-base text-ui-base text-on-surface-variant hover:text-on-surface transition-colors" data-path="compliance-guide" href="#">Compliance Guide</a><a class="font-ui-base text-ui-base text-on-surface-variant hover:text-on-surface transition-colors" data-path="design-system-spec" href="#">Design System Spec</a></nav><div class="hidden md:flex items-center gap-space-xs font-tabular-mono-sm text-tabular-mono-sm text-on-surface-variant"><span class="text-tertiary">Shift &amp; Tip</span><span>/</span><span class="text-tertiary">Standards &amp; Design System</span><span>/</span><span class="text-on-surface">Desktop Reference</span></div></div></div></header><main class="w-full pt-24 bg-surface"><div class="flex flex-col w-full">
+<!-- System Sheet Top Masthead / Reference Header -->
+<section class="w-full bg-surface-container-low border-b border-outline-variant">
+<div class="max-w-[1200px] mx-auto px-margin-desktop py-space-xl flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-tabular-mono-sm text-tabular-mono-sm text-on-surface">SYS-SPEC-2026.4</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">/</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-on-surface-variant">US 29 CFR § 531.54 Standards Engine</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-lowest border border-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-ui-small-bold text-ui-small-bold text-primary">Version 2.4 / Dec 2026 Verification</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-ui-small-bold text-ui-small-bold tracking-wider uppercase text-outline">Editorial Utility Specimen</span>
+<h1 class="font-headline-h1 text-headline-h1 text-on-surface">Design Tokens &amp; UI Component Specification</h1>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant max-w-4xl">
+          Calm, zero-hype guidelines for US payroll calculation, tip credit modeling, and statutory FLSA compliance tools. Engineered for hourly hospitality operators, shift auditors, and dual-job payroll administrators.
+        </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md pt-space-sm border-t border-outline-variant font-tabular-mono-sm text-tabular-mono-sm">
+<div>
+<span class="text-outline block">Grid Unit</span>
+<span class="text-on-surface font-tabular-mono-base">8px base / 4px sub</span>
+</div>
+<div>
+<span class="text-outline block">Linework Motif</span>
+<span class="text-on-surface font-tabular-mono-base">1px Solid #E3E0D6</span>
+</div>
+<div>
+<span class="text-outline block">Primary Font Pair</span>
+<span class="text-on-surface font-tabular-mono-base">Source Serif 4 + Plex Mono</span>
+</div>
+<div>
+<span class="text-outline block">Elevation Rule</span>
+<span class="text-on-surface font-tabular-mono-base">Planar (0–1px tactile)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Main Two-Column Specification Body -->
+<div class="max-w-[1200px] mx-auto px-margin-desktop py-space-2xl w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT COLUMN: Spec Sections 01, 02, 03, 04 (7 Columns) -->
+<div class="lg:col-span-7 flex flex-col gap-space-2xl">
+<!-- SECTION 01: TYPOGRAPHY HIERARCHY -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg p-space-lg flex flex-col gap-space-lg shadow-sm">
+<div class="flex items-baseline justify-between border-b border-outline-variant pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-tabular-mono-sm text-tabular-mono-sm px-2 py-0.5 rounded bg-surface-container font-medium text-on-surface">SEC 01</span>
+<h2 class="font-ui-medium text-ui-medium text-on-surface uppercase tracking-wide">Typography Hierarchy</h2>
+</div>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">No Inter / Poppins / Roboto</span>
+</div>
+<!-- Headings Category -->
+<div class="flex flex-col gap-space-md">
+<span class="font-ui-small-bold text-ui-small-bold text-tertiary uppercase tracking-wider">01.1 Editorial Headings (Source Serif 4)</span>
+<div class="border-b border-outline-variant pb-space-sm">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">H1 • 38px / 44px (-0.015em)</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">font-headline-h1</span>
+</div>
+<h1 class="font-headline-h1 text-headline-h1 text-on-surface">Tip Distribution by Point Weight</h1>
+</div>
+<div class="border-b border-outline-variant pb-space-sm">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">H2 • 28px / 34px (-0.010em)</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">font-headline-h2</span>
+</div>
+<h2 class="font-headline-h2 text-headline-h2 text-on-surface">FLSA Dual-Job &amp; 80/20 Rule Limits</h2>
+</div>
+<div class="border-b border-outline-variant pb-space-sm">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">H3 • 20px / 28px (0.000em)</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">font-headline-h3</span>
+</div>
+<h3 class="font-headline-h3 text-headline-h3 text-on-surface">Shift Roster &amp; Eligible Service Staff</h3>
+</div>
+</div>
+<!-- Body & Controls Category -->
+<div class="flex flex-col gap-space-md pt-space-xs">
+<span class="font-ui-small-bold text-ui-small-bold text-tertiary uppercase tracking-wider">01.2 Functional UI &amp; Regulatory Body (Public Sans)</span>
+<div class="border-b border-outline-variant pb-space-sm">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Body Editorial • 17px / 28px (400)</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">font-body-editorial</span>
+</div>
+<p class="font-body-editorial text-body-editorial text-on-surface">
+                Under federal regulations (29 CFR § 531.54), an employer may only take a tip credit against employees who customarily and regularly receive tips.
+              </p>
+</div>
+<div class="border-b border-outline-variant pb-space-sm">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">UI Medium • 15px / 22px (600)</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">font-ui-medium</span>
+</div>
+<p class="font-ui-medium text-ui-medium text-on-surface">Calculate Net Hourly Tip Rate</p>
+</div>
+<div class="border-b border-outline-variant pb-space-sm">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">UI Small • 13px / 18px (400)</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">font-ui-small</span>
+</div>
+<p class="font-ui-small text-ui-small text-on-surface-variant">Rounded to nearest cent. Non-exempt employees only.</p>
+</div>
+</div>
+<!-- Monospace Financial Numbers Category -->
+<div class="flex flex-col gap-space-md pt-space-xs">
+<span class="font-ui-small-bold text-ui-small-bold text-tertiary uppercase tracking-wider">01.3 Tabular Numeric Monospace (IBM Plex Mono 500)</span>
+<div class="bg-surface-container-low p-space-md rounded border border-outline-variant flex flex-col gap-space-sm">
+<div class="flex justify-between items-baseline">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Mono Large • 24px / 32px</span>
+<span class="font-tabular-mono-lg text-tabular-mono-lg text-on-surface font-semibold">$1,240.00</span>
+</div>
+<div class="border-t border-dashed border-outline-variant pt-space-xs flex justify-between items-baseline">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Mono Base • 15px / 22px</span>
+<span class="font-tabular-mono-base text-tabular-mono-base text-on-surface">$18.42/hr   38.50 hrs   100.0% share</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container rounded border-l-2 border-primary text-ui-small text-on-surface-variant">
+<strong>Typographic Constraint Notice:</strong> Font metrics strictly require lining figures with tabular spacing to eliminate numerical jitter across recurring payroll ledger reconciliation loops.
+            </div>
+</div>
+</article>
+<!-- SECTION 02: COLOR PALETTE & ARCHITECTURAL ROLES -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg p-space-lg flex flex-col gap-space-lg shadow-sm">
+<div class="flex items-baseline justify-between border-b border-outline-variant pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-tabular-mono-sm text-tabular-mono-sm px-2 py-0.5 rounded bg-surface-container font-medium text-on-surface">SEC 02</span>
+<h2 class="font-ui-medium text-ui-medium text-on-surface uppercase tracking-wide">Color Palette &amp; Architectural Roles</h2>
+</div>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">14 Verified Swatches</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm">
+<!-- ink -->
+<div class="border border-outline-variant rounded p-2.5 flex flex-col gap-2 bg-surface">
+<div class="w-full h-10 rounded bg-[#16201C] flex items-end p-1.5"><span class="text-[10px] font-mono text-white">#16201C</span></div>
+<div>
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface block">ink</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline block text-[11px]">Primary textual weight</span>
+</div>
+</div>
+<!-- ink-2 -->
+<div class="border border-outline-variant rounded p-2.5 flex flex-col gap-2 bg-surface">
+<div class="w-full h-10 rounded bg-[#3D4A44] flex items-end p-1.5"><span class="text-[10px] font-mono text-white">#3D4A44</span></div>
+<div>
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface block">ink-2</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline block text-[11px]">Secondary captions</span>
+</div>
+</div>
+<!-- muted -->
+<div class="border border-outline-variant rounded p-2.5 flex flex-col gap-2 bg-surface">
+<div class="w-full h-10 rounded bg-[#5E6B65] flex items-end p-1.5"><span class="text-[10px] font-mono text-white">#5E6B65</span></div>
+<div>
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface block">muted</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline block text-[11px]">Meta &amp; tabular headers</span>
+</div>
+</div>
+<!-- paper -->
+<div class="border border-outline-variant rounded p-2.5 flex flex-col gap-2 bg-surface">
+<div class="w-full h-10 rounded bg-[#F7F6F1] border border-outline-variant flex items-end p-1.5"><span class="text-[10px] font-mono text-[#16201C]">#F7F6F1</span></div>
+<div>
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface block">paper</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline block text-[11px]">Base canvas foundation</span>
+</div>
+</div>
+<!-- surface -->
+<div class="border border-outline-variant rounded p-2.5 flex flex-col gap-2 bg-surface">
+<div class="w-full h-10 rounded bg-[#FFFFFF] border border-outline-variant flex items-end p-1.5"><span class="text-[10px] font-mono text-[#16201C]">#FFFFFF</span></div>
+<div>
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface block">surface</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline block text-[11px]">Physical card ledger</span>
+</div>
+</div>
+<!-- line -->
+<div class="border border-outline-variant rounded p-2.5 flex flex-col gap-2 bg-surface">
+<div class="w-full h-10 rounded bg-[#E3E0D6] flex items-end p-1.5"><span class="text-[10px] font-mono text-[#16201C]">#E3E0D6</span></div>
+<div>
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface block">line</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline block text-[11px]">Structural perimeter</span>
+</div>
+</div>
+<!-- line-2 -->
+<div class="border border-outline-variant rounded p-2.5 flex flex-col gap-2 bg-surface">
+<div class="w-full h-10 rounded bg-[#CFCABB] flex items-end p-1.5"><span class="text-[10px] font-mono text-[#16201C]">#CFCABB</span></div>
+<div>
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface block">line-2</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline block text-[11px]">Perforations &amp; ticks</span>
+</div>
+</div>
+<!-- ledger -->
+<div class="border border-outline-variant rounded p-2.5 flex flex-col gap-2 bg-surface">
+<div class="w-full h-10 rounded bg-[#0E6B4C] flex items-end p-1.5"><span class="text-[10px] font-mono text-white">#0E6B4C</span></div>
+<div>
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface block">ledger</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline block text-[11px]">Primary action &amp; mark</span>
+</div>
+</div>
+<!-- ledger-600 -->
+<div class="border border-outline-variant rounded p-2.5 flex flex-col gap-2 bg-surface">
+<div class="w-full h-10 rounded bg-[#0A5039] flex items-end p-1.5"><span class="text-[10px] font-mono text-white">#0A5039</span></div>
+<div>
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface block">ledger-600</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline block text-[11px]">Active pressed depth</span>
+</div>
+</div>
+<!-- ledger-50 -->
+<div class="border border-outline-variant rounded p-2.5 flex flex-col gap-2 bg-surface">
+<div class="w-full h-10 rounded bg-[#E7F1EC] border border-outline-variant flex items-end p-1.5"><span class="text-[10px] font-mono text-[#0E6B4C]">#E7F1EC</span></div>
+<div>
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface block">ledger-50</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline block text-[11px]">Audited badge fill</span>
+</div>
+</div>
+<!-- receipt -->
+<div class="border border-outline-variant rounded p-2.5 flex flex-col gap-2 bg-surface">
+<div class="w-full h-10 rounded bg-[#A85400] flex items-end p-1.5"><span class="text-[10px] font-mono text-white">#A85400</span></div>
+<div>
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface block">receipt</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline block text-[11px]">Tip credit callouts</span>
+</div>
+</div>
+<!-- receipt-50 -->
+<div class="border border-outline-variant rounded p-2.5 flex flex-col gap-2 bg-surface">
+<div class="w-full h-10 rounded bg-[#FBF1E3] border border-outline-variant flex items-end p-1.5"><span class="text-[10px] font-mono text-[#A85400]">#FBF1E3</span></div>
+<div>
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface block">receipt-50</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline block text-[11px]">Regulatory highlight</span>
+</div>
+</div>
+<!-- danger -->
+<div class="border border-outline-variant rounded p-2.5 flex flex-col gap-2 bg-surface">
+<div class="w-full h-10 rounded bg-[#B42318] flex items-end p-1.5"><span class="text-[10px] font-mono text-white">#B42318</span></div>
+<div>
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface block">danger</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline block text-[11px]">FLSA violation warnings</span>
+</div>
+</div>
+<!-- ad-bg -->
+<div class="border border-outline-variant rounded p-2.5 flex flex-col gap-2 bg-surface">
+<div class="w-full h-10 rounded bg-[#F1EFE8] border border-outline-variant flex items-end p-1.5"><span class="text-[10px] font-mono text-[#5E6B65]">#F1EFE8</span></div>
+<div>
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface block">ad-bg</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline block text-[11px]">Neutral sponsor floor</span>
+</div>
+</div>
+</div>
+</article>
+<!-- SECTION 03: INPUT STATES & CONTROLS -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg p-space-lg flex flex-col gap-space-lg shadow-sm">
+<div class="flex items-baseline justify-between border-b border-outline-variant pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-tabular-mono-sm text-tabular-mono-sm px-2 py-0.5 rounded bg-surface-container font-medium text-on-surface">SEC 03</span>
+<h2 class="font-ui-medium text-ui-medium text-on-surface uppercase tracking-wide">Input States &amp; Form Controls</h2>
+</div>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Height: 44px • Radius: 6px</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- State 1: Default -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-baseline">
+<label class="font-ui-small-bold text-ui-small-bold text-on-surface">Reported Shift Cash Tips</label>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">State: Default</span>
+</div>
+<div class="relative flex items-center">
+<span class="absolute left-3 font-tabular-mono-base text-tabular-mono-base text-outline">$</span>
+<input class="w-full h-[44px] pl-8 pr-3 bg-surface-container-lowest border border-outline-variant rounded text-on-surface font-tabular-mono-base text-tabular-mono-base focus:border-primary focus:outline-none" readonly="" type="text" value="0.00"/>
+</div>
+<span class="font-ui-small text-ui-small text-on-surface-variant">Pre-tax shift cash tips collected before pool deduction</span>
+</div>
+<!-- State 2: Focus -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-baseline">
+<label class="font-ui-small-bold text-ui-small-bold text-on-surface">Total Shift Hours</label>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-primary">State: Focus (Active Listener)</span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full h-[44px] pl-3 pr-12 bg-surface-container-lowest border-2 border-primary rounded text-on-surface font-tabular-mono-base text-tabular-mono-base shadow-sm" readonly="" type="text" value="38.5"/>
+<span class="absolute right-3 font-tabular-mono-base text-tabular-mono-base text-outline">hrs</span>
+</div>
+<span class="font-ui-small text-ui-small text-on-surface-variant">Combined eligible service hours across dinner floor roster</span>
+</div>
+<!-- State 3: Error -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-baseline">
+<label class="font-ui-small-bold text-ui-small-bold text-on-surface">Individual Server Hours</label>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-error">State: Error Boundary</span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full h-[44px] pl-3 pr-12 bg-surface-container-lowest border border-error rounded text-error font-tabular-mono-base text-tabular-mono-base" readonly="" type="text" value="28.0"/>
+<span class="absolute right-3 font-tabular-mono-base text-tabular-mono-base text-error">hrs</span>
+</div>
+<span class="font-ui-small text-ui-small text-error font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">error</span> Enter hours between 0 and 24
+              </span>
+</div>
+</div>
+</article>
+<!-- SECTION 04: SEGMENT CONTROL -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg p-space-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex items-baseline justify-between border-b border-outline-variant pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-tabular-mono-sm text-tabular-mono-sm px-2 py-0.5 rounded bg-surface-container font-medium text-on-surface">SEC 04</span>
+<h2 class="font-ui-medium text-ui-medium text-on-surface uppercase tracking-wide">Segment Control</h2>
+</div>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">3px Padded Ledger Shell</span>
+</div>
+<p class="font-ui-small text-ui-small text-on-surface-variant">
+            Multi-modal allocation switch for distributing shift tips according to statutory FLSA contribution formulas.
+          </p>
+<!-- The Padded Segment Container -->
+<div class="p-[3px] bg-surface-container rounded-lg border border-outline-variant flex items-center gap-1">
+<button class="flex-1 py-2 px-3 text-center rounded font-ui-small text-on-surface-variant hover:text-on-surface transition-colors">
+              Hours
+            </button>
+<button class="flex-1 py-2 px-3 text-center rounded font-ui-small text-on-surface-variant hover:text-on-surface transition-colors">
+              Points
+            </button>
+<!-- ACTIVE SEGMENT -->
+<button class="flex-1 py-2 px-3 text-center rounded bg-[#16201C] text-surface-container-lowest font-ui-small-bold shadow-sm">
+              Hours × pts
+            </button>
+<button class="flex-1 py-2 px-3 text-center rounded font-ui-small text-on-surface-variant hover:text-on-surface transition-colors">
+              % share
+            </button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Formula: S_i = (H_i × P_i) / Σ(H_n × P_n)</span>
+<span class="font-ui-small text-ui-small text-tertiary">Standardized FLSA Point-Hour Algorithm</span>
+</div>
+</article>
+</div>
+<!-- RIGHT COLUMN: Spec Sections 05, 06, 08, 09 (5 Columns) -->
+<div class="lg:col-span-5 flex flex-col gap-space-2xl">
+<!-- SECTION 05: BUTTON SPECIFICATIONS -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg p-space-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex items-baseline justify-between border-b border-outline-variant pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-tabular-mono-sm text-tabular-mono-sm px-2 py-0.5 rounded bg-surface-container font-medium text-on-surface">SEC 05</span>
+<h2 class="font-ui-medium text-ui-medium text-on-surface uppercase tracking-wide">Button Specifications</h2>
+</div>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Action States</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Primary Action -->
+<div class="flex items-center justify-between py-1">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Primary Ledger</span>
+<button class="px-[18px] py-[10px] rounded bg-primary text-on-primary font-ui-medium text-ui-medium hover:bg-primary-container active:translate-y-px transition-all">
+                Calculate Pool Payouts
+              </button>
+</div>
+<!-- Secondary Outline -->
+<div class="flex items-center justify-between py-1">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Secondary Paper</span>
+<button class="px-[18px] py-[10px] rounded bg-surface-container-lowest border border-outline-variant text-on-surface font-ui-medium text-ui-medium hover:bg-surface-container-low transition-colors">
+                Export Shift CSV
+              </button>
+</div>
+<!-- Text / Utility -->
+<div class="flex items-center justify-between py-1">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Text Utility</span>
+<button class="px-2 py-1 text-primary hover:text-primary-container font-ui-medium text-ui-medium transition-colors">
+                ↺ Reset to FLSA Defaults
+              </button>
+</div>
+<!-- Destructive Purge -->
+<div class="flex items-center justify-between py-1">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Purge Record</span>
+<button class="px-[18px] py-[10px] rounded bg-surface-container-lowest border border-error text-error font-ui-medium text-ui-medium hover:bg-[#FBF1E3] transition-colors">
+                Clear roster
+              </button>
+</div>
+</div>
+</article>
+<!-- SECTION 06: PERFORATED RECEIPT CARD (PHYSICAL RECONCILIATION SLIP) -->
+<article class="flex flex-col shadow-sm">
+<div class="flex items-baseline justify-between mb-2">
+<div class="flex items-center gap-space-sm">
+<span class="font-tabular-mono-sm text-tabular-mono-sm px-2 py-0.5 rounded bg-surface-container font-medium text-on-surface">SEC 06</span>
+<h2 class="font-ui-medium text-ui-medium text-on-surface uppercase tracking-wide">Perforated Receipt Card</h2>
+</div>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Physical Slip Motif</span>
+</div>
+<!-- Perforated Slip Visual Container -->
+<div class="relative bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden pt-3">
+<!-- Scalloped Top Edge Punch-holes / Perforation Visual Motif -->
+<div class="absolute top-0 left-0 right-0 h-2 bg-surface-container-low flex justify-around items-center px-2">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+</div>
+<!-- Receipt Content -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<!-- Slip Header -->
+<div class="flex flex-col gap-0.5">
+<div class="flex justify-between items-baseline">
+<span class="font-tabular-mono-sm text-tabular-mono-sm font-semibold tracking-wider text-on-surface uppercase">Shift Tip Reconciliation</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">#8892</span>
+</div>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-on-surface-variant">Dec 18, 2026 • Dinner Service</span>
+</div>
+<!-- Dashed Divider -->
+<div class="w-full border-t-[1.5px] border-dashed border-[#CFCABB]"></div>
+<!-- 5 Line Items -->
+<div class="flex flex-col gap-space-sm font-tabular-mono-base text-tabular-mono-base">
+<div class="flex justify-between items-baseline">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Elena Rostova</span>
+<span class="text-[12px] text-outline font-normal">Server • 7.5 hrs • 15 pts</span>
+</div>
+<span class="text-on-surface font-semibold">$310.00</span>
+</div>
+<div class="flex justify-between items-baseline">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Marcus Vance</span>
+<span class="text-[12px] text-outline font-normal">Server • 8.0 hrs • 16 pts</span>
+</div>
+<span class="text-on-surface font-semibold">$330.67</span>
+</div>
+<div class="flex justify-between items-baseline">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Sarah Chen</span>
+<span class="text-[12px] text-outline font-normal">Bartender • 6.5 hrs • 13 pts</span>
+</div>
+<span class="text-on-surface font-semibold">$268.67</span>
+</div>
+<div class="flex justify-between items-baseline">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">David Kim</span>
+<span class="text-[12px] text-outline font-normal">Busser • 5.0 hrs • 8 pts</span>
+</div>
+<span class="text-on-surface font-semibold">$165.33</span>
+</div>
+<div class="flex justify-between items-baseline">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Chloe Bennett</span>
+<span class="text-[12px] text-outline font-normal">Host • 5.0 hrs • 8 pts</span>
+</div>
+<span class="text-on-surface font-semibold">$165.33</span>
+</div>
+</div>
+<!-- Dashed Divider -->
+<div class="w-full border-t-[1.5px] border-dashed border-[#CFCABB]"></div>
+<!-- Audit Check Line -->
+<div class="flex flex-col gap-1 bg-surface-container-low p-space-sm rounded">
+<div class="flex items-center justify-between text-ui-small-bold text-ui-small-bold text-primary">
+<span>✔ Allocated $1,240.00 of $1,240.00</span>
+<span class="font-tabular-mono-base text-tabular-mono-base">$0.00 VAR</span>
+</div>
+<div class="flex items-center justify-between text-[11px] text-outline font-tabular-mono-sm">
+<span>Variance: Balanced (Zero Penny Residual)</span>
+<span>29 CFR § 531.54(c)</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- SECTION 08: NOTICES, BADGES & EDITORIAL CALLOUTS -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg p-space-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex items-baseline justify-between border-b border-outline-variant pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-tabular-mono-sm text-tabular-mono-sm px-2 py-0.5 rounded bg-surface-container font-medium text-on-surface">SEC 08</span>
+<h2 class="font-ui-medium text-ui-medium text-on-surface uppercase tracking-wide">Notices &amp; Metadata</h2>
+</div>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Regulatory Callouts</span>
+</div>
+<!-- Verified Compliance Pill Badge -->
+<div class="flex items-center gap-space-md">
+<div class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-[#E7F1EC] border border-[#0E6B4C]">
+<span class="material-symbols-outlined text-[#0A5039] text-[16px]">verified</span>
+<span class="font-ui-small-bold text-ui-small-bold text-[#0A5039]">Rules verified Dec 2026</span>
+</div>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Verified Badge Spec</span>
+</div>
+<!-- Breadcrumbs Spec -->
+<div class="p-space-sm bg-surface-container rounded border border-outline-variant">
+<nav class="flex items-center gap-2 font-tabular-mono-sm text-tabular-mono-sm text-outline">
+<a class="hover:text-primary transition-colors" href="#">Shift &amp; Tip</a>
+<span>&gt;</span>
+<a class="hover:text-primary transition-colors" href="#">Calculators</a>
+<span>&gt;</span>
+<span class="text-on-surface font-medium">Tip Credit Verification</span>
+</nav>
+</div>
+<!-- Editorial Regulatory Callout -->
+<div class="bg-[#FBF1E3] border border-outline-variant border-l-[3px] border-l-[#A85400] rounded-r-lg p-space-md flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-[#A85400] font-ui-medium text-ui-medium">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span>FLSA Compliance Notice</span>
+</div>
+<p class="font-ui-base text-ui-base text-on-surface">
+              Watch out: managers and supervisors can't share in the tip pool under federal law, regardless of whether they perform service duties during the shift.
+            </p>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline mt-1 block">
+              29 U.S.C. § 203(m)(2)(B) • US Dept of Labor Wage &amp; Hour Division
+            </span>
+</div>
+</article>
+</div>
+</div>
+<!-- FULL WIDTH: SECTION 07 FINANCIAL LEDGER DATA TABLE -->
+<section class="mt-space-2xl bg-surface-container-lowest border border-outline-variant rounded-lg p-space-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex flex-wrap items-baseline justify-between border-b border-outline-variant pb-space-sm gap-2">
+<div class="flex items-center gap-space-sm">
+<span class="font-tabular-mono-sm text-tabular-mono-sm px-2 py-0.5 rounded bg-surface-container font-medium text-on-surface">SEC 07</span>
+<h2 class="font-ui-medium text-ui-medium text-on-surface uppercase tracking-wide">Financial Ledger Data Table</h2>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Alternating Rows (#FFFFFF / #F7F6F1)</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-primary font-medium">Lining Figures Enabled</span>
+</div>
+</div>
+<!-- Ledger Table Surface -->
+<div class="w-full overflow-x-auto">
+<table class="w-full border-collapse text-left">
+<thead>
+<tr class="bg-surface-container-low border-b border-outline-variant font-ui-small-bold text-ui-small-bold uppercase tracking-wider text-tertiary">
+<th class="py-3 px-4">Employee Name</th>
+<th class="py-3 px-4">Role Class</th>
+<th class="py-3 px-4 text-right">Direct Wages</th>
+<th class="py-3 px-4 text-right">Tip Credit Claimed</th>
+<th class="py-3 px-4 text-right">Gross Pay</th>
+<th class="py-3 px-4 text-right">Effective Rate</th>
+</tr>
+</thead>
+<tbody class="font-ui-base text-ui-base text-on-surface divide-y divide-outline-variant">
+<!-- Row 1 (White) -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container transition-colors">
+<td class="py-3 px-4 font-medium">Elena Rostova</td>
+<td class="py-3 px-4 font-ui-small text-on-surface-variant">Server (Floor Lead)</td>
+<td class="py-3 px-4 text-right font-tabular-mono-base text-tabular-mono-base text-on-surface">$2.13/hr</td>
+<td class="py-3 px-4 text-right font-tabular-mono-base text-tabular-mono-base text-on-surface">$5.12/hr</td>
+<td class="py-3 px-4 text-right font-tabular-mono-base text-tabular-mono-base font-semibold text-on-surface">$288.75</td>
+<td class="py-3 px-4 text-right font-tabular-mono-base text-tabular-mono-base text-primary font-semibold">$38.50/hr</td>
+</tr>
+<!-- Row 2 (Zebra Tint) -->
+<tr class="bg-[#F7F6F1] hover:bg-surface-container transition-colors">
+<td class="py-3 px-4 font-medium">Marcus Vance</td>
+<td class="py-3 px-4 font-ui-small text-on-surface-variant">Server (Dinner Service)</td>
+<td class="py-3 px-4 text-right font-tabular-mono-base text-tabular-mono-base text-on-surface">$2.13/hr</td>
+<td class="py-3 px-4 text-right font-tabular-mono-base text-tabular-mono-base text-on-surface">$5.12/hr</td>
+<td class="py-3 px-4 text-right font-tabular-mono-base text-tabular-mono-base font-semibold text-on-surface">$347.71</td>
+<td class="py-3 px-4 text-right font-tabular-mono-base text-tabular-mono-base text-primary font-semibold">$43.46/hr</td>
+</tr>
+<!-- Row 3 (White) -->
+<tr class="bg-surface-container-lowest hover:bg-surface-container transition-colors">
+<td class="py-3 px-4 font-medium">Sarah Chen</td>
+<td class="py-3 px-4 font-ui-small text-on-surface-variant">Bartender (Main Bar)</td>
+<td class="py-3 px-4 text-right font-tabular-mono-base text-tabular-mono-base text-on-surface">$3.50/hr</td>
+<td class="py-3 px-4 text-right font-tabular-mono-base text-tabular-mono-base text-on-surface">$3.75/hr</td>
+<td class="py-3 px-4 text-right font-tabular-mono-base text-tabular-mono-base font-semibold text-on-surface">$291.42</td>
+<td class="py-3 px-4 text-right font-tabular-mono-base text-tabular-mono-base text-primary font-semibold">$44.83/hr</td>
+</tr>
+<!-- Row 4 (Zebra Tint) -->
+<tr class="bg-[#F7F6F1] hover:bg-surface-container transition-colors">
+<td class="py-3 px-4 font-medium">David Kim</td>
+<td class="py-3 px-4 font-ui-small text-on-surface-variant">Busser (Support Tier)</td>
+<td class="py-3 px-4 text-right font-tabular-mono-base text-tabular-mono-base text-on-surface">$7.25/hr</td>
+<td class="py-3 px-4 text-right font-tabular-mono-base text-tabular-mono-base text-on-surface">$0.00/hr</td>
+<td class="py-3 px-4 text-right font-tabular-mono-base text-tabular-mono-base font-semibold text-on-surface">$201.58</td>
+<td class="py-3 px-4 text-right font-tabular-mono-base text-tabular-mono-base text-primary font-semibold">$40.32/hr</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex flex-wrap items-center justify-between pt-2 border-t border-outline-variant font-tabular-mono-sm text-tabular-mono-sm text-outline">
+<span>Ledger Rule: Horizontal border-bottom strictly enforced; no vertical column separators.</span>
+<span>Reconciliation Batch #992-FLSA</span>
+</div>
+</section>
+<!-- FULL WIDTH: SECTION 09 COMPLIANT ADVERTISEMENT CONTAINERS -->
+<section class="mt-space-2xl bg-surface-container-lowest border border-outline-variant rounded-lg p-space-lg flex flex-col gap-space-lg shadow-sm">
+<div class="flex items-baseline justify-between border-b border-outline-variant pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-tabular-mono-sm text-tabular-mono-sm px-2 py-0.5 rounded bg-surface-container font-medium text-on-surface">SEC 09</span>
+<h2 class="font-ui-medium text-ui-medium text-on-surface uppercase tracking-wide">Compliant Advertisement Containers</h2>
+</div>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Background: #F1EFE8 • Border: 1px Dashed #CFCABB</span>
+</div>
+<p class="font-ui-small text-ui-small text-on-surface-variant">
+        Strict separation between editorial calculation tools and external promotional sponsors. Standard IAB dimensions with explicit labels.
+      </p>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg items-start">
+<!-- Example A: Leaderboard (Left/Wide) -->
+<div class="md:col-span-8 flex flex-col gap-space-lg">
+<div class="flex flex-col gap-1">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline uppercase tracking-wider">Example A: In-Content Leaderboard Variant (728 × 90 Responsive)</span>
+<div class="w-full bg-[#F1EFE8] border border-dashed border-[#CFCABB] rounded p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="text-[11px] font-tabular-mono-sm uppercase tracking-widest text-[#5E6B65]">ADVERTISEMENT</span>
+<span class="text-[11px] font-tabular-mono-sm text-[#5E6B65]">FLSA SPONSOR ID: #4401</span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap- space-sm">
+<div>
+<h4 class="font-ui-medium text-ui-medium text-on-surface">Hospitality POS &amp; Integrated Shift Systems</h4>
+<p class="font-ui-small text-ui-small text-on-surface-variant">Automate 80/20 tip credit thresholds directly at the server terminal.</p>
+</div>
+<a class="px-3 py-1.5 bg-surface-container-lowest border border-outline-variant rounded font-ui-small-bold text-ui-small-bold text-on-surface hover:bg-surface-container transition-colors inline-block text-center whitespace-nowrap" href="#">
+                  Learn More
+                </a>
+</div>
+</div>
+</div>
+<!-- Example B: In-Content 300px Unit -->
+<div class="flex flex-col gap-1">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline uppercase tracking-wider">Example B: In-Content Compact Mobile / Column Unit (300px min)</span>
+<div class="max-w-[420px] bg-[#F1EFE8] border border-dashed border-[#CFCABB] rounded p-space-md flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-tabular-mono-sm uppercase tracking-widest text-[#5E6B65]">ADVERTISEMENT</span>
+<span class="material-symbols-outlined text-[#5E6B65] text-[16px]">info</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-ui-medium text-ui-medium text-on-surface">Automated W-2 Tip Reporting Suite</h4>
+<p class="font-ui-small text-ui-small text-on-surface-variant">IRS Section 6053 dual-job tip validation and Form 8027 compliance.</p>
+</div>
+<div class="pt-2 border-t border-dashed border-[#CFCABB] flex justify-between items-center">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-[#5E6B65]">Certified Partner</span>
+<a class="font-ui-small-bold text-ui-small-bold text-primary hover:underline" href="#">View Demo →</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Example C: Sidebar Tower (300 × 600) -->
+<div class="md:col-span-4 flex flex-col gap-1">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline uppercase tracking-wider">Example C: Desktop Sidebar Tower (300 × 600)</span>
+<div class="w-full min-h-[460px] bg-[#F1EFE8] border border-dashed border-[#CFCABB] rounded p-space-lg flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-tabular-mono-sm uppercase tracking-widest text-[#5E6B65]">ADVERTISEMENT</span>
+<span class="text-[11px] font-tabular-mono-sm text-[#5E6B65]">300×600 TOWER</span>
+</div>
+<div class="w-12 h-1 bg-outline-variant mt-1"></div>
+<h3 class="font-headline-h3 text-headline-h3 text-on-surface pt-2">State Labor Law Digest 2027</h3>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant">
+                Comprehensive 50-state handbook detailing tip credit bans, tip pooling minimum wage exclusions, and direct wage obligations.
+              </p>
+<div class="mt-4 p-space-sm bg-surface-container-lowest rounded border border-outline-variant flex flex-col gap-1">
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface">Edition Highlights:</span>
+<ul class="font-ui-small text-ui-small text-on-surface-variant list-disc pl-4 space-y-1">
+<li>California zero-credit statutes</li>
+<li>New York hospitality fast-food split</li>
+<li>Chicago tipped wage phase-out</li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-4 border-t border-dashed border-[#CFCABB]">
+<a class="w-full py-2.5 bg-primary text-on-primary text-center rounded font-ui-medium text-ui-medium hover:bg-primary-container transition-colors" href="#">
+                Download 2027 Digest
+              </a>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-center text-[#5E6B65]">Updated Semi-Annually</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- System Sheet Editorial Sign-off -->
+<div class="mt-space-2xl pt-space-md border-t border-outline-variant flex flex-wrap items-center justify-between text-on-surface-variant font-tabular-mono-sm text-tabular-mono-sm">
+<div class="flex items-center gap-space-sm">
+<span>ARCHIVAL LEDGER SPECIFICATION</span>
+<span>•</span>
+<span>FORM FLSA-WH2026</span>
+</div>
+<div>
+<span>AUTHORIZED FOR PRODUCTION PAYROLL IMPLEMENTATION</span>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low border-t border-outline-variant mt-space-2xl"><div class="max-w-[1200px] mx-auto px-margin-desktop py-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg"><div class="max-w-2xl"><p class="font-ui-small text-ui-small text-on-surface-variant">Shift &amp; Tip is an independent payroll and tip pooling reference tool. Calculations adhere to US FLSA 29 CFR § 531.54 tip regulations. Updated Dec 2026.</p><p class="font-tabular-mono-sm text-tabular-mono-sm text-outline mt-space-xs">Form Ref: FLSA-WH2026 • Archival Ledger Spec</p></div><div class="flex items-center gap-space-lg"><a class="font-ui-small text-ui-small text-on-surface-variant hover:text-primary transition-colors" href="#">FLSA Statutes</a><a class="font-ui-small text-ui-small text-on-surface-variant hover:text-primary transition-colors" href="#">Audit Method</a><a class="font-ui-small text-ui-small text-on-surface-variant hover:text-primary transition-colors" href="#">Terms</a><a class="font-ui-small text-ui-small text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy</a></div></div></footer></body></html>

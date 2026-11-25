@@ -1,0 +1,37 @@
+{
+  "tip-pool": {
+    "mobile": 2708,
+    "desktop": 1462,
+    "max": 2708
+  },
+  "tip-out": {
+    "mobile": 909,
+    "desktop": 729,
+    "max": 909
+  },
+  "overtime": {
+    "mobile": 1471,
+    "desktop": 1053,
+    "max": 1471
+  },
+  "shift-differential": {
+    "mobile": 832,
+    "desktop": 644,
+    "max": 832
+  },
+  "tipped-overtime": {
+    "mobile": 758,
+    "desktop": 540,
+    "max": 758
+  },
+  "take-home": {
+    "mobile": 948,
+    "desktop": 684,
+    "max": 948
+  },
+  "tips-ot-deduction": {
+    "mobile": 823,
+    "desktop": 597,
+    "max": 823
+  }
+}

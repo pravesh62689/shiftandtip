@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Public+Sans:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#dae5de","on-error-container":"#93000a","surface-variant":"#dae5de","on-error":"#ffffff","secondary":"#954a00","primary-container":"#0e6b4c","inverse-primary":"#85d7b1","surface-container-high":"#dfebe4","on-primary-fixed":"#002114","error":"#ba1a1a","on-tertiary-fixed-variant":"#3d4a44","inverse-on-surface":"#e8f3ed","on-primary":"#ffffff","primary-fixed-dim":"#85d7b1","secondary-fixed":"#ffdcc6","on-secondary-fixed-variant":"#713700","tertiary-fixed":"#d7e6de","on-secondary":"#ffffff","surface-container-low":"#ebf6ef","surface-container-lowest":"#ffffff","error-container":"#ffdad6","outline":"#6f7a73","tertiary-container":"#54615b","primary-fixed":"#a1f3cc","tertiary-fixed-dim":"#bccac2","on-primary-container":"#96e8c1","on-secondary-container":"#6c3400","on-tertiary-fixed":"#121e19","on-tertiary-container":"#cddbd3","on-tertiary":"#ffffff","outline-variant":"#bec9c1","on-primary-fixed-variant":"#005138","tertiary":"#3c4943","secondary-fixed-dim":"#ffb785","surface-bright":"#f1fcf5","inverse-surface":"#28332e","surface-container":"#e5f1ea","surface-tint":"#0f6c4c","background":"#f1fcf5","on-secondary-fixed":"#301400","surface":"#f1fcf5","surface-dim":"#d1ddd6","primary":"#005138","secondary-container":"#fe9748","on-surface":"#141e1a","on-background":"#141e1a","on-surface-variant":"#3f4943"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-md":"1rem","margin-tablet":"1.5rem","gutter-desktop":"1.5rem","space-lg":"1.5rem","space-sm":"0.5rem","margin-desktop":"2rem","space-xl":"2rem","margin":"1rem","gutter-tablet":"1.5rem","space-xs":"0.25rem","gutter":"1rem","space-2xl":"3rem"},fontFamily:{"body-editorial-strong":["Public Sans"],"headline-h1-mobile":["\"Source Serif 4\""],"headline-h2-mobile":["\"Source Serif 4\""],"tabular-mono-lg":["IBM Plex Mono"],"tabular-mono-sm":["IBM Plex Mono"],"ui-medium":["Public Sans"],"body-editorial":["Public Sans"],"headline-h2":["\"Source Serif 4\""],"tabular-mono-base":["IBM Plex Mono"],"ui-base":["Public Sans"],"headline-h1":["\"Source Serif 4\""],"headline-h3":["\"Source Serif 4\""],"ui-small-bold":["Public Sans"],"ui-small":["Public Sans"]},fontSize:{"body-editorial-strong":["17px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"600"}],"headline-h1-mobile":["30px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-h2-mobile":["24px",{lineHeight:"30px",letterSpacing:"-0.005em",fontWeight:"600"}],"tabular-mono-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"500"}],"tabular-mono-sm":["13px",{lineHeight:"18px",letterSpacing:"0em",fontWeight:"500"}],"ui-medium":["15px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"600"}],"body-editorial":["17px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"headline-h2":["28px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"600"}],"tabular-mono-base":["15px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"500"}],"ui-base":["15px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"headline-h1":["38px",{lineHeight:"44px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-h3":["20px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"600"}],"ui-small-bold":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"600"}],"ui-small":["13px",{lineHeight:"18px",letterSpacing:"0.01em",fontWeight:"400"}]}}}};</script></head><body class="bg-surface font-ui-base text-on-surface min-h-screen"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur border-b border-outline-variant"><div class="h-16 max-w-[1200px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-baseline gap-space-xs text-decoration-none" data-path="tip-tools" href="#"><span class="font-headline-h3 text-headline-h3 text-on-surface tracking-tight">Shift &amp; Tip</span><span class="hidden xl:inline font-ui-small text-ui-small text-outline border-l border-outline-variant pl-space-xs">US Payroll &amp; Tip Pool Utility</span></a><nav class="hidden lg:flex items-center gap-space-md h-16" data-active-classes="text-primary font-ui-medium border-b-2 border-primary"><a aria-current="page" class="transition-colors py-space-sm text-primary font-ui-medium border-b-2 border-primary" data-path="tip-tools" href="#">Tip tools</a><a class="font-ui-base text-ui-base text-on-surface-variant hover:text-on-surface transition-colors py-space-sm" data-path="overtime" href="#">Overtime</a><a class="font-ui-base text-ui-base text-on-surface-variant hover:text-on-surface transition-colors py-space-sm" data-path="shift-pay" href="#">Shift pay</a><a class="font-ui-base text-ui-base text-on-surface-variant hover:text-on-surface transition-colors py-space-sm" data-path="state-rules" href="#">State rules</a><a class="font-ui-base text-ui-base text-on-surface-variant hover:text-on-surface transition-colors py-space-sm" data-path="guides" href="#">Guides</a></nav></div><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center relative"><span class="material-symbols-outlined text-[18px] text-outline absolute left-2.5 pointer-events-none">search</span><input class="w-52 h-9 pl-8 pr-2.5 bg-surface-container-lowest border border-outline-variant rounded font-ui-small text-ui-small text-on-surface placeholder:text-outline focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Search rules or tools..." type="text"/></div><div class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 bg-surface-container rounded-full border border-outline-variant font-ui-small text-ui-small text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-primary"></span><span>Rules verified Dec 2026</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Content Canvas Area -->
+<div class="w-full max-w-[1200px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
+<!-- Top Meta, Breadcrumb & Header -->
+<header class="mb-space-xl">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-tabular-mono-sm text-tabular-mono-sm text-outline mb-space-xs">
+<a class="hover:text-on-surface transition-colors" href="#">Tip tools</a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface-variant font-medium">Tip pool calculator</span>
+</nav>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pt-space-xs">
+<div>
+<div class="flex flex-wrap items-center gap-space-sm mb-space-xs">
+<h1 class="font-headline-h1 text-headline-h1 text-on-surface tracking-tight">Tip pool calculator</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container-low border border-primary text-primary font-ui-small-bold text-ui-small-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Rules verified Dec 2026
+            </span>
+</div>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant max-w-2xl">
+            Split tonight’s tips by hours, points or percentage — with tip-outs taken off the top.
+          </p>
+</div>
+<div class="flex items-center gap-space-md self-start md:self-end font-ui-small text-ui-small">
+<span class="text-outline">FLSA § 531.54 Standard Model</span>
+<span class="text-outline-variant">|</span>
+<button class="text-primary hover:underline font-ui-small-bold" type="button">Reset ledger</button>
+</div>
+</div>
+</header>
+<!-- Main 12-Column Grid Layout -->
+<div class="grid grid-cols-12 gap-space-lg lg:gap-gutter-desktop items-start">
+<!-- Primary Left Column: 8 Cols -->
+<div class="col-span-12 lg:col-span-8 flex flex-col gap-space-xl">
+<!-- Section 1: The Input Ledger Sheet Card -->
+<section class="bg-surface-container-lowest rounded-lg border border-outline-variant shadow-sm p-space-lg">
+<div class="flex flex-wrap items-center justify-between pb-space-md mb-space-md border-b border-outline-variant gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">account_balance_wallet</span>
+<h2 class="font-ui-medium text-ui-medium text-on-surface tracking-tight uppercase">Shift Gross Receipts</h2>
+</div>
+<div class="flex items-center gap-space-md font-ui-small text-ui-small">
+<button class="text-primary hover:underline font-medium" type="button">Use example</button>
+<span class="text-outline-variant">•</span>
+<button class="text-on-surface-variant hover:text-on-surface" type="button">Clear inputs</button>
+</div>
+</div>
+<!-- Top Input Controls -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md mb-space-lg">
+<div class="space-y-1.5">
+<label class="block font-ui-small-bold text-ui-small-bold text-on-surface" for="total-tips-input">
+                Total tips collected ($)
+              </label>
+<div class="relative flex items-center">
+<span class="absolute left-3 font-tabular-mono-base text-tabular-mono-base text-outline pointer-events-none">$</span>
+<input class="w-full h-11 pl-7 pr-3 bg-surface-container-lowest border border-outline-variant rounded font-tabular-mono-base text-tabular-mono-base text-on-surface focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" id="total-tips-input" type="text" value="1,240.00"/>
+</div>
+<span class="font-ui-small text-ui-small text-outline">Cash plus credit card slip totals</span>
+</div>
+<div class="space-y-1.5">
+<label class="block font-ui-small-bold text-ui-small-bold text-on-surface" for="net-sales-input">
+                Net shift sales (for % tip-outs)
+              </label>
+<div class="relative flex items-center">
+<span class="absolute left-3 font-tabular-mono-base text-tabular-mono-base text-outline pointer-events-none">$</span>
+<input class="w-full h-11 pl-7 pr-3 bg-surface-container-lowest border border-outline-variant rounded font-tabular-mono-base text-tabular-mono-base text-on-surface focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" id="net-sales-input" type="text" value="8,000.00"/>
+</div>
+<span class="font-ui-small text-ui-small text-outline">POS gross sales minus comps &amp; sales tax</span>
+</div>
+</div>
+<!-- Allocation Method Toggle -->
+<div class="mb-space-lg">
+<label class="block font-ui-small-bold text-ui-small-bold text-on-surface mb-2">
+              Allocation methodology
+            </label>
+<div class="inline-flex flex-wrap p-1 bg-surface-container rounded-md border border-outline-variant gap-1">
+<button class="px-3.5 py-1.5 rounded bg-inverse-surface text-inverse-on-surface font-ui-small-bold text-ui-small-bold shadow-sm" type="button">
+                Hours worked
+              </button>
+<button class="px-3.5 py-1.5 rounded text-on-surface-variant hover:text-on-surface font-ui-small text-ui-small transition-colors" type="button">
+                Point weighting
+              </button>
+<button class="px-3.5 py-1.5 rounded text-on-surface-variant hover:text-on-surface font-ui-small text-ui-small transition-colors" type="button">
+                Hours × points
+              </button>
+<button class="px-3.5 py-1.5 rounded text-on-surface-variant hover:text-on-surface font-ui-small text-ui-small transition-colors" type="button">
+                Percentage share
+              </button>
+</div>
+</div>
+<!-- Staff Table Component -->
+<div class="mb-space-lg">
+<div class="flex items-center justify-between mb-2">
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface uppercase tracking-wider">
+                Staff Roster &amp; Shift Allocation (5 Eligible)
+              </span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">
+                Total: <strong class="text-on-surface font-semibold">30.50 hrs</strong>
+</span>
+</div>
+<div class="overflow-x-auto rounded border border-outline-variant bg-surface-container-lowest">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container border-b border-outline-variant font-ui-small-bold text-ui-small-bold text-outline tracking-wider uppercase">
+<th class="py-2.5 px-3" scope="col">Role</th>
+<th class="py-2.5 px-3" scope="col">Name</th>
+<th class="py-2.5 px-3 text-right" scope="col">Floor Hours</th>
+<th class="py-2.5 px-3 text-center w-12" scope="col">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant font-ui-base text-ui-base">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3">
+<span class="inline-block px-2 py-0.5 text-xs font-ui-small-bold rounded bg-surface-container border border-outline-variant text-on-surface">Server</span>
+</td>
+<td class="py-2.5 px-3 font-ui-medium text-on-surface">Maya S.</td>
+<td class="py-2.5 px-3 text-right">
+<input class="w-16 h-8 text-right px-2 border border-outline-variant rounded font-tabular-mono-base text-tabular-mono-base text-on-surface focus:border-primary focus:outline-none" type="text" value="6.5"/>
+</td>
+<td class="py-2.5 px-3 text-center">
+<button aria-label="Remove Maya" class="text-outline hover:text-error transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3">
+<span class="inline-block px-2 py-0.5 text-xs font-ui-small-bold rounded bg-surface-container border border-outline-variant text-on-surface">Server</span>
+</td>
+<td class="py-2.5 px-3 font-ui-medium text-on-surface">Luis R.</td>
+<td class="py-2.5 px-3 text-right">
+<input class="w-16 h-8 text-right px-2 border border-outline-variant rounded font-tabular-mono-base text-tabular-mono-base text-on-surface focus:border-primary focus:outline-none" type="text" value="7.0"/>
+</td>
+<td class="py-2.5 px-3 text-center">
+<button aria-label="Remove Luis" class="text-outline hover:text-error transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3">
+<span class="inline-block px-2 py-0.5 text-xs font-ui-small-bold rounded bg-surface-container border border-outline-variant text-on-surface">Bartender</span>
+</td>
+<td class="py-2.5 px-3 font-ui-medium text-on-surface">Dana K.</td>
+<td class="py-2.5 px-3 text-right">
+<input class="w-16 h-8 text-right px-2 border border-outline-variant rounded font-tabular-mono-base text-tabular-mono-base text-on-surface focus:border-primary focus:outline-none" type="text" value="8.0"/>
+</td>
+<td class="py-2.5 px-3 text-center">
+<button aria-label="Remove Dana" class="text-outline hover:text-error transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3">
+<span class="inline-block px-2 py-0.5 text-xs font-ui-small-bold rounded bg-surface-container border border-outline-variant text-on-surface">Busser</span>
+</td>
+<td class="py-2.5 px-3 font-ui-medium text-on-surface">Theo M.</td>
+<td class="py-2.5 px-3 text-right">
+<input class="w-16 h-8 text-right px-2 border border-outline-variant rounded font-tabular-mono-base text-tabular-mono-base text-on-surface focus:border-primary focus:outline-none" type="text" value="5.0"/>
+</td>
+<td class="py-2.5 px-3 text-center">
+<button aria-label="Remove Theo" class="text-outline hover:text-error transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-2.5 px-3">
+<span class="inline-block px-2 py-0.5 text-xs font-ui-small-bold rounded bg-surface-container border border-outline-variant text-on-surface">Host</span>
+</td>
+<td class="py-2.5 px-3 font-ui-medium text-on-surface">Priya N.</td>
+<td class="py-2.5 px-3 text-right">
+<input class="w-16 h-8 text-right px-2 border border-outline-variant rounded font-tabular-mono-base text-tabular-mono-base text-on-surface focus:border-primary focus:outline-none" type="text" value="4.0"/>
+</td>
+<td class="py-2.5 px-3 text-center">
+<button aria-label="Remove Priya" class="text-outline hover:text-error transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-space-sm flex items-center justify-between">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded border border-dashed border-outline-variant hover:border-outline bg-surface-container-lowest text-on-surface font-ui-small-bold text-ui-small-bold transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+                Add staff member
+              </button>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Sum: 30.50 h</span>
+</div>
+</div>
+<!-- Fixed Top Tip-Out Deductions -->
+<div class="p-space-md rounded bg-surface-container border border-outline-variant">
+<div class="flex items-center justify-between mb-2">
+<span class="font-ui-small-bold text-ui-small-bold text-on-surface uppercase tracking-wider">
+                Direct Off-The-Top Tip-Outs
+              </span>
+<span class="font-ui-small text-ui-small text-outline">Subtracted before hourly pool</span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm p-space-sm bg-surface-container-lowest rounded border border-outline-variant">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-ui-medium text-ui-medium text-on-surface">Kitchen Staff</span>
+<span class="font-ui-small text-ui-small text-outline">(BOH Non-Exempt Pool)</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-on-surface-variant">3.00% of $8,000 net sales</span>
+<span class="font-tabular-mono-base text-tabular-mono-base text-secondary font-semibold">-$240.00</span>
+<button aria-label="Remove tip out line" class="text-outline hover:text-error" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<div class="mt-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<button class="inline-flex items-center gap-1 text-primary font-ui-small-bold text-ui-small-bold hover:underline" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+                Add secondary tip-out (e.g. Barista / Sommelier)
+              </button>
+<p class="font-ui-small text-ui-small text-outline italic">
+                Results calculate in real time. Deductions taken before floor division.
+              </p>
+</div>
+</div>
+</section>
+<!-- Section 2: Perforated Receipt Result Card -->
+<section aria-labelledby="receipt-header" class="relative bg-surface-container-lowest rounded-lg border border-outline-variant shadow-sm overflow-hidden">
+<!-- Tactile Perforation Top Motif -->
+<div aria-hidden="true" class="w-full h-3 bg-surface border-b border-dashed border-outline-variant flex items-center justify-around px-2">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest"></span>
+</div>
+<div class="p-space-lg md:p-space-xl">
+<!-- Receipt Header -->
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between pb-space-md border-b border-outline-variant gap-space-xs">
+<div>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline tracking-wider uppercase block">Audited Distribution Voucher</span>
+<h3 class="font-headline-h2 text-headline-h2 text-on-surface" id="receipt-header">Shift Tip Reconciliation</h3>
+</div>
+<div class="text-left sm:text-right font-tabular-mono-sm text-tabular-mono-sm text-outline">
+<div>Batch #8892 • Dinner Service</div>
+<div>Calculated: Dec 18, 2026 • 23:42 EST</div>
+</div>
+</div>
+<!-- Rate Banner Summary -->
+<div class="my-space-md py-space-sm px-space-md bg-surface-container-low rounded border border-outline-variant flex flex-wrap items-center justify-between gap-space-sm">
+<div class="space-y-0.5">
+<span class="font-ui-small text-ui-small text-outline">Net Distributable Floor Pool</span>
+<div class="font-tabular-mono-lg text-tabular-mono-lg text-primary font-semibold">$1,000.00</div>
+</div>
+<div class="space-y-0.5 text-right">
+<span class="font-ui-small text-ui-small text-outline">Effective Floor Hourly Rate</span>
+<div class="font-tabular-mono-lg text-tabular-mono-lg text-on-surface font-semibold">
+                  $32.7869 <span class="font-ui-small text-ui-small text-outline font-normal">/ hr</span>
+</div>
+</div>
+</div>
+<!-- Individual Share Allocation List -->
+<div class="space-y-2 mb-space-lg">
+<div class="font-ui-small-bold text-ui-small-bold text-outline uppercase tracking-wider mb-2">
+                Line-Item Net Disbursements
+              </div>
+<!-- Row 1: Maya -->
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/60 hover:bg-surface-container/40 px-1 rounded transition-colors">
+<div>
+<div class="font-ui-medium text-ui-medium text-on-surface">Maya S. <span class="text-outline font-normal font-ui-small text-ui-small">(Server)</span></div>
+<div class="font-tabular-mono-sm text-tabular-mono-sm text-outline">6.50 hrs × $32.7869/hr</div>
+</div>
+<div class="text-right">
+<div class="font-tabular-mono-base text-tabular-mono-base text-on-surface font-semibold">$213.11</div>
+<div class="font-tabular-mono-sm text-tabular-mono-sm text-outline">21.31% share</div>
+</div>
+</div>
+<!-- Row 2: Luis -->
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/60 hover:bg-surface-container/40 px-1 rounded transition-colors">
+<div>
+<div class="font-ui-medium text-ui-medium text-on-surface">Luis R. <span class="text-outline font-normal font-ui-small text-ui-small">(Server)</span></div>
+<div class="font-tabular-mono-sm text-tabular-mono-sm text-outline">7.00 hrs × $32.7869/hr</div>
+</div>
+<div class="text-right">
+<div class="font-tabular-mono-base text-tabular-mono-base text-on-surface font-semibold">$229.51</div>
+<div class="font-tabular-mono-sm text-tabular-mono-sm text-outline">22.95% share</div>
+</div>
+</div>
+<!-- Row 3: Dana -->
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/60 hover:bg-surface-container/40 px-1 rounded transition-colors">
+<div>
+<div class="font-ui-medium text-ui-medium text-on-surface">Dana K. <span class="text-outline font-normal font-ui-small text-ui-small">(Bartender)</span></div>
+<div class="font-tabular-mono-sm text-tabular-mono-sm text-outline">8.00 hrs × $32.7869/hr</div>
+</div>
+<div class="text-right">
+<div class="font-tabular-mono-base text-tabular-mono-base text-on-surface font-semibold">$262.30</div>
+<div class="font-tabular-mono-sm text-tabular-mono-sm text-outline">26.23% share</div>
+</div>
+</div>
+<!-- Row 4: Theo -->
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/60 hover:bg-surface-container/40 px-1 rounded transition-colors">
+<div>
+<div class="font-ui-medium text-ui-medium text-on-surface">Theo M. <span class="text-outline font-normal font-ui-small text-ui-small">(Busser)</span></div>
+<div class="font-tabular-mono-sm text-tabular-mono-sm text-outline">5.00 hrs × $32.7869/hr</div>
+</div>
+<div class="text-right">
+<div class="font-tabular-mono-base text-tabular-mono-base text-on-surface font-semibold">$163.93</div>
+<div class="font-tabular-mono-sm text-tabular-mono-sm text-outline">16.39% share</div>
+</div>
+</div>
+<!-- Row 5: Priya -->
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/60 hover:bg-surface-container/40 px-1 rounded transition-colors">
+<div>
+<div class="font-ui-medium text-ui-medium text-on-surface">Priya N. <span class="text-outline font-normal font-ui-small text-ui-small">(Host)</span></div>
+<div class="font-tabular-mono-sm text-tabular-mono-sm text-outline">4.00 hrs × $32.7869/hr</div>
+</div>
+<div class="text-right">
+<div class="font-tabular-mono-base text-tabular-mono-base text-on-surface font-semibold">$131.15</div>
+<div class="font-tabular-mono-sm text-tabular-mono-sm text-outline">13.12% share</div>
+</div>
+</div>
+<!-- Tip Out Line -->
+<div class="flex items-center justify-between py-2 border-b border-outline-variant/60 hover:bg-surface-container/40 px-1 rounded transition-colors bg-secondary-fixed/20">
+<div>
+<div class="font-ui-medium text-ui-medium text-secondary">Kitchen Tip-out <span class="text-outline font-normal font-ui-small text-ui-small">(3% net sales)</span></div>
+<div class="font-tabular-mono-sm text-tabular-mono-sm text-outline">BOH Shared Kitchen Disbursal</div>
+</div>
+<div class="text-right">
+<div class="font-tabular-mono-base text-tabular-mono-base text-secondary font-semibold">$240.00</div>
+<div class="font-tabular-mono-sm text-tabular-mono-sm text-outline">Off-the-top</div>
+</div>
+</div>
+</div>
+<!-- Double Perforation Divider -->
+<div class="border-t border-dashed border-outline-variant pt-space-md mb-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<!-- Audit pill badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low border border-primary text-primary font-tabular-mono-sm text-tabular-mono-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                  Allocated $1,240.00 of $1,240.00 (Zero Penny Residual • Balanced)
+                </div>
+<div class="text-left sm:text-right font-tabular-mono-base text-tabular-mono-base">
+<span class="text-outline text-xs block uppercase">Total Reconciled</span>
+<span class="text-on-surface font-semibold text-lg">$1,240.00</span>
+</div>
+</div>
+</div>
+<!-- Receipt Actions Row -->
+<div class="pt-space-md border-t border-outline-variant flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded bg-primary text-on-primary font-ui-medium text-ui-medium hover:bg-primary-fixed-variant transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+                  Save preset
+                </button>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded bg-surface-container-lowest border border-outline-variant text-on-surface hover:bg-surface-container font-ui-medium text-ui-medium transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+                  Copy link
+                </button>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded bg-surface-container-lowest border border-outline-variant text-on-surface hover:bg-surface-container font-ui-medium text-ui-medium transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+                  Print
+                </button>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded bg-surface-container-lowest border border-outline-variant text-on-surface hover:bg-surface-container font-ui-medium text-ui-medium transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                  Export CSV
+                </button>
+</div>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">SHA-256: e8d4..3a</span>
+</div>
+</div>
+</section>
+<!-- Section 3: Mid-Page Editorial Advertisement Slot (280px high) -->
+<aside aria-label="Sponsor Advertisement" class="w-full h-[280px] bg-surface-container rounded-lg border border-dashed border-outline-variant p-space-md flex flex-col justify-between overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline tracking-widest uppercase">ADVERTISEMENT</span>
+<span class="font-ui-small text-ui-small text-outline">Verified Partner Specification</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<div class="md:col-span-8 space-y-1">
+<span class="inline-block px-2 py-0.5 rounded text-xs font-ui-small-bold bg-surface-container-lowest border border-outline-variant text-secondary">
+                Point of Sale Architecture
+              </span>
+<h4 class="font-headline-h3 text-headline-h3 text-on-surface">
+                Automate Your Floor Grids &amp; Tip Reconciliations Directly From Clover &amp; Toast
+              </h4>
+<p class="font-ui-base text-ui-base text-on-surface-variant line-clamp-2">
+                Eliminate close-of-shift spreadsheet errors. Sync actual clock-in punches with shift tip credit thresholds directly into your payroll engine.
+              </p>
+</div>
+<div class="md:col-span-4 flex flex-col items-start md:items-end justify-center">
+<button class="px-4 py-2.5 bg-inverse-surface text-inverse-on-surface rounded font-ui-medium text-ui-medium hover:bg-on-surface transition-colors" type="button">
+                Request Free Audit →
+              </button>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline mt-1.5">No contract required</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-outline-variant/60 font-ui-small text-ui-small text-outline">
+<span>Hospitality POS Integration Group</span>
+<span>ANSI Standard 412-B Certified</span>
+</div>
+</aside>
+<!-- Section 4: Arithmetic Explanation -->
+<section class="bg-surface-container-lowest rounded-lg border border-outline-variant p-space-lg">
+<div class="flex items-center gap-space-xs pb-space-sm mb-space-md border-b border-outline-variant">
+<span class="material-symbols-outlined text-primary text-[22px]">functions</span>
+<h2 class="font-headline-h2 text-headline-h2 text-on-surface">How this was calculated</h2>
+</div>
+<div class="space-y-space-md">
+<!-- Step 1 -->
+<div class="flex items-start gap-space-md">
+<span class="flex-shrink-0 w-7 h-7 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center font-tabular-mono-base text-tabular-mono-base text-on-surface font-medium">
+                1
+              </span>
+<div class="space-y-1">
+<h4 class="font-ui-medium text-ui-medium text-on-surface">Distributable pool net determination</h4>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant">
+                  Tip-outs stipulated by management agreements are taken directly off gross shift gratuities before hourly weighting:
+                </p>
+<div class="p-space-sm bg-surface-container rounded border border-outline-variant font-tabular-mono-sm text-tabular-mono-sm text-on-surface">
+                  $1,240.00 (Gross tips) − $240.00 (3.0% of $8,000 Net Sales) = <strong>$1,000.00 Distributable Pool</strong>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-space-md">
+<span class="flex-shrink-0 w-7 h-7 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center font-tabular-mono-base text-tabular-mono-base text-on-surface font-medium">
+                2
+              </span>
+<div class="space-y-1">
+<h4 class="font-ui-medium text-ui-medium text-on-surface">Uniform hourly dividend rate calculation</h4>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant">
+                  The pool is divided by aggregate participant hours to calculate the unrounded base rate:
+                </p>
+<div class="p-space-sm bg-surface-container rounded border border-outline-variant font-tabular-mono-sm text-tabular-mono-sm text-on-surface">
+                  $1,000.00 Net Pool ÷ 30.50 Cumulative Hours = <strong>$32.786885... per Pool Hour</strong>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-space-md">
+<span class="flex-shrink-0 w-7 h-7 rounded-full bg-surface-container border border-outline-variant flex items-center justify-center font-tabular-mono-base text-tabular-mono-base text-on-surface font-medium">
+                3
+              </span>
+<div class="space-y-1">
+<h4 class="font-ui-medium text-ui-medium text-on-surface">Participant allocation &amp; zero-penny rounding reconciliation</h4>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant">
+                  Each employee's hours are multiplied by the rate and rounded to two decimal places. Any floating fractional cent discrepancy (typically ±$0.01 due to rounding) is allocated according to standard double-entry payroll reconciliation rules.
+                </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Second In-Content Advertisement Slot (280px tall) -->
+<aside aria-label="Sponsor Advertisement" class="w-full h-[280px] bg-surface-container rounded-lg border border-dashed border-outline-variant p-space-md flex flex-col justify-between overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline tracking-widest uppercase">ADVERTISEMENT</span>
+<span class="font-ui-small text-ui-small text-outline">Federal Compliance Standards</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<div class="md:col-span-8 space-y-1">
+<span class="inline-block px-2 py-0.5 rounded text-xs font-ui-small-bold bg-surface-container-lowest border border-outline-variant text-primary">
+                Multi-State Payroll Suite
+              </span>
+<h4 class="font-headline-h3 text-headline-h3 text-on-surface">
+                Protect Your Operation From FLSA 80/20 &amp; Dual-Job Wage Claims
+              </h4>
+<p class="font-ui-base text-ui-base text-on-surface-variant line-clamp-2">
+                Automated tip-credit liability tracking for multi-unit restaurant operators. Generate IRS Form 8846 tip credit reports with a single export.
+              </p>
+</div>
+<div class="md:col-span-4 flex flex-col items-start md:items-end justify-center">
+<button class="px-4 py-2.5 bg-primary text-on-primary rounded font-ui-medium text-ui-medium hover:bg-primary-fixed-variant transition-colors" type="button">
+                View 2027 Demo →
+              </button>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline mt-1.5">Free 30-day compliance pilot</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-t border-outline-variant/60 font-ui-small text-ui-small text-outline">
+<span>LedgerPay Hospitality Services</span>
+<span>DOL Rule 29 CFR Part 531 Compliant</span>
+</div>
+</aside>
+<!-- Section 6: State Rules Accordion & Regulatory Callout -->
+<section class="bg-surface-container-lowest rounded-lg border border-outline-variant p-space-lg">
+<div class="pb-space-sm mb-space-md border-b border-outline-variant">
+<h2 class="font-headline-h2 text-headline-h2 text-on-surface">Tip pooling regulations by jurisdiction</h2>
+<p class="font-ui-small text-ui-small text-outline mt-1">
+              State statutes supersede federal defaults whenever state requirements provide greater employee wage protection.
+            </p>
+</div>
+<!-- Accordion Group -->
+<div class="divide-y divide-outline-variant border border-outline-variant rounded mb-space-md">
+<!-- California (Expanded) -->
+<details class="group" open="">
+<summary class="flex items-center justify-between p-space-md cursor-pointer bg-surface-container-low group-open:bg-surface-container-lowest transition-colors list-none">
+<span class="font-ui-medium text-ui-medium text-on-surface flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  California (Strict Employer Prohibition • No Tip Credits)
+                </span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-space-md pt-0 font-body-editorial text-body-editorial text-on-surface-variant space-y-2">
+<p>
+                  Under California Labor Code § 351, employers and their direct agents (supervisors and managers with authority to hire, fire, or direct work) are strictly forbidden from collecting, taking, or receiving any portion of gratuities.
+                </p>
+<p>
+                  Furthermore, tip credits against minimum wage are completely unlawful in California; every tipped worker must receive the full state/local minimum wage before any gratuity is paid. Kitchen/BOH staff may participate in mandatory tip pools only if traditional chain-of-service ties exist and supervisory staff are completely excluded<sup>1</sup>.
+                </p>
+<div class="text-xs font-tabular-mono-sm text-outline pt-1">
+                  Reference: <sup>1</sup> Cal. Lab. Code § 351; <em>Etheridge v. Reins International California, Inc.</em>
+</div>
+</div>
+</details>
+<!-- New York (Collapsed) -->
+<details class="group">
+<summary class="flex items-center justify-between p-space-md cursor-pointer bg-surface-container-low group-open:bg-surface-container-lowest transition-colors list-none">
+<span class="font-ui-medium text-ui-medium text-on-surface flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                  New York (Hospitality Wage Order • 80/20 Dual-Job Limits)
+                </span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-space-md pt-0 font-body-editorial text-body-editorial text-on-surface-variant space-y-2">
+<p>
+                  New York Labor Law § 196-d limits tip pooling strictly to employees who perform direct customer service duties. BOH employees (such as line cooks, dishwashers, and expediters) cannot participate in mandatory tip pools if the employer claims a statutory tip credit against minimum wage<sup>2</sup>.
+                </p>
+<div class="text-xs font-tabular-mono-sm text-outline pt-1">
+                  Reference: <sup>2</sup> NYLL § 196-d; 12 NYCRR Part 146 (Hospitality Industry Wage Order).
+                </div>
+</div>
+</details>
+<!-- Texas (Collapsed) -->
+<details class="group">
+<summary class="flex items-center justify-between p-space-md cursor-pointer bg-surface-container-low group-open:bg-surface-container-lowest transition-colors list-none">
+<span class="font-ui-medium text-ui-medium text-on-surface flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                  Texas (Standard FLSA 29 U.S.C. Adoption • Notice Rule)
+                </span>
+<span class="material-symbols-outlined text-outline group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-space-md pt-0 font-body-editorial text-body-editorial text-on-surface-variant space-y-2">
+<p>
+                  Texas adheres to the federal Fair Labor Standards Act provisions. Employers may claim the standard maximum tip credit up to $5.12/hr (paying $2.13/hr in direct cash wages), provided employees are formally notified in advance and retain 100% of all gratuities received<sup>3</sup>.
+                </p>
+<div class="text-xs font-tabular-mono-sm text-outline pt-1">
+                  Reference: <sup>3</sup> FLSA 29 U.S.C. § 203(m); Texas Labor Code Chapter 62.
+                </div>
+</div>
+</details>
+</div>
+<!-- Watch Out Warning Callout Box -->
+<div class="rounded-r-md border border-outline-variant border-l-4 border-l-secondary bg-secondary-fixed/20 p-space-md">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] flex-shrink-0">warning</span>
+<div>
+<h4 class="font-ui-medium text-ui-medium text-secondary mb-1">
+                  Statutory Watch Out: Management Participation Is Prohibited
+                </h4>
+<p class="font-ui-base text-ui-base text-on-surface">
+                  Under federal law (<strong>29 U.S.C. § 203(m)(2)(B)</strong>), managers and supervisors cannot participate in or take any funds from a tip pool, regardless of whether they physically clear tables, pour drinks, or serve patrons during peak hours. Doing so invalidates the entire pool and exposes the employer to 100% back-wage liquidated damages.
+                </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: FAQ & Resource Links -->
+<section class="bg-surface-container-lowest rounded-lg border border-outline-variant p-space-lg">
+<div class="pb-space-sm mb-space-md border-b border-outline-variant">
+<h2 class="font-headline-h2 text-headline-h2 text-on-surface">Frequently asked questions</h2>
+</div>
+<div class="space-y-space-md">
+<div class="space-y-1">
+<h3 class="font-ui-medium text-ui-medium text-on-surface">Can salaried or shift managers participate in tip pools?</h3>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant">
+                No. The DOL applies the executive exemption duties test (29 CFR § 541.100). If an employee regularly directs the work of two or more staff members or has input into scheduling/hiring, they are classified as a manager and cannot retain tips from any pooled source.
+              </p>
+</div>
+<div class="space-y-1">
+<h3 class="font-ui-medium text-ui-medium text-on-surface">How are credit card transaction processing fees handled?</h3>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant">
+                In states where permitted (not in CA, CO, or ME), an employer may subtract the actual transactional processing percentage charged by the credit card issuer (e.g. 2.5%) from the tip amount before disbursing it to the pool participant.
+              </p>
+</div>
+<div class="space-y-1">
+<h3 class="font-ui-medium text-ui-medium text-on-surface">What is the distinction between tip pooling and tip sharing?</h3>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant">
+                Tip pooling involves accumulating all tips into a communal fund distributed according to an established mathematical formula. Tip sharing (or tipping out) involves direct, voluntary or customary transfers from primary service workers to support staff (e.g., servers tipping bartenders directly).
+              </p>
+</div>
+<div class="space-y-1">
+<h3 class="font-ui-medium text-ui-medium text-on-surface">How does the FLSA 80/20 dual-job rule affect dual-role staff?</h3>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant">
+                If an employee spends more than 20% of their working hours performing non-tipped support duties (or more than 30 continuous minutes), the employer cannot claim the tip-credit wage rate for those hours and must pay full statutory minimum wage.
+              </p>
+</div>
+<div class="space-y-1">
+<h3 class="font-ui-medium text-ui-medium text-on-surface">Can back-of-house staff receive tip-outs if no tip credit is taken?</h3>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant">
+                Yes. Under the 2020 FLSA amendments, if the employer pays all staff the full minimum wage without utilizing a tip credit, non-supervisory kitchen staff (cooks, dishwashers, cleaners) may participate in mandatory tip pools.
+              </p>
+</div>
+</div>
+<!-- Related Calculators Ledger Links -->
+<div class="mt-space-xl pt-space-md border-t border-outline-variant">
+<span class="font-ui-small-bold text-ui-small-bold text-outline uppercase tracking-wider block mb-space-sm">
+              Related Compliance Calculators
+            </span>
+<div class="divide-y divide-outline-variant border border-outline-variant rounded">
+<a class="flex items-center justify-between p-3 hover:bg-surface-container-low transition-colors group" href="#">
+<span class="font-ui-medium text-ui-medium text-on-surface group-hover:text-primary">
+                  FLSA Dual-Job &amp; 80/20 Rule Auditor
+                </span>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between p-3 hover:bg-surface-container-low transition-colors group" href="#">
+<span class="font-ui-medium text-ui-medium text-on-surface group-hover:text-primary">
+                  Overtime Weighted Average Rate Calculator
+                </span>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between p-3 hover:bg-surface-container-low transition-colors group" href="#">
+<span class="font-ui-medium text-ui-medium text-on-surface group-hover:text-primary">
+                  Tip Credit Minimum Wage Compliance Matrix (All 50 States)
+                </span>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Section 8: Multiplex Advertisement Grid (2x3 tiles) -->
+<aside aria-label="Sponsor Marketplace" class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline tracking-widest uppercase">ADVERTISEMENTS • MULTIPLEX PARTNER NETWORK</span>
+<span class="font-ui-small text-ui-small text-outline">Verified Directory</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-space-sm">
+<div class="p-space-md bg-surface-container rounded border border-dashed border-outline-variant flex flex-col justify-between h-40">
+<span class="font-ui-small-bold text-ui-small-bold text-outline uppercase tracking-wider">Payroll Audit</span>
+<p class="font-ui-medium text-ui-medium text-on-surface line-clamp-2">Automatic FLSA tip liability protection for multi-unit bars.</p>
+<a class="text-primary font-ui-small-bold text-ui-small-bold hover:underline" href="#">Explore Software →</a>
+</div>
+<div class="p-space-md bg-surface-container rounded border border-dashed border-outline-variant flex flex-col justify-between h-40">
+<span class="font-ui-small-bold text-ui-small-bold text-outline uppercase tracking-wider">Scheduling POS</span>
+<p class="font-ui-medium text-ui-medium text-on-surface line-clamp-2">Smart floor roster templates with integrated tip matrices.</p>
+<a class="text-primary font-ui-small-bold text-ui-small-bold hover:underline" href="#">Free 14-Day Trial →</a>
+</div>
+<div class="p-space-md bg-surface-container rounded border border-dashed border-outline-variant flex flex-col justify-between h-40">
+<span class="font-ui-small-bold text-ui-small-bold text-outline uppercase tracking-wider">Tax Credits</span>
+<p class="font-ui-medium text-ui-medium text-on-surface line-clamp-2">Recover FICA tax credits under IRS Section 45B.</p>
+<a class="text-primary font-ui-small-bold text-ui-small-bold hover:underline" href="#">Calculate Refund →</a>
+</div>
+<div class="p-space-md bg-surface-container rounded border border-dashed border-outline-variant flex flex-col justify-between h-40">
+<span class="font-ui-small-bold text-ui-small-bold text-outline uppercase tracking-wider">Instant Pay</span>
+<p class="font-ui-medium text-ui-medium text-on-surface line-clamp-2">Direct employee tip debit disbursals post-shift.</p>
+<a class="text-primary font-ui-small-bold text-ui-small-bold hover:underline" href="#">Setup Payouts →</a>
+</div>
+<div class="p-space-md bg-surface-container rounded border border-dashed border-outline-variant flex flex-col justify-between h-40">
+<span class="font-ui-small-bold text-ui-small-bold text-outline uppercase tracking-wider">State Legal Digest</span>
+<p class="font-ui-medium text-ui-medium text-on-surface line-clamp-2">2027 statutory wage updates and labor law laminated posters.</p>
+<a class="text-primary font-ui-small-bold text-ui-small-bold hover:underline" href="#">Download Handbook →</a>
+</div>
+<div class="p-space-md bg-surface-container rounded border border-dashed border-outline-variant flex flex-col justify-between h-40">
+<span class="font-ui-small-bold text-ui-small-bold text-outline uppercase tracking-wider">Timeclock Hardware</span>
+<p class="font-ui-medium text-ui-medium text-on-surface line-clamp-2">Biometric shift clocks compliant with state meal penalty rules.</p>
+<a class="text-primary font-ui-small-bold text-ui-small-bold hover:underline" href="#">Request Pricing →</a>
+</div>
+</div>
+</aside>
+</div>
+<!-- Secondary Right Column: 4 Cols (~300px - 340px) -->
+<div class="col-span-12 lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Saved Shift Presets Card -->
+<section class="bg-surface-container-lowest rounded-lg border border-outline-variant p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-2 mb-space-sm border-b border-outline-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">history</span>
+<h3 class="font-ui-small-bold text-ui-small-bold text-on-surface uppercase tracking-wider">Saved Presets</h3>
+</div>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">2 active</span>
+</div>
+<div class="space-y-space-sm mb-space-sm">
+<!-- Preset 1 -->
+<div class="p-space-sm rounded bg-surface-container border border-outline-variant hover:border-outline transition-colors">
+<div class="flex items-start justify-between">
+<div>
+<h4 class="font-ui-medium text-ui-medium text-on-surface">Fri Dinner Standard</h4>
+<p class="font-tabular-mono-sm text-tabular-mono-sm text-outline">5 servers • 32.0 hrs • 3.0% kitchen</p>
+</div>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest border border-outline-variant font-ui-small-bold text-ui-small-bold text-on-surface hover:bg-surface transition-colors shadow-sm" type="button">
+                  Load
+                </button>
+</div>
+<div class="mt-2 text-xs font-tabular-mono-sm text-outline">Updated: Nov 28, 2026</div>
+</div>
+<!-- Preset 2 -->
+<div class="p-space-sm rounded bg-surface-container border border-outline-variant hover:border-outline transition-colors">
+<div class="flex items-start justify-between">
+<div>
+<h4 class="font-ui-medium text-ui-medium text-on-surface">Sun Brunch Service</h4>
+<p class="font-tabular-mono-sm text-tabular-mono-sm text-outline">6 servers • 28.0 hrs • 2.5% kitchen</p>
+</div>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest border border-outline-variant font-ui-small-bold text-ui-small-bold text-on-surface hover:bg-surface transition-colors shadow-sm" type="button">
+                  Load
+                </button>
+</div>
+<div class="mt-2 text-xs font-tabular-mono-sm text-outline">Updated: Dec 04, 2026</div>
+</div>
+</div>
+<button class="w-full py-1.5 rounded border border-dashed border-outline-variant hover:border-outline bg-surface-container-lowest font-ui-small-bold text-ui-small-bold text-primary flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+            Save current parameters as preset
+          </button>
+</section>
+<!-- Sidebar Sticky Tower Specification (300x600) -->
+<aside aria-label="Sponsor Sidebar Tower" class="sticky top-20 w-full min-h-[600px] bg-surface-container rounded-lg border border-dashed border-outline-variant p-space-md flex flex-col justify-between overflow-hidden">
+<div>
+<div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/60">
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline tracking-widest uppercase">ADVERTISEMENT</span>
+<span class="font-tabular-mono-sm text-tabular-mono-sm text-outline">300 × 600 Tower</span>
+</div>
+<div class="mt-space-lg space-y-space-md">
+<div class="space-y-1">
+<span class="inline-block px-2 py-0.5 rounded text-xs font-ui-small-bold bg-surface-container-lowest border border-outline-variant text-on-surface">
+                  State Labor Law Digest • 2027 Edition
+                </span>
+<h4 class="font-headline-h3 text-headline-h3 text-on-surface pt-1">
+                  The Complete Employer Guide to US Tip Regulations
+                </h4>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded border border-outline-variant space-y-2">
+<div class="flex items-center gap-2 font-ui-small text-ui-small text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span>50-State Minimum Wage Schedules</span>
+</div>
+<div class="flex items-center gap-2 font-ui-small text-ui-small text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span>DOL 80/20 Dual-Job Audit Templates</span>
+</div>
+<div class="flex items-center gap-2 font-ui-small text-ui-small text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span>Manager Exclusion Compliance Rulebook</span>
+</div>
+</div>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant text-sm">
+                Prevent multi-million dollar collective class-action wage claims with audited FLSA payroll workflows.
+              </p>
+</div>
+</div>
+<div class="pt-space-md border-t border-outline-variant/60 space-y-space-sm">
+<button class="w-full py-3 bg-inverse-surface text-inverse-on-surface rounded font-ui-medium text-ui-medium hover:bg-on-surface transition-colors shadow-sm text-center" type="button">
+              Download Handbook PDF
+            </button>
+<div class="flex items-center justify-between font-tabular-mono-sm text-tabular-mono-sm text-outline">
+<span>National Restaurant Bar Assoc.</span>
+<span>Updated Monthly</span>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant mt-space-2xl"><div class="max-w-[1200px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg"><div class="space-y-1.5"><div class="font-ui-small-bold text-ui-small-bold text-on-surface tracking-wider uppercase">Shift &amp; Tip — Archival Ledger Utility</div><p class="font-ui-small text-ui-small text-on-surface-variant max-w-xl">Estimates, not legal or tax advice. Calculations adhere to US FLSA 29 CFR § 531.54 tip regulations.</p></div><nav class="flex flex-wrap items-center gap-space-md"><a class="font-ui-small text-ui-small text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="font-ui-small text-ui-small text-on-surface-variant hover:text-on-surface transition-colors" data-path="methodology" href="#">Methodology</a><a class="font-ui-small text-ui-small text-on-surface-variant hover:text-on-surface transition-colors" data-path="privacy" href="#">Privacy</a><a class="font-ui-small text-ui-small text-on-surface-variant hover:text-on-surface transition-colors" data-path="terms" href="#">Terms</a><a class="font-ui-small text-ui-small text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav></div></footer></body></html>

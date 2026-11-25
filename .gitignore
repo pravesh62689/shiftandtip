@@ -1,0 +1,32 @@
+# Dependencies and builds
+node_modules/
+dist/
+
+# Environment and secrets
+.env
+secrets/
+token*.json
+client_secret*.json
+
+# Playwright profiles and test runs
+.pw-profile/
+.pw-test-*/
+temp_pw_core/
+test-results/
+
+# Reports and logs (keep summaries)
+reports/live/
+reports/drafts/
+reports/oauth/
+reports/lighthouse/*.json
+reports/lighthouse/*.html
+
+# Archives
+*.zip
+*.7z
+
+# Raw scrapes and caches (keep data/raw/snapshots/*.txt for data evidence)
+data/raw/*_files/
+data/raw/*.html
+data/raw/snapshots/*.html
+data/raw/snapshots/*.png

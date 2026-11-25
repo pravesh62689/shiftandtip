@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.0.0' expr:dir='data:blog.languageDirection' lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+  <meta charset='UTF-8'/>
+  <meta content='width=device-width, initial-scale=1' name='viewport'/>
+  <b:include data='blog' name='all-head-content'/>
+  <title><b:if cond='data:view.isHomepage'><data:blog.title/> · Free pay calculators for tipped &amp; hourly workers<b:else/><data:view.title.escaped/></b:if></title>
+  <meta content='#F7F6F1' name='theme-color'/>
+  <link crossorigin='anonymous' href='https://cdn.jsdelivr.net' rel='preconnect'/>
+  <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/pravesh62689/shiftandtip-assets@v1.0.0/fonts/public-sans-var-latin.woff2' rel='preload' type='font/woff2'/>
+  <b:if cond='data:view.isSearch or data:view.isArchive'>
+    <meta content='noindex,follow' name='robots'/>
+  </b:if>
+  <b:if cond='data:view.isSingleItem'>
+    <meta expr:content='data:view.title.escaped' property='og:title'/>
+    <meta expr:content='data:view.url.canonical' property='og:url'/>
+    <meta content='article' property='og:type'/>
+    <meta content='summary_large_image' name='twitter:card'/>
+    <b:if cond='data:view.featuredImage'>
+      <meta expr:content='data:view.featuredImage' property='og:image'/>
+    <b:else/>
+      <meta content='https://cdn.jsdelivr.net/gh/pravesh62689/shiftandtip-assets@main/img/og/default.png' property='og:image'/>
+    </b:if>
+    <b:if cond='data:view.url.canonical contains &quot;/es-&quot;'>
+      <link expr:href='data:view.url.canonical' hreflang='es' rel='alternate'/>
+    <b:else/>
+      <link expr:href='data:view.url.canonical' hreflang='en' rel='alternate'/>
+      <link expr:href='data:view.url.canonical' hreflang='x-default' rel='alternate'/>
+    </b:if>
+  </b:if>
+  <b:skin><![CDATA[/*__THEME_CSS__*/]]></b:skin>
+  <!-- AdSense loader: add ONLY if Blogger Earnings has NOT already injected it (check view-source). -->
+</head>
+<body>
+  <b:class cond='data:view.isPost' name='is-post'/>
+  <b:class cond='data:view.isPage' name='is-page'/>
+  <b:class cond='data:view.isHomepage' name='is-home'/>
+  <a class='skip' href='#content'>Skip to content</a>
+
+  <header class='topbar'>
+    <b:section class='topbar__brand' id='brand' maxwidgets='1' showaddelement='false'>
+      <b:widget id='Header1' locked='true' title='Shift &amp; Tip (Header)' type='Header' version='2' visible='true'>
+        <b:includable id='main'>
+          <a class='brand' expr:href='data:blog.homepageUrl'>Shift &amp; Tip</a>
+        </b:includable>
+      </b:widget>
+    </b:section>
+    <nav aria-label='Primary' class='topbar__nav'>
+      <a href='/p/tip-tools.html'>Tip tools</a>
+      <a href='/p/overtime-tools.html'>Overtime</a>
+      <a href='/p/shift-pay-tools.html'>Shift pay</a>
+      <a href='/p/state-pay-rules.html'>State rules</a>
+      <a href='/p/guides.html'>Guides</a>
+    </nav>
+    <form action='/search' class='topbar__search' method='get' role='search'>
+      <label class='sr-only' for='q'>Search tools</label>
+      <input id='q' name='q' placeholder='Search tools' type='search'/>
+    </form>
+  </header>
+
+  <div class='layout' id='content'>
+    <main class='layout__main'>
+      <b:section id='main' showaddelement='false'>
+        <b:widget id='Blog1' locked='true' title='Posts' type='Blog' version='2' visible='true'>
+          <b:includable id='main'>
+            <b:if cond='data:view.isError'>
+              <article class='entry'>
+                <div class='nf'>
+                  <h1 class='entry__title'>Nothing to calculate here</h1>
+                  <p>That page moved or never existed.</p>
+                  <p><a href='/p/tip-tools.html'>Tip tools</a> · <a href='/p/overtime-tools.html'>Overtime</a> · <a href='/p/state-pay-rules.html'>State rules</a></p>
+                </div>
+              </article>
+            <b:elseif cond='data:view.isSingleItem'/>
+              <b:loop values='data:posts' var='post'>
+                <article class='entry'>
+                  <h1 class='entry__title'><data:post.title/></h1>
+                  <p class='entry__meta'>By <a href='/p/about.html'>Pravesh Rathore</a> · Updated <time expr:datetime='data:post.lastUpdated.iso8601'><data:post.lastUpdated/></time></p>
+                  <div class='entry__body'><data:post.body/></div>
+                </article>
+              </b:loop>
+            <b:else/>
+              <ol class='list'>
+                <b:loop values='data:posts' var='post'>
+                  <li class='list__row'>
+                    <a class='list__title' expr:href='data:post.url'><data:post.title/></a>
+                    <p class='list__snippet'><data:post.snippets.short/></p>
+                  </li>
+                </b:loop>
+              </ol>
+              <nav class='pager'>
+                <b:if cond='data:newerPageUrl'><a aria-label='Newer posts' expr:href='data:newerPageUrl'>&#8592; Newer</a></b:if>
+                <b:if cond='data:olderPageUrl'><a aria-label='Older posts' expr:href='data:olderPageUrl'>Older &#8594;</a></b:if>
+              </nav>
+            </b:if>
+          </b:includable>
+        </b:widget>
+        <b:widget id='Profile1' locked='true' title='About Me' type='Profile' version='2' visible='false'>
+          <b:includable id='main'/>
+        </b:widget>
+        <b:widget id='FeaturedPost1' locked='true' title='Featured Post' type='FeaturedPost' version='2' visible='false'>
+          <b:includable id='main'/>
+        </b:widget>
+        <b:widget id='PageList1' locked='true' title='Pages' type='PageList' version='2' visible='false'>
+          <b:includable id='main'/>
+        </b:widget>
+      </b:section>
+    </main>
+
+    <aside class='layout__side'>
+      <!-- Layout > Add gadget > HTML/JavaScript here: paste the sidebar ad from blogger/ad-units.html -->
+      <b:section id='sidebar' showaddelement='true'/>
+    </aside>
+  </div>
+
+  <footer class='footer'>
+    <div class='alerts-box'>
+      <h3>Get 2027 Wage-Change Alerts for Your State</h3>
+      <p class='field__help'>Never miss an annual minimum wage increase or overtime rule change. Delivered quarterly. No spam.</p>
+      <form action='/p/contact.html' class='alerts-form' method='get'>
+        <div class='alerts-form__row'>
+          <input class='field__input' name='email' placeholder='Enter your email address' required='required' type='email'/>
+          <button class='btn' type='submit'>Get Alerts</button>
+        </div>
+      </form>
+    </div>
+    <b:section id='footer-contact' maxwidgets='1' showaddelement='false'>
+      <b:widget id='ContactForm1' locked='true' title='Contact Us' type='ContactForm' version='2'>
+        <b:includable id='main'>
+          <div class='contact-form-widget'>
+            <h3><data:title/></h3>
+            <p class='field__help'>Use the form at the bottom of any page; we reply within 3 business days.</p>
+            <div class='form'>
+              <form name='contact-form'>
+                <div class='field'>
+                  <label class='field__label' for='ContactForm1_contact-form-name'>Name</label>
+                  <input class='field__input contact-form-name' id='ContactForm1_contact-form-name' name='name' type='text' value=''/>
+                </div>
+                <div class='field'>
+                  <label class='field__label' for='ContactForm1_contact-form-email'>Email <span style='color:var(--danger)'>*</span></label>
+                  <input class='field__input contact-form-email' id='ContactForm1_contact-form-email' name='email' type='email' value='' required='required'/>
+                </div>
+                <div class='field'>
+                  <label class='field__label' for='ContactForm1_contact-form-email-message'>Message <span style='color:var(--danger)'>*</span></label>
+                  <textarea class='field__input contact-form-email-message' cols='25' id='ContactForm1_contact-form-email-message' name='email-message' rows='4' required='required'></textarea>
+                </div>
+                <input class='btn contact-form-button contact-form-button-submit' id='ContactForm1_contact-form-submit' type='button' value='Send Message'/>
+                <div class='contact-form-error-message' id='ContactForm1_contact-form-error-message'></div>
+                <div class='contact-form-success-message' id='ContactForm1_contact-form-success-message'></div>
+              </form>
+            </div>
+          </div>
+        </b:includable>
+      </b:widget>
+    </b:section>
+    <nav aria-label='Footer'>
+      <a href='/p/about.html'>About</a> <a href='/p/methodology.html'>Methodology</a>
+      <a href='/p/privacy.html'>Privacy</a> <a href='/p/terms.html'>Terms</a>
+      <a href='/p/contact.html'>Contact</a> <a href='/p/corrections.html'>Corrections</a>
+      <a href='/p/embed.html'>Embed Widget</a>
+    </nav>
+    <p class='footer__note'>Estimates only, not legal or tax advice. Rules link to official sources.</p>
+  </footer>
+
+  <b:if cond='data:view.isPost'>
+    <script defer='defer' src='https://cdn.jsdelivr.net/gh/pravesh62689/shiftandtip-assets@v1.0.0/tools.min.js' onerror='this.onerror=null;this.src="https://fastly.jsdelivr.net/gh/pravesh62689/shiftandtip-assets@v1.0.0/tools.min.js"'></script>
+  </b:if>
+</body>
+</html>
