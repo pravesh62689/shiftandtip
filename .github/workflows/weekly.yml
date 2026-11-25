@@ -2,7 +2,8 @@ name: Weekly Maintenance & Health Audit
 
 on:
   schedule:
-    - cron: '30 3 * * 1'
+    - cron: '30 3 * * 1'   # weekly Monday 03:30 UTC
+    - cron: '0 4 1 * *'    # monthly 1st at 04:00 UTC — re-capture pending states/cities
   workflow_dispatch:
 
 permissions:
@@ -33,6 +34,18 @@ jobs:
 
       - name: Verify Blogger API authorization
         run: node scripts/verify-blogger-auth.mjs
+        env:
+          BLOG_ID: ${{ secrets.BLOG_ID }}
+          BLOGGER_TOKEN_JSON: ${{ secrets.BLOGGER_TOKEN_JSON }}
+          BLOGGER_CLIENT_SECRET_JSON: ${{ secrets.BLOGGER_CLIENT_SECRET_JSON }}
+
+      - name: Monthly re-capture pending state taxes and city wages
+        if: github.event.schedule == '0 4 1 * *' || github.event_name == 'workflow_dispatch'
+        run: |
+          echo "Re-capturing 38 pending state tax tables and 36 cities from .gov pages..."
+          node scripts/pw/capture-tax-and-cities.mjs --pending-only 2>&1 || true
+          node scripts/audit-tax-city-data.mjs
+          node scripts/auto-schedule-verified.mjs 2>&1 || echo "No new pages to schedule"
         env:
           BLOG_ID: ${{ secrets.BLOG_ID }}
           BLOGGER_TOKEN_JSON: ${{ secrets.BLOGGER_TOKEN_JSON }}
