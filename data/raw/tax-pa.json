@@ -1,0 +1,9 @@
+{
+  "state": "PA",
+  "name": "Pennsylvania",
+  "url": "https://www.revenue.pa.gov",
+  "type": "flat",
+  "quote": "Pennsylvania personal income tax rate is 3.07 percent.",
+  "snapshotDate": "2026-11-25T22:12:00.928Z",
+  "snapshotFile": "tax-pa-2026-11-25.txt"
+}

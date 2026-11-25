@@ -1,0 +1,9 @@
+{
+  "state": "TX",
+  "name": "Texas",
+  "url": "https://comptroller.texas.gov",
+  "type": "none",
+  "quote": "Texas has no state personal income tax.",
+  "snapshotDate": "2026-11-25T22:12:00.385Z",
+  "snapshotFile": "tax-tx-2026-11-25.txt"
+}

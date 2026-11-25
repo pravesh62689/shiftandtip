@@ -1,0 +1,10 @@
+{
+  "cityKey": "la",
+  "name": "Los Angeles",
+  "state": "CA",
+  "url": "https://wagesla.lacity.org",
+  "rate": 17.27,
+  "quote": "City of Los Angeles minimum wage rate is $17.27 per hour.",
+  "snapshotDate": "2026-11-25T22:12:01.336Z",
+  "snapshotFile": "city-la-2026-11-25.txt"
+}

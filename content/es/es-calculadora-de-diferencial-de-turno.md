@@ -1,37 +1,61 @@
 ---
-title: "Calculadora de Diferencial de Turno y Tasa Combinada"
+title: "Calculadora de Diferencial de Turno (Shift Differential)"
 slugTitle: "es-calculadora-de-diferencial-de-turno"
-h1: "Calculadora de diferencial de turno y horas extras"
-description: "Calcule la tarifa regular combinada cuando trabaja turnos nocturnos con bonos o diferentes tarifas por hora."
-intro: "Calcule el pago de horas extras cuando su semana laboral incluye dos turnos con tarifas salariales distintas."
+h1: "Calculadora de compensación por diferencial de turno"
+description: "Calcule recargos nocturnos, turnos rotativos y fines de semana combinados con horas extras regulares."
+intro: "Determine con exactitud el pago adicional por trabajar en horarios nocturnos, fines de semana o turnos rotativos."
 type: tool
 tool: shift-differential
-hub: /p/tip-tools.html
-hubName: Herramientas en español
-labels: [espanol, tools, shift-differential]
+hub: /p/shift-pay-tools.html
+hubName: Herramientas de pago
+labels: [espanol, tools, calculadoras]
 needs human edit: false
 related:
-  - { label: "Calculadora de horas extras", url: "/2026/12/es-calculadora-de-horas-extras-y-tiempo-doble.html" }
+  - { label: "Calculadora de salario neto", url: "/2026/12/es-calculadora-de-salario-neto-con-propinas.html" }
   - { label: "Calculadora de fondo de propinas", url: "/2026/12/es-calculadora-de-fondo-de-propinas.html" }
-  - { label: "Salario mínimo por estado", url: "/p/state-pay-rules.html" }
+  - { label: "Guía de horas extras y sobretiempo", url: "/2026/12/es-calculadora-de-horas-extras-y-tiempo-doble.html" }
 sources:
-  - { label: "Departamento de Trabajo de EE. UU. (DOL)", url: "https://www.dol.gov/agencies/whd" }
-  - { label: "Servicio de Impuestos Internos (IRS)", url: "https://www.irs.gov/es" }
+  - { label: "Departamento de Trabajo de EE. UU. (FLSA)", url: "https://www.dol.gov/agencies/whd/flsa" }
+  - { label: "Servicio de Impuestos Internos (IRS Guía de Propinas)", url: "https://www.irs.gov/businesses/small-businesses-self-employed/tip-recordkeeping-and-reporting" }
 ---
-## Tarifa Regular Ponderada para Turnos Mixtos
+## Definición y Utilidad del Diferencial de Turno en la Nómina Laboral
 
-Cuando un empleado trabaja en diferentes puestos o turnos nocturnos con diferenciales durante la misma semana laboral, la ley FLSA exige calcular una tarifa regular ponderada para pagar las horas extras.
+El diferencial de turno (*shift differential*) es un complemento retributivo que las organizaciones otorgan a aquellos trabajadores que desempeñan sus funciones durante horarios considerados atípicos, arduos o socialmente desfavorables. Aunque su otorgamiento suele pactarse mediante políticas corporativas o convenios colectivos, su cálculo interactúa directamente con las obligaciones federales y estatales relativas a las horas extras.
 
-## Ejemplo Práctico 1: Turno de Día ($18/hr) y Turno de Noche ($22/hr)
-El trabajador realiza 30 horas diurnas ($540.00) y 15 horas nocturnas ($330.00), sumando 45 horas y $870.00 en salario base.
-- Tarifa regular promedio: $870.00 / 45 horas = $19.33/hr
-- Prima de horas extras (0.5x): 5 horas x ($19.33 x 0.5) = $48.33
-- Salario bruto final: $870.00 + $48.33 = $918.33
+Los escenarios más habituales donde se implementa este beneficio abarcan turnos nocturnos (*graveyard shifts* o *third shifts*), horarios vespertinos extendidos, coberturas de fines de semana y guardias rotativas de urgencia en hoteles, cocinas de preparación y centros de logística hospitalaria.
 
-## Ejemplo Práctico 2: Bono de Turno Nocturno Fijo
-Un cocinero recibe un bono de turno nocturno de $100.00 además de sus 44 horas a $20.00/hr. El bono debe incorporarse en la tasa regular para determinar el sobretiempo.
+### Modalidades Convencionales de Aplicación del Plus Horario
 
-## Preguntas Frecuentes
+Las estructuras de compensación diferencian principalmente entre dos formas de aplicación:
 
-### ¿Es legal pagar horas extras solo sobre la tarifa más baja?
-No. La ley federal prohíbe calcular las horas extras únicamente sobre la tarifa base más baja cuando se realizan tareas mejor remuneradas en la misma semana.
+1. **Adicional Fijo por Hora Trabajada en el Tramo Cualificado**: Consiste en agregar una prima fija en dólares (por ejemplo, +$2.50 o +$4.00 por hora) sobre la tarifa base por cada hora completada dentro del horario definido como nocturno (comúnmente entre las 10:00 p. m. y las 6:00 a. m.).
+2. **Porcentaje Adicional sobre el Salario Base**: Se incrementa la tarifa horaria ordinaria mediante un porcentaje fijo acordado (por ejemplo, un 10% o un 15% adicional) aplicable a la totalidad de las horas asignadas a la jornada atípica.
+
+## Ejemplo Práctico 1: Guardia Nocturna Hospitalaria con Tarifa Regular Ponderada
+
+Un asistente de hostelería hospitalaria en Illinois labora 40 horas en una semana. Su retribución horaria básica es de $20.00 por hora. Sin embargo, 20 de esas 40 horas se desarrollaron en horario nocturno, disfrutando de un diferencial pactado de +$3.50 por hora ($23.50/hr):
+- 20 horas en turno diurno regular a $20.00/hr = **$400.00**.
+- 20 horas en turno nocturno cualificado a $23.50/hr = **$470.00**.
+- Salario bruto ordinario total por 40 horas = **$870.00**.
+- **Tarifa Horaria Regular Ponderada (*Blended Regular Rate*)**: $870.00 ÷ 40 horas = **$21.75 por hora**.
+
+Si este trabajador realiza 5 horas extras en esa misma semana, la tarifa base sobre la cual debe aplicarse el multiplicador legal de 1.5x es de $21.75/hr (arrojando $32.625 por hora extra), y no su salario nominal diurno de $20.00/hr. Esta distinción evita el fraude salarial por omisión de complementos.
+
+## Ejemplo Práctico 2: Jornada de Fin de Semana en Cocina de Producción
+
+Una repostera trabaja 32 horas a $19.00/hr y 8 horas adicionales durante el turno crítico del domingo con un plus porcentual del 20% ($22.80/hr):
+- Horas de semana regulares (32 hrs × $19.00): **$608.00**.
+- Horas de domingo con prima (8 hrs × $22.80): **$182.40**.
+- **Ingreso Semanal Acumulado**: $608.00 + $182.40 = **$790.40**.
+
+## Consideraciones Contables y Normativas en Diferenciales
+
+El cálculo exacto del diferencial de turno requiere conciliar las horas marcadas mediante reloj checador digital con los acuerdos de política laboral interna de la empresa. En auditorías salariales realizadas por el DOL, la omisión de estos suplementos en el cálculo del factor de sobretiempo constituye una de las causales más comunes de penalización pecuniaria. Los supervisores deben garantizar que la fórmula ponderada se aplique de forma automatizada en el software contable de nómina para resguardar la legalidad de los pagos emitidos.
+
+## Aspectos Normativos Determinantes
+
+### ¿Exige la ley federal el pago obligatorio de diferenciales nocturnos?
+La ley federal FLSA no exige a los empleadores abonar de forma obligatoria un plus nocturno; no obstante, si el empleador lo ofrece contractual o institucionalmente, la normativa federal exige inexorablemente que dicho diferencial se compute al determinar la tarifa regular de horas extras.
+
+### ¿Puede un empleador excluir el diferencial al liquidar horas extraordinarias?
+De ninguna manera. Excluir el suplemento de nocturnidad o turno rotativo al fijar la tarifa horaria para horas extras infringe las disposiciones del Código de Regulaciones Federales (29 CFR Parte 778), exponiendo a la empresa a liquidaciones retroactivas de haberes.

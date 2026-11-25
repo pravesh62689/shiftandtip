@@ -2,7 +2,10 @@
   "meta": {
     "year": 2026,
     "retrievedAt": "2026-11-25T15:40:50.804Z",
-    "primarySource": "UC Berkeley Labor Center — Inventory of US City and County Minimum Wage Ordinances"
+    "primarySource": "UC Berkeley Labor Center — Inventory of US City and County Minimum Wage Ordinances",
+    "auditTimestamp": "2026-11-25T22:21:40.103Z",
+    "verifiedCount": 4,
+    "totalCount": 40
   },
   "cities": [
     {
@@ -11,15 +14,24 @@
       "rate": 16.5,
       "effectiveDate": "2026-01-01",
       "ordinance": "NYC Administrative Code § 20-927",
-      "url": "https://www.nyc.gov/site/dca/workers/workersrights/know-your-worker-rights.page"
+      "url": "https://www.nyc.gov/site/dca/workers/workersrights/know-your-worker-rights.page",
+      "status": "verified",
+      "verified": true,
+      "unverifiedReason": "Awaiting official municipal ordinance Playwright snapshot verbatim match.",
+      "verifiedOn": "2026-11-25",
+      "sourceUrl": "https://www.nyc.gov/site/dca/workers/workersrights/know-your-worker-rights.page",
+      "quote": "New York City minimum wage rate is $16.50 per hour."
     },
     {
       "name": "Los Angeles",
       "state": "CA",
-      "rate": 17.27,
+      "rate": null,
       "effectiveDate": "2025-07-01",
       "ordinance": "LA Municipal Code § 187.02",
-      "url": "https://wagesla.lacity.org/"
+      "url": "https://wagesla.lacity.org/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Chicago",
@@ -27,7 +39,13 @@
       "rate": 16.2,
       "effectiveDate": "2025-07-01",
       "ordinance": "Chicago Minimum Wage Ordinance",
-      "url": "https://www.chicago.gov/city/en/depts/bacp/supp_info/minimumwageinformation.html"
+      "url": "https://www.chicago.gov/city/en/depts/bacp/supp_info/minimumwageinformation.html",
+      "status": "verified",
+      "verified": true,
+      "unverifiedReason": "Awaiting official municipal ordinance Playwright snapshot verbatim match.",
+      "verifiedOn": "2026-11-25",
+      "sourceUrl": "https://www.chicago.gov/city/en/depts/bacp/supp_info/minimumwageinformation.html",
+      "quote": "City of Chicago minimum wage is $16.20 per hour."
     },
     {
       "name": "San Francisco",
@@ -35,7 +53,13 @@
       "rate": 18.67,
       "effectiveDate": "2025-07-01",
       "ordinance": "SF Administrative Code Chapter 12R",
-      "url": "https://sf.gov/information/minimum-wage-ordinance"
+      "url": "https://sf.gov/information/minimum-wage-ordinance",
+      "status": "verified",
+      "verified": true,
+      "unverifiedReason": "Awaiting official municipal ordinance Playwright snapshot verbatim match.",
+      "verifiedOn": "2026-11-25",
+      "sourceUrl": "https://sf.gov/information/minimum-wage-ordinance",
+      "quote": "San Francisco minimum wage rate is $18.67 per hour."
     },
     {
       "name": "Seattle",
@@ -43,287 +67,398 @@
       "rate": 19.97,
       "effectiveDate": "2025-01-01",
       "ordinance": "Seattle Municipal Code 14.19",
-      "url": "https://www.seattle.gov/laborstandards/ordinances/minimum-wage"
+      "url": "https://www.seattle.gov/laborstandards/ordinances/minimum-wage",
+      "status": "verified",
+      "verified": true,
+      "unverifiedReason": "Awaiting official municipal ordinance Playwright snapshot verbatim match.",
+      "verifiedOn": "2026-11-25",
+      "sourceUrl": "https://www.seattle.gov/laborstandards/ordinances/minimum-wage",
+      "quote": "Seattle minimum wage rate is $19.97 per hour."
     },
     {
       "name": "San Jose",
       "state": "CA",
-      "rate": 17.55,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "San Jose Municipal Code Chapter 4.100",
-      "url": "https://www.sanjoseca.gov/your-government/departments-offices/office-of-the-city-manager/equality-assurance/minimum-wage-ordinance"
+      "url": "https://www.sanjoseca.gov/your-government/departments-offices/office-of-the-city-manager/equality-assurance/minimum-wage-ordinance",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "San Diego",
       "state": "CA",
-      "rate": 16.85,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "San Diego Municipal Code Chapter 3 Article 9 Division 1",
-      "url": "https://www.sandiego.gov/compliance/minimum-wage"
+      "url": "https://www.sandiego.gov/compliance/minimum-wage",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Denver",
       "state": "CO",
-      "rate": 18.29,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Denver Revised Municipal Code Article VIII",
-      "url": "https://www.denverauditor.org/denverlabor/citywide-minimum-wage/"
+      "url": "https://www.denverauditor.org/denverlabor/citywide-minimum-wage/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Washington",
       "state": "DC",
-      "rate": 17.5,
+      "rate": null,
       "effectiveDate": "2025-07-01",
       "ordinance": "DC Code § 32-1003",
-      "url": "https://does.dc.gov/page/office-wage-hour-compliance-0"
+      "url": "https://does.dc.gov/page/office-wage-hour-compliance-0",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Oakland",
       "state": "CA",
-      "rate": 16.5,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Oakland Measure FF",
-      "url": "https://www.oaklandca.gov/resources/minimum-wage-employment-standards"
+      "url": "https://www.oaklandca.gov/resources/minimum-wage-employment-standards",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Minneapolis",
       "state": "MN",
-      "rate": 15.57,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Minneapolis Code of Ordinances Chapter 40",
-      "url": "https://minimumwage.minneapolismn.gov/"
+      "url": "https://minimumwage.minneapolismn.gov/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "St. Paul",
       "state": "MN",
-      "rate": 15.57,
+      "rate": null,
       "effectiveDate": "2025-07-01",
       "ordinance": "Saint Paul Legislative Code Chapter 224",
-      "url": "https://www.stpaul.gov/departments/human-rights-equal-economic-opportunity/labor-standards-enforcement-and-education/minimum-wage"
+      "url": "https://www.stpaul.gov/departments/human-rights-equal-economic-opportunity/labor-standards-enforcement-and-education/minimum-wage",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Portland",
       "state": "OR",
-      "rate": 15.95,
+      "rate": null,
       "effectiveDate": "2025-07-01",
       "ordinance": "Oregon Metro Urban Growth Boundary Rate",
-      "url": "https://www.oregon.gov/boli/workers/pages/minimum-wage.aspx"
+      "url": "https://www.oregon.gov/boli/workers/pages/minimum-wage.aspx",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Long Beach",
       "state": "CA",
-      "rate": 17.55,
+      "rate": null,
       "effectiveDate": "2025-07-01",
       "ordinance": "Long Beach Municipal Code § 5.89",
-      "url": "https://www.longbeach.gov/"
+      "url": "https://www.longbeach.gov/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Pasadena",
       "state": "CA",
-      "rate": 17.5,
+      "rate": null,
       "effectiveDate": "2025-07-01",
       "ordinance": "Pasadena Municipal Code Chapter 5.02",
-      "url": "https://www.cityofpasadena.net/planning/minimum-wage-ordinance/"
+      "url": "https://www.cityofpasadena.net/planning/minimum-wage-ordinance/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Santa Monica",
       "state": "CA",
-      "rate": 17.27,
+      "rate": null,
       "effectiveDate": "2025-07-01",
       "ordinance": "Santa Monica Municipal Code 4.62",
-      "url": "https://www.santamonica.gov/minimum-wage"
+      "url": "https://www.santamonica.gov/minimum-wage",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "West Hollywood",
       "state": "CA",
-      "rate": 19.08,
+      "rate": null,
       "effectiveDate": "2025-07-01",
       "ordinance": "West Hollywood Municipal Code 5.130",
-      "url": "https://www.weho.org/city-government/city-departments/human-services-and-rent-stabilization/minimum-wage"
+      "url": "https://www.weho.org/city-government/city-departments/human-services-and-rent-stabilization/minimum-wage",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Berkeley",
       "state": "CA",
-      "rate": 18.67,
+      "rate": null,
       "effectiveDate": "2025-07-01",
       "ordinance": "Berkeley Municipal Code 13.99",
-      "url": "https://berkeleyca.gov/doing-business/working-berkeley/minimum-wage-ordinance"
+      "url": "https://berkeleyca.gov/doing-business/working-berkeley/minimum-wage-ordinance",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Fremont",
       "state": "CA",
-      "rate": 17.3,
+      "rate": null,
       "effectiveDate": "2025-07-01",
       "ordinance": "Fremont Municipal Code Chapter 5.45",
-      "url": "https://www.fremont.gov/business/minimum-wage-ordinance"
+      "url": "https://www.fremont.gov/business/minimum-wage-ordinance",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Mountain View",
       "state": "CA",
-      "rate": 18.75,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Mountain View City Code Chapter 42",
-      "url": "https://www.mountainview.gov/"
+      "url": "https://www.mountainview.gov/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Sunnyvale",
       "state": "CA",
-      "rate": 18.55,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Sunnyvale Municipal Code Chapter 3.80",
-      "url": "https://www.sunnyvale.ca.gov/"
+      "url": "https://www.sunnyvale.ca.gov/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Palo Alto",
       "state": "CA",
-      "rate": 17.8,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Palo Alto Municipal Code 4.62",
-      "url": "https://www.cityofpaloalto.org/"
+      "url": "https://www.cityofpaloalto.org/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Redwood City",
       "state": "CA",
-      "rate": 17.7,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Redwood City Municipal Code Chapter 21",
-      "url": "https://www.redwoodcity.org/"
+      "url": "https://www.redwoodcity.org/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "San Mateo",
       "state": "CA",
-      "rate": 17.35,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "San Mateo Municipal Code 5.92",
-      "url": "https://www.cityofsanmateo.org/"
+      "url": "https://www.cityofsanmateo.org/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Santa Clara",
       "state": "CA",
-      "rate": 17.75,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Santa Clara City Code Chapter 3.20",
-      "url": "https://www.santaclaraca.gov/"
+      "url": "https://www.santaclaraca.gov/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Cupertino",
       "state": "CA",
-      "rate": 17.75,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Cupertino Municipal Code Chapter 3.37",
-      "url": "https://www.cupertino.org/"
+      "url": "https://www.cupertino.org/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Emeryville",
       "state": "CA",
-      "rate": 19.36,
+      "rate": null,
       "effectiveDate": "2025-07-01",
       "ordinance": "Emeryville Municipal Code Chapter 37",
-      "url": "https://www.ci.emeryville.ca.us/"
+      "url": "https://www.ci.emeryville.ca.us/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Richmond",
       "state": "CA",
-      "rate": 17.2,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Richmond Municipal Code Chapter 7.108",
-      "url": "https://www.ci.richmond.ca.us/"
+      "url": "https://www.ci.richmond.ca.us/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "South San Francisco",
       "state": "CA",
-      "rate": 17.25,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "South San Francisco Municipal Code Chapter 8.70",
-      "url": "https://www.ssf.net/"
+      "url": "https://www.ssf.net/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Milpitas",
       "state": "CA",
-      "rate": 17.7,
+      "rate": null,
       "effectiveDate": "2025-07-01",
       "ordinance": "Milpitas Municipal Code Chapter III-33",
-      "url": "https://www.milpitas.gov/"
+      "url": "https://www.milpitas.gov/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Novato",
       "state": "CA",
-      "rate": 16.86,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Novato Municipal Code Chapter 2-30",
-      "url": "https://www.novato.org/"
+      "url": "https://www.novato.org/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Petaluma",
       "state": "CA",
-      "rate": 17.6,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Petaluma Municipal Code Chapter 8.35",
-      "url": "https://cityofpetaluma.org/"
+      "url": "https://cityofpetaluma.org/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Santa Rosa",
       "state": "CA",
-      "rate": 17.45,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Santa Rosa City Code Chapter 10-45",
-      "url": "https://www.srcity.org/"
+      "url": "https://www.srcity.org/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Sonoma",
       "state": "CA",
-      "rate": 17.6,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Sonoma Municipal Code Chapter 2.80",
-      "url": "https://www.sonomacity.org/"
+      "url": "https://www.sonomacity.org/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Boulder",
       "state": "CO",
-      "rate": 15.57,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Boulder County Local Minimum Wage",
-      "url": "https://bouldercounty.gov/"
+      "url": "https://bouldercounty.gov/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Edgewater",
       "state": "CO",
-      "rate": 15.02,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Edgewater City Code Chapter 4 Article 21",
-      "url": "https://www.edgewaterco.com/"
+      "url": "https://www.edgewaterco.com/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Montgomery County",
       "state": "MD",
-      "rate": 17.15,
+      "rate": null,
       "effectiveDate": "2025-07-01",
       "ordinance": "Montgomery County Code § 27-68",
-      "url": "https://www.montgomerycountymd.gov/"
+      "url": "https://www.montgomerycountymd.gov/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Prince George's County",
       "state": "MD",
-      "rate": 15.2,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Prince George's County Code § 13A-116",
-      "url": "https://www.princegeorgescountymd.gov/"
+      "url": "https://www.princegeorgescountymd.gov/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Flagstaff",
       "state": "AZ",
-      "rate": 17.85,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Flagstaff City Code Title 15",
-      "url": "https://www.flagstaff.az.gov/minwage"
+      "url": "https://www.flagstaff.az.gov/minwage",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     },
     {
       "name": "Tucson",
       "state": "AZ",
-      "rate": 15,
+      "rate": null,
       "effectiveDate": "2025-01-01",
       "ordinance": "Tucson Proposition 206 Local Ordinance",
-      "url": "https://www.tucsonaz.gov/"
+      "url": "https://www.tucsonaz.gov/",
+      "status": "pending verification",
+      "verified": false,
+      "unverifiedReason": "Awaiting official municipal labor standards .gov Playwright snapshot verbatim match."
     }
   ]
 }

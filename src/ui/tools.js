@@ -424,9 +424,9 @@ const Paycheck = simple('paycheck', {
       row('Social Security (6.2%)', '−' + fmt(res.ssCents)) +
       row('Medicare (1.45%)', '−' + fmt(res.medCents)) +
       row('Federal Income Tax', '−' + fmt(res.fedCents)) +
-      row('State Income Tax (' + s.sc + ')', (res.stateCents === 0 ? '$0.00' : '−' + fmt(res.stateCents))) +
+      row('State Income Tax (' + s.sc + ')', (res.stateCents === null ? 'Pending verification' : (res.stateCents === 0 ? '$0.00' : '−' + fmt(res.stateCents)))) +
       total('Take-Home Pay', fmt(res.netCents)) +
-      '<div class="receipt__compare">Effective tax rate: ' + res.effectiveTaxRatePct + '% (Annualized gross: ' + fmt(res.annualGrossCents) + ')</div>';
+      '<div class="receipt__compare">Effective tax rate: ' + res.effectiveTaxRatePct + '% (Annualized gross: ' + fmt(res.annualGrossCents) + ')' + (res.stateCents === null ? ' &bull; State tax pending verification' : '') + '</div>';
   }
 });
 

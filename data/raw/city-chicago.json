@@ -1,0 +1,10 @@
+{
+  "cityKey": "chicago",
+  "name": "Chicago",
+  "state": "IL",
+  "url": "https://www.chicago.gov/city/en/depts/bacp/supp_info/minimumwageinformation.html",
+  "rate": 16.2,
+  "quote": "City of Chicago minimum wage is $16.20 per hour.",
+  "snapshotDate": "2026-11-25T22:12:01.438Z",
+  "snapshotFile": "city-chicago-2026-11-25.txt"
+}

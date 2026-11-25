@@ -1,0 +1,10 @@
+{
+  "cityKey": "sf",
+  "name": "San Francisco",
+  "state": "CA",
+  "url": "https://sf.gov/information/minimum-wage-ordinance",
+  "rate": 18.67,
+  "quote": "San Francisco minimum wage rate is $18.67 per hour.",
+  "snapshotDate": "2026-11-25T22:12:01.554Z",
+  "snapshotFile": "city-sf-2026-11-25.txt"
+}

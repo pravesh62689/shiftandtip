@@ -1,0 +1,10 @@
+{
+  "cityKey": "seattle",
+  "name": "Seattle",
+  "state": "WA",
+  "url": "https://www.seattle.gov/laborstandards/ordinances/minimum-wage",
+  "rate": 19.97,
+  "quote": "Seattle minimum wage rate is $19.97 per hour.",
+  "snapshotDate": "2026-11-25T22:12:01.805Z",
+  "snapshotFile": "city-seattle-2026-11-25.txt"
+}

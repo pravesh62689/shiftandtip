@@ -1,0 +1,10 @@
+{
+  "cityKey": "nyc",
+  "name": "New York City",
+  "state": "NY",
+  "url": "https://www.nyc.gov/site/dca/workers/workersrights/know-your-worker-rights.page",
+  "rate": 16.5,
+  "quote": "New York City minimum wage rate is $16.50 per hour.",
+  "snapshotDate": "2026-11-25T22:12:01.237Z",
+  "snapshotFile": "city-nyc-2026-11-25.txt"
+}

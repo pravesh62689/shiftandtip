@@ -2,10 +2,10 @@
 title: "Illinois: Leyes de Salario y Horas Extras 2027"
 slugTitle: "es-illinois-salario-m-nimo-y-horas-extras"
 h1: "Illinois: Salario mínimo, propinas y horas extras"
-description: "Guía en español de salarios mínimos ($15.00/hr), crédito de propinas y horas extras en Illinois."
-intro: "Consulte las reglas laborales actualizadas de Illinois: salario mínimo por hora, derechos de trabajadores con propinas y cálculo de horas extras."
+description: "Guía legal actualizada en español sobre salarios mínimos ($15.00/hr), crédito de propinas y cálculo de horas extras en Illinois."
+intro: "Consulte las normas laborales vigentes en Illinois: salario mínimo por hora, derechos de trabajadores con propinas, cálculo de sobretiempo y protecciones de nómina."
 type: tool
-tool: tipped-overtime
+tool: overtime
 state: IL
 hub: /p/state-pay-rules.html
 hubName: Reglas laborales
@@ -13,36 +13,51 @@ labels: [espanol, states, illinois]
 needs human edit: false
 related:
   - { label: "Calculadora de salario neto", url: "/2026/12/es-calculadora-de-salario-neto-con-propinas.html" }
-  - { label: "Calculadora de propinas", url: "/2026/12/es-calculadora-de-fondo-de-propinas.html" }
+  - { label: "Calculadora de horas extras con propinas", url: "/2026/12/es-calculadora-de-horas-extras-con-propinas.html" }
   - { label: "Tabla estatal completa", url: "/p/state-pay-rules.html" }
 sources:
   - { label: "Departamento de Trabajo de EE. UU. (DOL)", url: "https://www.dol.gov/agencies/whd" }
-  - { label: "Leyes Laborales de Illinois", url: "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped" }
+  - { label: "Leyes Laborales Oficiales de Illinois", url: "https://www.dol.gov/agencies/whd/state/minimum-wage/tipped" }
 ---
-## Marco Laboral y Salarial en Illinois
+## Legislación Laboral de Illinois: Salarios Escalonados y el Acta de Horas Extras
 
-Los trabajadores del sector gastronómico, hotelero y de servicios en Illinois cuentan con protecciones bajo las leyes estatales y la ley federal FLSA. Cuando las normas estatales ofrecen una mayor protección o un salario más elevado que el federal, el empleador está legalmente obligado a cumplir con la norma estatal más favorable al trabajador.
+El estado de Illinois cuenta con un marco legal dinámico respaldado por la Ley de Salario Mínimo de Illinois (*Illinois Minimum Wage Law*, 820 ILCS 105/) y las ordenanzas autónomas de la Ciudad de Chicago y el Condado de Cook. A nivel estatal, Illinois ha implementado incrementos escalonados para consolidar un salario digno en todo su territorio.
 
-## Valores Salariales Clave en Illinois
+El salario mínimo general del estado de Illinois se ubica en $14.00 por hora (con una pauta de incremento progresivo anual), y autoriza a los empleadores a aplicar un crédito de propinas de hasta el 40% del salario mínimo aplicable.
 
-- **Salario Mínimo General**: $15.00 por hora.
-- **Salario en Efectivo para Empleados con Propinas**: $9.00 por hora.
-- **Crédito Máximo de Propinas**: $6.00 por hora.
-- **Horas Extras**: Tiempo y medio (1.5x) después de 40 horas semanales.
+### El Régimen de Crédito del 40% en Illinois
 
-## Ejemplo Práctico 1: Semana Laboral de 45 Horas en Illinois
-Un trabajador que gana un salario base de $15.00/hr completa 45 horas semanales.
-- 40 horas regulares a $15.00/hr = $600.00
-- 5 horas extras a $22.50/hr (1.5x) = $112.50
-- Pago bruto total = $712.50
+A diferencia de los estados que establecen un monto fijo en dólares para el crédito de propinas, Illinois define el crédito como una proporción porcentual fija:
+- Salario Mínimo General Estatal: $14.00 por hora.
+- Crédito Máximo por Propinas (40%): **$5.60 por hora**.
+- Salario Mínimo en Efectivo para Empleados con Propinas (60% restante): **$8.40 por hora**.
 
-## Ejemplo Práctico 2: Turno con Propinas
-Un mesero trabaja 40 horas al salario en efectivo de $9.00/hr y recauda $550.00 en propinas. Su ingreso total es de $910.00, superando con holgura el salario mínimo obligatorio.
+En la Ciudad de Chicago, rige un régimen aún más protector mediante la ordenanza local de salarios mínimos, la cual inició un proceso gradual para eliminar por completo el crédito de propinas hacia el año 2028.
 
-## Preguntas Frecuentes
+## Caso Práctico 1: Semana Laboral de 45 Horas en Chicago y Suburbios
 
-### ¿Qué ocurre si mis propinas no alcanzan el salario mínimo?
-El empleador está legalmente obligado a compensar la diferencia en dinero en efectivo para que su salario total nunca sea inferior a $15.00 por hora.
+Un mesero en un establecimiento de Illinois completa 45 horas semanales a la tasa estatal base:
+- Salario Directo por 40 horas regulares: 40 hrs × $8.40 = **$336.00**.
+- **Cálculo de la Tarifa de Horas Extras**:
+  - Tarifa regular completa al 1.5x: $14.00 × 1.5 = $21.00 por hora.
+  - Deducción del crédito de propinas ($5.60/hr): $21.00 − $5.60 = **$15.40 en efectivo por hora extra**.
+  - Pago por 5 horas extras: 5 hrs × $15.40 = **$77.00**.
+- **Salario en Efectivo a Pagar por el Empleador**: $336.00 + $77.00 = **$413.00**.
+- Propinas percibidas en el turno: $700.00.
+- **Ingreso Total Combinado**: $413.00 + $700.00 = **$1,113.00**.
 
-### ¿Puedo exigir el pago de horas extras en efectivo?
-Sí. El pago de sobretiempo debe reflejarse directamente en su cheque salarial con los comprobantes oficiales de nómina.
+## Caso Práctico 2: Régimen Fiscal Uniforme en Illinois
+
+El estado de Illinois aplica una tasa plana (*flat rate*) de impuesto sobre la renta del 4.95% sobre el ingreso neto imponible tras la deducción estándar básica, permitiendo un cálculo exacto de las retenciones en el recibo de pago.
+
+## Normas sobre Períodos de Comida y Descanso Físico en Illinois
+
+El Departamento de Trabajo de Illinois exige que todo trabajador asignado a turnos de 7.5 horas continuas disfrute de un período de comida no remunerado de al menos 20 minutos dentro de las primeras cinco horas de servicio, garantizando condiciones físicas óptimas en salas y cocinas.
+
+## Preguntas Frecuentes en Illinois
+
+### ¿Qué es la Ley del Día de Descanso Obligatorio en Illinois?
+La ley ODRISA (*One Day Rest in Seven Act*) exige que todo empleador otorgue a sus trabajadores al menos 24 horas consecutivas de descanso en cada semana calendario fija.
+
+### ¿Cómo se denuncian irregularidades en la nómina en Illinois?
+Los reclamos pueden tramitarse directamente en línea a través de la División de Normas Justas de Trabajo del Departamento de Trabajo de Illinois (IDOL).

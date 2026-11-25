@@ -1,0 +1,9 @@
+{
+  "state": "NY",
+  "name": "New York",
+  "url": "https://www.tax.ny.gov",
+  "type": "graduated",
+  "quote": "New York State personal income tax withholding rates and tax tables.",
+  "snapshotDate": "2026-11-25T22:12:00.811Z",
+  "snapshotFile": "tax-ny-2026-11-25.txt"
+}

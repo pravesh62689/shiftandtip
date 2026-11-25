@@ -60,9 +60,13 @@ export function paycheck({
 
   // 4. State Income Tax Withholding
   let stateCents = 0;
+  let stateTaxStatus = 'verified';
   const stateRule = STATE_TAXES[state];
 
-  if (stateRule && stateRule.type !== 'none') {
+  if (!stateRule || stateRule.status === 'pending verification' || (stateRule.type !== 'none' && stateRule.flatRate == null && !stateRule.brackets)) {
+    stateCents = null;
+    stateTaxStatus = 'pending verification';
+  } else if (stateRule.type !== 'none') {
     const stateStdDed = stateRule.standardDeduction || 0;
     const stateTaxableAnnual = Math.max(0, annualGross - stateStdDed);
 
@@ -75,7 +79,8 @@ export function paycheck({
     }
   }
 
-  const totalTaxCents = ssCents + medCents + fedCents + stateCents;
+  const stateDeductionCents = stateCents ?? 0;
+  const totalTaxCents = ssCents + medCents + fedCents + stateDeductionCents;
   const netCents = Math.max(0, gross - totalTaxCents);
   const effectiveTaxRatePct = gross > 0 ? +((totalTaxCents / gross) * 100).toFixed(1) : 0;
 
@@ -86,6 +91,7 @@ export function paycheck({
     medCents,
     fedCents,
     stateCents,
+    stateTaxStatus,
     totalTaxCents,
     netCents,
     effectiveTaxRatePct,
