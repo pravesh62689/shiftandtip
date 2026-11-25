@@ -1,5 +1,5 @@
 # State Pay Rules Data Recheck & Diff Report
-Audit Timestamp: 2026-11-25T18:00:44.100Z
+Audit Timestamp: 2026-11-25T20:58:02.072Z
 
 Total Jurisdictions: 51
 Verified Jurisdictions: 49
