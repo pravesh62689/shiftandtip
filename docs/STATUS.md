@@ -1,6 +1,6 @@
 # Shift & Tip & FileBrik Master Status Report
 
-**Last Updated**: 2026-11-26T02:38:00+05:30  
+**Last Updated**: 2026-11-26T19:20:00+05:30  
 **Repository**: [pravesh62689/shiftandtip](https://github.com/pravesh62689/shiftandtip) (Public)
 
 ---
@@ -8,10 +8,11 @@
 ## 1. Shift & Tip Status
 
 ### Health & Workflow Verifications
-- **CI Workflow (`ci.yml`)**: ✅ GREEN (Tests: 23/23 pass, build: 146/146 pages pass, audit: 0 fails).
-- **Publish Workflow (`publish.yml`)**: ✅ GREEN (Blogger API OAuth verified in dry-run with production token).
-- **Weekly Maintenance (`weekly.yml`)**: ✅ GREEN (Blogger blogs.get auth check, statutory data recheck, 5-URL live QA, 3-URL mobile Lighthouse audit, automatic report commit).
-- **AdSense Tracker**: Integrated into `weekly.yml` via `scripts/track-adsense.mjs`. Automatically writes `APPLY NOW` banner to `docs/manual-steps.md` when 25+ substantial published pages have been live for 7+ days.
+- **CI Workflow (`ci.yml`)**: ✅ GREEN (`45828522186` on `adca7e0`: 23/23 unit tests pass, 51/51 states verified, 148 posts built, SEO audit pass).
+- **Publish Workflow (`publish.yml`)**: ✅ GREEN (`45699841365`).
+- **Weekly Maintenance (`weekly.yml`)**: ✅ GREEN (`45699852651`).
+- **AdSense Tracker**: Ran `node scripts/track-adsense.mjs` (2026-11-26) — 37 live URLs in `data/live-urls.json`, wrote `APPLY NOW` to `docs/manual-steps.md`.
+- **Audit Report**: Full checklist recorded in [docs/AUDIT-2026-11-26.md](docs/AUDIT-2026-11-26.md).
 
 ### Revenue & Scaling Assets
 - **Affiliate Integration**:
@@ -41,14 +42,16 @@
 
 - **Repository**: [pravesh62689/filebrik-site](https://github.com/pravesh62689/filebrik-site) (Public)
 - **Production URL**: `https://filebrik.pages.dev` (zero-budget Cloudflare Pages; custom domain deferred, buy only from ad earnings).
-- **CI**: GREEN (4/4 unit tests, 42/42 Playwright e2e across Mobile/Desktop Chrome, Lighthouse 100/100).
+- **CI & Live QA**: GREEN (`45831952415` CI, `45832528918` Live QA: 48/48 Playwright e2e across Mobile/Desktop Chrome, Lighthouse Perf 100 / A11y 98–100 / BP 100 / SEO 100 / CLS 0).
 
 ---
 
 ## 3. Pending Human Actions
 
-1. **FileBrik Cloudflare Pages + GSC + Bing**: Connect `pravesh62689/filebrik-site` as project `filebrik` (`https://filebrik.pages.dev`) in Cloudflare Dashboard (zero spend), add GSC URL-prefix HTML meta tag, verify, and import to Bing Webmaster Tools.
-2. **Shift & Tip Secrets Backup**: Run `F:\create-backup.cmd` to generate `F:\shiftandtip-secrets.7z` if not yet created.
+1. **GSC Search Console API + Bing WMT Key**: Enable `searchconsole.googleapis.com` in GCP Console and authorize `scripts/gsc-audit.mjs` for both sites; optionally set `BING_WMT_KEY`.
+2. **Shift & Tip Blogger Live Sync**: Restore updated `dist/theme.xml` in Blogger Dashboard and enrich the 18 title-only scheduled posts + 3 updated trust pages (`about`, `privacy`, `contact`).
+3. **Shift & Tip Secrets Backup**: Run `F:\create-backup.cmd` to generate `F:\shiftandtip-secrets.7z`.
+4. **FileBrik Ad Networks**: Held per `docs/after-approval.md` until GSC shows indexed pages.
 
 ---
 

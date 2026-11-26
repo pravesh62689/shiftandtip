@@ -1,3 +1,11 @@
+# 🚀 APPLY NOW: ADSENSE READINESS THRESHOLD MET
+
+> [!IMPORTANT]
+> Shift & Tip has reached **37 substantial published pages** live for 7+ days.
+> Apply for Google AdSense now via https://www.google.com/adsense/start/ with custom domain or blogspot URL.
+
+---
+
 # Shift & Tip Manual Steps, UI Flows & Operational Runbook
 
 > Run locally when needed:
