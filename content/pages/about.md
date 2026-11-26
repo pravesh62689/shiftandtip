@@ -1,5 +1,5 @@
 ---
-title: "About Shift & Tip"
+title: "About Shift & Tip — Tipped & Hourly Pay Calculators"
 slugTitle: "about"
 description: "Learn about Shift & Tip, our mission, editorial standards, and author Pravesh Rathore."
 type: page

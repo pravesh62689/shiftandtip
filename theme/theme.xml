@@ -5,7 +5,7 @@
   <meta charset='UTF-8'/>
   <meta content='width=device-width, initial-scale=1' name='viewport'/>
   <b:include data='blog' name='all-head-content'/>
-  <title><b:if cond='data:view.isHomepage'><data:blog.title/> · Free pay calculators for tipped &amp; hourly workers<b:else/><data:view.title.escaped/></b:if></title>
+  <title><b:if cond='data:view.isHomepage'><data:blog.title/> · Tipped &amp; hourly pay calculators<b:else/><data:view.title.escaped/></b:if></title>
   <meta content='#F7F6F1' name='theme-color'/>
   <link crossorigin='anonymous' href='https://cdn.jsdelivr.net' rel='preconnect'/>
   <link as='font' crossorigin='anonymous' href='https://cdn.jsdelivr.net/gh/pravesh62689/shiftandtip-assets@v1.0.0/fonts/public-sans-var-latin.woff2' rel='preload' type='font/woff2'/>
@@ -81,6 +81,9 @@
                 </article>
               </b:loop>
             <b:else/>
+              <b:if cond='data:view.isHomepage'>
+                <h1 class='sr-only'><data:blog.title/> — Tipped &amp; hourly pay calculators</h1>
+              </b:if>
               <ol class='list'>
                 <b:loop values='data:posts' var='post'>
                   <li class='list__row'>

@@ -1,5 +1,5 @@
 ---
-title: "Contact Shift & Tip"
+title: "Contact Shift & Tip — Support, Feedback & Corrections"
 slugTitle: "contact"
 description: "Contact the Shift & Tip team for corrections, feedback, questions, or calculation inquiries."
 type: page

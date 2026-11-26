@@ -173,7 +173,7 @@ Under our strict verification methodology, values are sourced exclusively from o
 
 // 6. About
 fs.writeFileSync(path.join(pagesDir, 'about.md'), `---
-title: "About Shift & Tip"
+title: "About Shift & Tip — Tipped & Hourly Pay Calculators"
 slugTitle: "about"
 description: "Learn about Shift & Tip, our mission, editorial standards, and author Pravesh Rathore."
 type: page
@@ -229,7 +229,7 @@ We continuously monitor labor department wage bulletins. When statutory rates ch
 
 // 8. Privacy
 fs.writeFileSync(path.join(pagesDir, 'privacy.md'), `---
-title: "Privacy Policy"
+title: "Privacy Policy — Shift & Tip Cookie & Data Practices"
 slugTitle: "privacy"
 description: "Privacy policy covering cookies, Google advertising partners, consent choices, and data handling."
 type: page
@@ -286,7 +286,7 @@ To report calculation discrepancies or submit questions, please contact us via t
 
 // 10. Contact
 fs.writeFileSync(path.join(pagesDir, 'contact.md'), `---
-title: "Contact Shift & Tip"
+title: "Contact Shift & Tip — Support, Feedback & Corrections"
 slugTitle: "contact"
 description: "Contact the Shift & Tip team for corrections, feedback, questions, or calculation inquiries."
 type: page

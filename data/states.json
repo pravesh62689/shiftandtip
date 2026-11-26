@@ -258,17 +258,17 @@
       "code": "CT",
       "name": "Connecticut",
       "slug": "connecticut",
-      "minWage": null,
-      "tippedCashWage": null,
-      "maxTipCredit": null,
+      "minWage": 16.94,
+      "tippedCashWage": 6.38,
+      "maxTipCredit": 10.56,
       "tipCreditAllowed": true,
       "ot": {
         "weekly": 40
       },
       "notes": [
-        "Hotel and restaurant tipped cash wage is $6.38 (tip credit $9.97). Bartenders tipped cash wage is $8.23 (tip credit $8.12) under C.G.S. § 31-58."
+        "Hotel and restaurant tipped cash wage is $6.38 (tip credit $10.56). Bartenders tipped cash wage is $8.71 (tip credit $8.23) under C.G.S. § 31-58."
       ],
-      "effectiveFrom": "2025-01-01",
+      "effectiveFrom": "2026-01-01",
       "nextChange": {
         "date": null,
         "minWage": null
@@ -282,7 +282,7 @@
           "retrievedAt": "2026-11-24T16:08:25.659Z"
         }
       ],
-      "verifiedOn": null
+      "verifiedOn": "2026-11-26"
     },
     {
       "code": "DE",
@@ -1003,17 +1003,17 @@
       "code": "MT",
       "name": "Montana",
       "slug": "montana",
-      "minWage": null,
-      "tippedCashWage": null,
-      "maxTipCredit": null,
-      "tipCreditAllowed": true,
+      "minWage": 10.85,
+      "tippedCashWage": 10.85,
+      "maxTipCredit": 0,
+      "tipCreditAllowed": false,
       "ot": {
         "weekly": 40
       },
       "notes": [
         "MCA § 39-3-405 prohibits tip credits; employers must pay the full minimum wage."
       ],
-      "effectiveFrom": "2025-01-01",
+      "effectiveFrom": "2026-01-01",
       "nextChange": {
         "date": null,
         "minWage": null
@@ -1027,7 +1027,7 @@
           "retrievedAt": "2026-11-24T16:08:25.659Z"
         }
       ],
-      "verifiedOn": null
+      "verifiedOn": "2026-11-26"
     },
     {
       "code": "NE",

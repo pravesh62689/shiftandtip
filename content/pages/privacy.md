@@ -1,5 +1,5 @@
 ---
-title: "Privacy Policy"
+title: "Privacy Policy — Shift & Tip Cookie & Data Practices"
 slugTitle: "privacy"
 description: "Privacy policy covering cookies, Google advertising partners, consent choices, and data handling."
 type: page
