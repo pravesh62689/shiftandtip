@@ -42,7 +42,7 @@ async function main() {
   await page.waitForTimeout(1500);
 
   const dateStr = new Date().toISOString().slice(0, 10);
-  const backupFileProject = path.join(backupsDir, `theme-backup-${dateStr}.xml`);
+  const backupFileProject = path.join(backupsDir, `theme-live-${dateStr}.xml`);
   const backupFileDownloads = path.join(downloadsDir, `theme-backup-${dateStr}.xml`);
 
   console.log('4. Clicking Download button (data-id=EBS5u)...');

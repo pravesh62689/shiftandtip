@@ -1,8 +1,8 @@
-# 🚀 APPLY NOW: ADSENSE READINESS THRESHOLD MET
+# ⏳ AdSense Readiness Status: NOT YET READY (0/20 Substantial Posts Live 7+ Days)
 
-> [!IMPORTANT]
-> Shift & Tip has reached **37 substantial published pages** live for 7+ days.
-> Apply for Google AdSense now via https://www.google.com/adsense/start/ with custom domain or blogspot URL.
+> [!NOTE]
+> **True State (2026-11-26):** 0 substantial posts (≥600 words) have been live for 7+ days (the 7 currently live tool posts are 136–201 words each; 19 scheduled posts at 3/week begin Dec 1, 2026).
+> **Projected AdSense Application Date:** **2027-01-25** (7 days after the 20th substantial post goes live at 3 posts/week, once updated theme and trust pages are verified live with zero "pending verification" notices).
 
 ---
 

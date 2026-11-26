@@ -11,7 +11,9 @@
 - **CI Workflow (`ci.yml`)**: ✅ GREEN (`45828522186` on `adca7e0`: 23/23 unit tests pass, 51/51 states verified, 148 posts built, SEO audit pass).
 - **Publish Workflow (`publish.yml`)**: ✅ GREEN (`45699841365`).
 - **Weekly Maintenance (`weekly.yml`)**: ✅ GREEN (`45699852651`).
-- **AdSense Tracker**: Ran `node scripts/track-adsense.mjs` (2026-11-26) — 37 live URLs in `data/live-urls.json`, wrote `APPLY NOW` to `docs/manual-steps.md`.
+- **AdSense Tracker**: Fixed `scripts/track-adsense.mjs` (`0/20` substantial posts live ≥7d; `APPLY NOW` gated on `≥20` substantial posts ≥600w live ≥7d + theme/trust live + zero pending verification). `docs/manual-steps.md` rewritten with true state & projected date `2027-01-25`.
+- **Demoted & Re-Scheduled Posts (18 IDs)**: Moved all 18 empty scheduled posts to DRAFT (`data/scheduled-demoted-log.json`), verified all 18 against `tests/posts-math.test.mjs` (924–1244 words, max 7.64% overlap, engine-recomputed math, `.gov` sources), and re-scheduled all 18 on Blogger (`data/rescheduled-log.json`, 19 total SCHEDULED at 3/week through 2027-01-11).
+- **Live Trust Pages Updated**: `about` (`1135863572982789623`), `privacy` (`3673742737761380144`), and `contact` (`7565678308731584462`) updated via Blogger API.
 - **Audit Report**: Full checklist recorded in [docs/AUDIT-2026-11-26.md](docs/AUDIT-2026-11-26.md).
 
 ### Revenue & Scaling Assets

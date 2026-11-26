@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node --test tests/engine.test.mjs tests/paycheck.test.mjs tests/takehome.test.mjs",
+    "test": "node --test tests/engine.test.mjs tests/paycheck.test.mjs tests/takehome.test.mjs tests/adsense-tracker.test.mjs tests/posts-math.test.mjs",
     "test:e2e": "node node_modules/@playwright/test/cli.js test",
     "build:theme": "node scripts/build-theme.mjs",
     "build:assets": "node scripts/build-assets.mjs",
