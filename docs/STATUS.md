@@ -28,7 +28,7 @@
 - **Outreach & Link Assets**:
   - Embeddable widget at `/p/embed.html` with branded attribution iframe.
   - Outreach directory of 30 hospitality publications documented in [docs/outreach.md](file:///F:/shiftandtip/docs/outreach.md).
-  - Custom domain migration architecture and INR pricing documented in [docs/domain-plan.md](file:///F:/shiftandtip/docs/domain-plan.md).
+  - Domain: deferred, buy only from earnings — staying on free Blogger subdomain `https://shiftandtip.blogspot.com` (see [docs/domain-plan.md](file:///F:/shiftandtip/docs/domain-plan.md)).
 
 ### Local Workspace Status
 - `F:\shiftandtip-assets`: Deleted (fully hosted on GitHub).
@@ -39,13 +39,13 @@
 
 ## 2. FileBrik Status
 
-- **Status**: STOPPED at Phase 2 Gate 1.
-- **Condition**: `stitch_filebrik_browser_tools_ui.zip` was deleted during safe cleanup.
-- **Action Required**: Please download the Stitch zip to `C:\Users\prave\Downloads`.
+- **Repository**: [pravesh62689/filebrik-site](https://github.com/pravesh62689/filebrik-site) (Public)
+- **Production URL**: `https://filebrik.pages.dev` (zero-budget Cloudflare Pages; custom domain deferred, buy only from ad earnings).
+- **CI**: GREEN (4/4 unit tests, 42/42 Playwright e2e across Mobile/Desktop Chrome, Lighthouse 100/100).
 
 ---
 
-## 3. Pending Human Actions (Phase 0 & Phase 2 Gates)
+## 3. Pending Human Actions
 
-1. **Secrets Backup**: Run `F:\create-backup.cmd` (or double-click it on `F:\`) and type the encryption password to generate `F:\shiftandtip-secrets.7z`.
-2. **FileBrik Stitch Zip**: Download the Stitch zip to `C:\Users\prave\Downloads\stitch_filebrik_browser_tools_ui.zip`.
+1. **FileBrik Cloudflare Pages + GSC + Bing**: Connect `pravesh62689/filebrik-site` as project `filebrik` (`https://filebrik.pages.dev`) in Cloudflare Dashboard (zero spend), add GSC URL-prefix HTML meta tag, verify, and import to Bing Webmaster Tools.
+2. **Shift & Tip Secrets Backup**: Run `F:\create-backup.cmd` to generate `F:\shiftandtip-secrets.7z` if not yet created.

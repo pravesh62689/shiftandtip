@@ -1,6 +1,9 @@
 # Shift & Tip: Custom Domain Architecture & Migration Plan
 
-A readiness blueprint for upgrading from `shiftandtip.blogspot.com` to a branded custom `.com` domain.
+> **ZERO BUDGET OVERRIDE**: **Domain: deferred, buy only from earnings**  
+> Keep the free Blogger subdomain **`https://shiftandtip.blogspot.com`** permanently until ad/affiliate earnings cover registration fees. Never buy a domain out-of-pocket or enter payment details.
+
+A reference blueprint for migrating from `shiftandtip.blogspot.com` to a branded custom `.com` domain *only after* revenue is established.
 
 ---
 
@@ -73,4 +76,5 @@ Once the domain is purchased (e.g. `shiftandtip.com`), follow these exact steps 
 ---
 
 ## Recommendation & Decision Checkpoint
-- **Recommended Action**: Secure **`shiftandtip.com`** on Cloudflare or Porkbun for ~₹865/year ($10.37 USD) to protect the exact brand identity before public traffic scales.
+- **Current Policy**: **Domain: deferred, buy only from earnings**. Continue publishing and monetizing on `https://shiftandtip.blogspot.com` (Google AdSense allows free `.blogspot.com` subdomains).
+- **Future Trigger**: Only once cumulative Shift & Tip earnings exceed ₹1,000+ INR should **`shiftandtip.com`** (~₹865/year on Cloudflare/Porkbun) be evaluated to unlock Mediavine Journey / Raptive.
