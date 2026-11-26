@@ -1,9 +1,9 @@
 # State Pay Rules Data Recheck & Diff Report
-Audit Timestamp: 2026-11-25T20:58:02.072Z
+Audit Timestamp: 2026-11-26T18:22:39.045Z
 
 Total Jurisdictions: 51
-Verified Jurisdictions: 49
-Pending / Fallback Jurisdictions: 2
+Verified Jurisdictions: 51
+Pending / Fallback Jurisdictions: 0
 
 ## Verified State Rules (0 Diffs Detected)
 | State | Min Wage | Tipped Cash Wage | Max Tip Credit | Tip Credit Allowed | Verified On | Source |
@@ -14,6 +14,7 @@ Pending / Fallback Jurisdictions: 2
 | Arkansas (AR) | $11.00 | $2.63 | $8.37 | Yes | 2026-11-24 | [DOL / State Law](#) |
 | California (CA) | $16.90 | $16.90 | $0.00 | No | 2026-11-24 | [DOL / State Law](#) |
 | Colorado (CO) | $15.16 | $12.14 | $3.02 | Yes | 2026-11-24 | [DOL / State Law](#) |
+| Connecticut (CT) | $16.94 | $6.38 | $10.56 | Yes | 2026-11-26 | [DOL / State Law](#) |
 | Delaware (DE) | $15.00 | $2.23 | $12.77 | Yes | 2026-11-24 | [DOL / State Law](#) |
 | District of Columbia (DC) | $18.40 | $10.30 | $8.10 | Yes | 2026-11-24 | [DOL / State Law](#) |
 | Florida (FL) | $15.00 | $11.98 | $3.02 | Yes | 2026-11-24 | [DOL / State Law](#) |
@@ -33,6 +34,7 @@ Pending / Fallback Jurisdictions: 2
 | Minnesota (MN) | $11.41 | $11.41 | $0.00 | No | 2026-11-24 | [DOL / State Law](#) |
 | Mississippi (MS) | $7.25 | $2.13 | $5.12 | Yes | 2026-11-24 | [DOL / State Law](#) |
 | Missouri (MO) | $15.00 | $7.50 | $7.50 | Yes | 2026-11-24 | [DOL / State Law](#) |
+| Montana (MT) | $10.85 | $10.85 | $0.00 | No | 2026-11-26 | [DOL / State Law](#) |
 | Nebraska (NE) | $15.00 | $2.13 | $12.87 | Yes | 2026-11-24 | [DOL / State Law](#) |
 | Nevada (NV) | $12.00 | $12.00 | $0.00 | No | 2026-11-24 | [DOL / State Law](#) |
 | New Hampshire (NH) | $7.25 | $3.27 | $3.98 | Yes | 2026-11-24 | [DOL / State Law](#) |
@@ -61,8 +63,6 @@ Pending / Fallback Jurisdictions: 2
 ## Pending Verification / Fallbacks
 | State | Status | Primary Reason |
 |---|---|---|
-| Connecticut (CT) | Pending Verification | Fallback to federal minimum wage and FLSA tip credit rules pending official 2026 state statute update. |
-| Montana (MT) | Pending Verification | Fallback to federal minimum wage and FLSA tip credit rules pending official 2026 state statute update. |
 
 ## Audit Engine Output
 ```text

@@ -16,7 +16,7 @@
         "url": "https://taxfoundation.org"
       }
     ],
-    "auditTimestamp": "2026-11-25T23:22:28.301Z",
+    "auditTimestamp": "2026-11-26T18:22:38.925Z",
     "verifiedCount": 13,
     "totalCount": 51
   },
@@ -98,7 +98,7 @@
       "source": "Alaska Dept of Revenue",
       "status": "verified",
       "verified": true,
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "unverifiedReason": "Awaiting official Department of Revenue Playwright snapshot verbatim match.",
       "sourceUrl": "https://dor.alaska.gov",
       "quote": "Alaska has no individual state income tax."
@@ -120,7 +120,7 @@
       "source": "Nevada Dept of Taxation",
       "status": "verified",
       "verified": true,
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "unverifiedReason": "Awaiting official Department of Revenue Playwright snapshot verbatim match.",
       "sourceUrl": "https://tax.nv.gov",
       "quote": "Nevada has no state personal income tax."
@@ -133,7 +133,7 @@
       "source": "NH Dept of Revenue",
       "status": "verified",
       "verified": true,
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "unverifiedReason": "Awaiting official Department of Revenue Playwright snapshot verbatim match.",
       "sourceUrl": "https://www.revenue.nh.gov",
       "quote": "New Hampshire imposes no general tax on wage or earned income."
@@ -145,7 +145,7 @@
       "source": "South Dakota Dept of Revenue",
       "status": "verified",
       "verified": true,
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "unverifiedReason": "Awaiting official Department of Revenue Playwright snapshot verbatim match.",
       "sourceUrl": "https://dor.sd.gov",
       "quote": "South Dakota does not assess personal income tax."
@@ -157,7 +157,7 @@
       "source": "Tennessee Dept of Revenue",
       "status": "verified",
       "verified": true,
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "unverifiedReason": "Awaiting official Department of Revenue Playwright snapshot verbatim match.",
       "sourceUrl": "https://www.tn.gov/revenue",
       "quote": "Tennessee levies no personal income tax on wages."
@@ -169,7 +169,7 @@
       "source": "Texas Comptroller of Public Accounts",
       "status": "verified",
       "verified": true,
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "unverifiedReason": "Awaiting official Department of Revenue Playwright snapshot verbatim match.",
       "sourceUrl": "https://comptroller.texas.gov",
       "quote": "Texas has no state personal income tax."
@@ -182,7 +182,7 @@
       "source": "Washington Dept of Revenue",
       "status": "verified",
       "verified": true,
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "unverifiedReason": "Awaiting official Department of Revenue Playwright snapshot verbatim match.",
       "sourceUrl": "https://dor.wa.gov",
       "quote": "Washington does not levy a personal income tax on salaries and wages."
@@ -194,7 +194,7 @@
       "source": "Wyoming Dept of Revenue",
       "status": "verified",
       "verified": true,
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "unverifiedReason": "Awaiting official Department of Revenue Playwright snapshot verbatim match.",
       "sourceUrl": "https://revenue.wyo.gov",
       "quote": "Wyoming has no state income tax."
@@ -228,7 +228,7 @@
       "source": "Georgia Dept of Revenue",
       "status": "verified",
       "verified": true,
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "unverifiedReason": "Awaiting official Department of Revenue Playwright snapshot verbatim match.",
       "brackets": null,
       "sourceUrl": "https://dor.georgia.gov",
@@ -252,7 +252,7 @@
       "source": "Illinois Dept of Revenue",
       "status": "verified",
       "verified": true,
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "unverifiedReason": "Awaiting official Department of Revenue Playwright snapshot verbatim match.",
       "brackets": null,
       "sourceUrl": "https://tax.illinois.gov",
@@ -331,7 +331,7 @@
       "source": "Pennsylvania Dept of Revenue",
       "status": "verified",
       "verified": true,
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "unverifiedReason": "Awaiting official Department of Revenue Playwright snapshot verbatim match.",
       "brackets": null,
       "sourceUrl": "https://www.revenue.pa.gov",
@@ -377,7 +377,7 @@
       "brackets": null,
       "status": "verified",
       "verified": true,
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "unverifiedReason": "Awaiting official Department of Revenue Playwright snapshot verbatim match.",
       "flatRate": null,
       "sourceUrl": "https://www.ftb.ca.gov",
@@ -556,7 +556,7 @@
       "brackets": null,
       "status": "verified",
       "verified": true,
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "unverifiedReason": "Awaiting official Department of Revenue Playwright snapshot verbatim match.",
       "flatRate": null,
       "sourceUrl": "https://www.tax.ny.gov",

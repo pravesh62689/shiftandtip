@@ -3,7 +3,7 @@
     "year": 2026,
     "retrievedAt": "2026-11-25T15:40:50.804Z",
     "primarySource": "UC Berkeley Labor Center — Inventory of US City and County Minimum Wage Ordinances",
-    "auditTimestamp": "2026-11-25T23:22:31.352Z",
+    "auditTimestamp": "2026-11-26T18:22:38.928Z",
     "verifiedCount": 4,
     "totalCount": 40
   },
@@ -18,7 +18,7 @@
       "status": "verified",
       "verified": true,
       "unverifiedReason": "Awaiting official municipal ordinance Playwright snapshot verbatim match.",
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "sourceUrl": "https://www.nyc.gov/site/dca/workers/workersrights/know-your-worker-rights.page",
       "quote": "New York City minimum wage rate is $16.50 per hour."
     },
@@ -43,7 +43,7 @@
       "status": "verified",
       "verified": true,
       "unverifiedReason": "Awaiting official municipal ordinance Playwright snapshot verbatim match.",
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "sourceUrl": "https://www.chicago.gov/city/en/depts/bacp/supp_info/minimumwageinformation.html",
       "quote": "City of Chicago minimum wage is $16.20 per hour."
     },
@@ -57,7 +57,7 @@
       "status": "verified",
       "verified": true,
       "unverifiedReason": "Awaiting official municipal ordinance Playwright snapshot verbatim match.",
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "sourceUrl": "https://sf.gov/information/minimum-wage-ordinance",
       "quote": "San Francisco minimum wage rate is $18.67 per hour."
     },
@@ -71,7 +71,7 @@
       "status": "verified",
       "verified": true,
       "unverifiedReason": "Awaiting official municipal ordinance Playwright snapshot verbatim match.",
-      "verifiedOn": "2026-11-25",
+      "verifiedOn": "2026-11-26",
       "sourceUrl": "https://www.seattle.gov/laborstandards/ordinances/minimum-wage",
       "quote": "Seattle minimum wage rate is $19.97 per hour."
     },
