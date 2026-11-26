@@ -52,7 +52,7 @@
 
 1. **GSC Search Console API + Bing WMT Key**: Enable `searchconsole.googleapis.com` in GCP Console and authorize `scripts/gsc-audit.mjs` for both sites; optionally set `BING_WMT_KEY`.
 2. **Shift & Tip Blogger Live Sync**: Restore updated `dist/theme.xml` in Blogger Dashboard and enrich the 18 title-only scheduled posts + 3 updated trust pages (`about`, `privacy`, `contact`).
-3. **Shift & Tip Secrets Backup**: Run `F:\create-backup.cmd` to generate `F:\shiftandtip-secrets.7z`.
+3. **Shift & Tip Secrets Backup**: ✅ Verified `F:\shiftandtip-secrets.7z` (`1,647` bytes, 5 files, `7z t` → `Everything is Ok`).
 4. **FileBrik Ad Networks**: Held per `docs/after-approval.md` until GSC shows indexed pages.
 
 ---
