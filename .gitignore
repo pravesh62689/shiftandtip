@@ -4,11 +4,15 @@ dist/
 
 # Environment and secrets
 .env
+.env.*
+!.env.example
 secrets/
 token*.json
 client_secret*.json
+handoff/
 
 # Playwright profiles and test runs
+.pw-profile*
 .pw-profile/
 .pw-test-*/
 temp_pw_core/

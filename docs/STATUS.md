@@ -49,3 +49,8 @@
 
 1. **FileBrik Cloudflare Pages + GSC + Bing**: Connect `pravesh62689/filebrik-site` as project `filebrik` (`https://filebrik.pages.dev`) in Cloudflare Dashboard (zero spend), add GSC URL-prefix HTML meta tag, verify, and import to Bing Webmaster Tools.
 2. **Shift & Tip Secrets Backup**: Run `F:\create-backup.cmd` to generate `F:\shiftandtip-secrets.7z` if not yet created.
+
+---
+
+## 4. Release Log
+- `2026-11-26` · **P0 Preflight**: Verified `git pull`, `gh auth status`, Node `v22.23.2`, disk space; updated `.gitignore` (`.env*`, `!.env.example`, `.pw-profile*`, `handoff/`).
