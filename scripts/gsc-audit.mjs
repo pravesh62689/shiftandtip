@@ -60,10 +60,10 @@ async function authorizeInteractive() {
   }
 
   console.log(`\nOpen in ${isFileBrik ? 'FILEBRIK' : 'MAIN'} Chrome profile: http://127.0.0.1:${port}/start`);
-  console.log(`Waiting on ${redirectUri} for OAuth callback (up to 10 min)...`);
+  console.log(`Waiting on ${redirectUri} for OAuth callback (up to 30 min)...`);
 
   const code = await new Promise((resolve, reject) => {
-    const timer = setTimeout(() => reject(new Error('OAuth callback timeout (600s)')), 600000);
+    const timer = setTimeout(() => reject(new Error('OAuth callback timeout (1800s)')), 1800000);
     server.on('request', (req, res) => {
       const u = new URL(req.url, redirectUri);
       if (u.pathname === '/start') {
