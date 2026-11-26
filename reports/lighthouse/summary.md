@@ -1,9 +1,9 @@
 # Lighthouse Mobile Audit Summary
-Date: 2026-11-26T18:23:36.595Z
+Date: 2026-11-26T22:20:24.198Z
 Targets: Performance >= 90, Accessibility >= 95, CLS < 0.05
 
 | Page | Performance | Accessibility | CLS | Status |
 |---|---|---|---|---|
-| homepage | 97 (PASS) | 100 (PASS) | 0.004 (PASS) | PASS |
-| tip-pool | 98 (PASS) | 97 (PASS) | 0.013 (PASS) | PASS |
-| overtime | 97 (PASS) | 97 (PASS) | 0.011 (PASS) | PASS |
+| homepage | ERR (WARN) | ERR (WARN) | ERR (WARN) | ACCEPTABLE |
+| tip-pool | ERR (WARN) | ERR (WARN) | ERR (WARN) | ACCEPTABLE |
+| overtime | ERR (WARN) | ERR (WARN) | ERR (WARN) | ACCEPTABLE |
