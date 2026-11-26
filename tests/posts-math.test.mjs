@@ -1,10 +1,15 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import { splitHours, grossPay } from '../src/engine/overtime.js';
 import { tipPool } from '../src/engine/tips.js';
 import { tipsDeduction, overtimeDeduction } from '../src/engine/deductions.js';
 import { toCents } from '../src/engine/money.js';
+
+if (!fs.existsSync('dist/posts/manifest.json')) {
+  execFileSync(process.execPath, ['scripts/build-posts.mjs'], { stdio: 'inherit' });
+}
 
 const statesData = JSON.parse(fs.readFileSync('data/states.json', 'utf8')).states;
 const manifest = JSON.parse(fs.readFileSync('dist/posts/manifest.json', 'utf8'));
