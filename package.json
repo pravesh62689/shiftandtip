@@ -12,7 +12,8 @@
     "build": "npm run build:theme && npm run build:assets",
     "build:posts": "node scripts/build-posts.mjs",
     "audit": "node scripts/audit-seo.mjs",
-    "publish:drafts": "node scripts/publish-blogger.mjs"
+    "publish:drafts": "node scripts/publish-blogger.mjs",
+    "reauth": "node scripts/reauth.mjs"
   },
   "keywords": [],
   "author": "",

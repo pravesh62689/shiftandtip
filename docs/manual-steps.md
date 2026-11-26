@@ -18,25 +18,10 @@
 
 ---
 
-## 1. Google Auth Platform & OAuth Status (Production)
-To ensure refresh tokens do not expire after 7 days:
-1. Go to **Google Cloud Console** > **APIs & Services** > **OAuth consent screen** (or Google Auth Platform).
-2. **Branding**:
-   - App name: `Shift & Tip`
-   - User support email: Select your verified Google account email.
-   - App logo: (optional).
-   - Application home page: `https://shiftandtip.blogspot.com`
-   - Application privacy policy link: `https://shiftandtip.blogspot.com/p/privacy-policy.html`
-   - Application terms of service link: `https://shiftandtip.blogspot.com/p/terms-of-service-disclaimers.html`
-   - Developer contact email: Your email.
-   - Click **Save and Continue**.
-3. **Audience / Publishing Status**:
-   - Change Publishing status from **Testing** to **In production** by clicking **Publish App** -> **Confirm**.
-4. **Re-mint OAuth Token**:
-   - Run `node scripts/pw/auth-flow.mjs` locally.
-   - Complete Google login and consent in Chrome (`Advanced` -> `Go to Shift & Tip (unsafe)` -> `Continue` / `Allow`).
-   - Token is refreshed and written to `secrets/token.json`.
-   - Update the GitHub secret `BLOGGER_TOKEN_JSON` with the new token content.
+## 1. Google Auth Platform & OAuth Status (Testing — ₹0 Policy)
+Because `blogspot.com` / `pages.dev` cannot be authorized for a Production OAuth app without buying a domain, the OAuth app stays in **Testing** (refresh tokens expire every 7 days):
+- **Every 6 days:** `npm run reauth` → click **Allow** twice (Main profile `rathore.monty2002@gmail.com` on `48121`, FileBrik profile `praveshrathore2002@gmail.com` on `48122`). This refreshes `secrets/token.json`, `secrets/token-gsc-shiftandtip.json`, `secrets/token-gsc-filebrik.json`, and updates `BLOGGER_TOKEN_JSON` in GitHub Secrets.
+- If a token expires, `weekly.yml` and `publish.yml` automatically pause publishing and open a GitHub issue (`Re-auth needed: run npm run reauth`).
 
 ---
 
